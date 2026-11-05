@@ -1,0 +1,1523 @@
+Order ID,Product ID,Product Name,Product Category,Order Date,Delivery PIN Code,Quantity,Selling Price,Cost Price,Return Status,Cancellation Status,Discount,Inventory Quantity,Shipping Cost,Advertising Spend
+ORD-10001,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-27,400601,1,999,420,No,No,0,140,52,16.59
+ORD-10002,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-17,600001,1,807,340,No,No,5,210,48,52.94
+ORD-10002,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-17,600001,1,569,210,No,No,5,160,46,20.11
+ORD-10003,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-06-13,110016,1,1899,850,No,No,0,85,59,18.94
+ORD-10004,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-30,380015,1,549,180,No,No,0,260,44,0.0
+ORD-10005,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-21,390001,1,399,140,No,No,0,190,46,23.56
+ORD-10005,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-01-21,390001,1,329,110,No,No,0,175,44,42.85
+ORD-10005,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-21,390001,1,1079,550,No,No,10,110,68,0.0
+ORD-10006,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-11,208001,1,339,140,No,No,15,190,46,0.0
+ORD-10006,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-05-11,208001,1,313,110,No,No,5,175,44,33.1
+ORD-10007,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-09,673001,2,399,140,No,No,0,190,46,34.24
+ORD-10008,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-10-02,313001,2,429,190,No,No,0,115,51,28.34
+ORD-10009,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-24,110085,2,1499,750,No,No,0,180,45,58.53
+ORD-10009,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-24,110085,1,1709,890,No,No,5,95,51,41.97
+ORD-10010,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-29,400001,1,1199,550,No,No,0,110,68,0.0
+ORD-10011,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-03,403001,1,1799,890,No,No,0,95,51,0.0
+ORD-10012,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-08-01,781001,2,3869,2100,No,No,10,35,150,0.0
+ORD-10012,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-01,781001,1,1199,550,No,No,0,110,82,0.0
+ORD-10013,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-02,734001,1,849,340,No,No,0,210,62,0.0
+ORD-10013,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-02,734001,1,539,210,No,No,10,160,61,43.55
+ORD-10013,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-01-02,734001,1,386,190,No,No,10,115,66,0.0
+ORD-10014,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-07-09,380001,1,3869,2100,No,No,10,35,135,0.0
+ORD-10015,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-23,110034,1,379,150,No,No,0,240,48,42.52
+ORD-10015,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-23,110034,1,343,190,No,No,20,115,51,57.43
+ORD-10015,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-23,110034,1,949,420,No,No,5,140,52,0.0
+ORD-10016,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-13,400001,1,949,420,No,No,5,140,52,42.79
+ORD-10017,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-07,201001,1,1349,750,No,No,10,180,45,57.64
+ORD-10017,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-08-07,201001,1,1439,890,No,No,20,95,51,48.76
+ORD-10018,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-31,208001,1,807,340,No,No,5,210,48,61.74
+ORD-10019,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-15,700001,2,467,180,Returned,No,15,260,59,20.0
+ORD-10019,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-15,700001,1,427,160,No,No,5,320,58,0.0
+ORD-10020,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-05,395001,3,494,180,Returned,No,10,260,44,0.0
+ORD-10020,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-04-05,395001,1,382,160,No,No,15,320,43,0.0
+ORD-10021,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-10,201001,1,399,140,No,No,0,190,46,19.61
+ORD-10021,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-10,201001,1,329,110,Returned,No,0,175,44,28.1
+ORD-10022,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-07-15,781001,1,1189,620,No,No,15,80,78,0.0
+ORD-10023,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-08,492001,1,599,210,No,No,0,160,46,0.0
+ORD-10024,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-02,580020,1,522,180,No,No,5,260,44,61.29
+ORD-10025,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-01,560001,2,399,140,No,No,0,190,46,55.11
+ORD-10026,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-04-07,500001,1,807,340,No,No,5,210,48,0.0
+ORD-10027,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-27,600028,1,359,140,No,No,10,190,46,57.18
+ORD-10027,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-27,600028,1,329,110,No,No,0,175,44,64.18
+ORD-10028,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2025-12-20,110034,1,1804,850,No,No,5,85,59,24.5
+ORD-10029,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2025-12-23,823001,1,899,480,No,No,10,130,80,0.0
+ORD-10030,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-05-19,700001,2,1804,950,No,No,5,25,61,42.72
+ORD-10031,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-03-09,282001,1,1299,580,No,No,0,70,55,30.19
+ORD-10032,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-18,823001,1,522,180,No,No,5,260,59,62.99
+ORD-10033,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-02-25,416001,1,799,480,No,No,20,130,65,22.37
+ORD-10034,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2025-12-24,625001,1,949,480,No,No,5,130,65,34.2
+ORD-10035,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-06-23,625001,2,246,160,No,No,15,150,65,49.8
+ORD-10036,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-26,411057,1,289,160,No,No,0,150,65,30.86
+ORD-10037,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-15,695001,1,289,160,No,No,0,150,65,56.99
+ORD-10038,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-04-21,160001,1,764,340,No,No,10,210,48,19.03
+ORD-10039,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-16,600096,1,2374,1250,No,No,5,60,44,0.0
+ORD-10040,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-07-04,360001,1,849,480,No,No,15,130,65,0.0
+ORD-10041,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-30,520001,2,360,150,No,No,5,240,48,26.03
+ORD-10042,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-23,500001,1,1349,750,No,No,10,180,45,21.38
+ORD-10043,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-10-15,143001,1,1424,750,No,No,5,180,45,0.0
+ORD-10043,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-10-15,143001,1,1619,890,No,No,10,95,51,27.61
+ORD-10043,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-10-15,143001,1,999,480,No,No,0,130,65,0.0
+ORD-10044,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-01-05,411001,1,649,380,No,No,0,90,53,43.2
+ORD-10045,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-22,313001,1,313,110,No,No,5,175,44,63.24
+ORD-10046,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-25,492001,1,4299,2100,No,No,0,35,135,0.0
+ORD-10046,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-25,492001,1,1019,550,No,No,15,110,68,54.13
+ORD-10047,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-05-27,143001,1,1299,580,No,No,0,70,55,0.0
+ORD-10048,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-04,342001,1,479,210,No,No,20,160,46,39.17
+ORD-10049,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-12,500001,1,1349,750,No,No,10,180,45,0.0
+ORD-10049,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-12,500001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10050,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-04-23,500081,1,4299,2100,No,No,0,35,135,0.0
+ORD-10051,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-01,474001,1,1424,750,No,No,5,180,45,0.0
+ORD-10052,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-09-10,141001,1,1329,620,No,No,5,80,62,30.78
+ORD-10053,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-01,560100,1,899,420,No,No,10,140,52,29.81
+ORD-10054,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-03,560066,1,2499,1250,No,No,0,60,44,52.64
+ORD-10055,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-22,400050,1,4299,2100,No,No,0,35,135,56.11
+ORD-10056,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-24,474001,2,1499,750,No,No,0,180,45,0.0
+ORD-10056,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-06-24,474001,1,1709,890,No,No,5,95,51,29.87
+ORD-10056,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-24,474001,1,313,110,No,No,5,175,44,19.96
+ORD-10057,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-17,600001,1,807,340,No,No,5,210,48,0.0
+ORD-10057,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-17,600001,1,599,210,No,No,0,160,46,0.0
+ORD-10057,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-17,600001,1,2249,1250,No,No,10,60,44,0.0
+ORD-10058,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-28,751001,1,549,180,No,No,0,260,59,29.43
+ORD-10058,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-01-28,751001,1,404,160,No,No,10,320,58,39.69
+ORD-10059,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-11,411001,1,549,180,No,No,0,260,44,44.36
+ORD-10060,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-11,500001,1,427,160,No,No,5,320,43,36.79
+ORD-10061,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-09,110001,1,599,210,No,No,0,160,46,48.13
+ORD-10062,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-24,781001,3,522,180,No,No,5,260,59,42.13
+ORD-10062,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-24,781001,1,449,160,No,No,0,320,58,53.0
+ORD-10063,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-03-15,500001,1,584,380,No,No,10,90,53,26.96
+ORD-10064,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-02-20,522001,1,1119,620,No,No,20,80,62,0.0
+ORD-10065,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-17,682001,1,949,420,No,No,5,140,52,22.23
+ORD-10066,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-08,673001,1,2249,1250,No,No,10,60,44,28.36
+ORD-10067,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2025-12-02,506001,1,296,110,No,No,10,175,44,31.62
+ORD-10068,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-09-05,390001,1,1709,850,No,No,10,85,59,17.18
+ORD-10069,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-07-31,390001,2,1359,750,No,No,20,50,70,44.51
+ORD-10070,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-21,842001,1,1274,750,No,No,15,180,60,28.25
+ORD-10071,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-10-16,226001,2,322,150,No,No,15,240,48,52.97
+ORD-10072,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-04,410210,1,999,420,No,No,0,140,52,53.02
+ORD-10073,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-21,842001,1,1499,750,No,No,0,180,60,54.63
+ORD-10073,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-21,842001,1,1799,890,No,No,0,95,66,0.0
+ORD-10073,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-21,842001,2,1799,890,No,No,0,95,66,0.0
+ORD-10074,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-05,313001,1,427,160,No,No,5,320,43,36.22
+ORD-10075,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-08,342001,1,949,420,No,No,5,140,52,64.63
+ORD-10076,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-01,400076,1,1614,750,No,No,5,50,70,0.0
+ORD-10077,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-10-07,682001,1,289,160,No,No,0,150,65,0.0
+ORD-10078,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-04-08,121001,1,289,160,No,No,0,150,65,19.51
+ORD-10079,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-01,700091,1,949,420,No,No,5,140,68,56.52
+ORD-10080,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-04-11,462001,2,1709,850,No,No,10,85,59,26.28
+ORD-10081,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-22,834001,1,360,150,No,No,5,240,62,44.23
+ORD-10082,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-06-09,110034,1,3654,2100,No,No,15,35,135,46.77
+ORD-10083,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-26,520001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10084,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-09-02,121001,2,1169,580,No,No,10,70,55,59.27
+ORD-10085,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-01-20,474001,1,584,380,No,No,10,90,53,0.0
+ORD-10086,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-06-04,110016,2,1234,580,Returned,No,5,70,55,62.45
+ORD-10087,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-21,110001,1,549,180,No,No,0,260,44,0.0
+ORD-10088,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-09-16,580020,1,2549,1600,No,No,15,40,61,15.14
+ORD-10089,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-13,122001,1,322,150,No,No,15,240,48,44.44
+ORD-10090,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2025-12-09,560066,1,4084,2100,No,No,5,35,135,0.0
+ORD-10090,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2025-12-09,560066,1,1019,550,No,No,15,110,68,41.07
+ORD-10091,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-07-23,400601,1,3869,2100,No,No,10,35,135,0.0
+ORD-10091,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-07-23,400601,1,1199,550,No,No,0,110,68,34.05
+ORD-10092,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-10-02,141001,1,3869,2100,No,No,10,35,135,36.5
+ORD-10092,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-10-02,141001,2,1139,550,No,No,5,110,68,30.63
+ORD-10092,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-10-02,141001,1,429,190,No,No,0,115,51,19.56
+ORD-10093,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-13,110001,1,399,140,No,No,0,190,46,48.5
+ORD-10094,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-06-29,380001,1,552,380,No,No,15,90,53,0.0
+ORD-10095,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-01-23,248001,1,1709,950,No,No,10,25,46,0.0
+ORD-10096,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-22,248001,1,1349,750,Returned,No,10,180,45,61.08
+ORD-10096,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-22,248001,1,1799,890,No,No,0,95,51,0.0
+ORD-10097,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-16,110001,1,999,420,No,No,0,140,52,43.38
+ORD-10098,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-13,411057,1,1424,750,No,No,5,180,45,0.0
+ORD-10099,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-21,673001,1,522,180,No,No,5,260,44,17.74
+ORD-10099,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-21,673001,1,382,160,No,No,15,320,43,0.0
+ORD-10100,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-31,400001,1,569,210,No,No,5,160,46,32.71
+ORD-10101,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-22,411001,1,599,210,No,No,0,160,46,29.48
+ORD-10102,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-06-26,400076,2,2849,1600,No,No,5,40,61,0.0
+ORD-10103,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-01-24,625001,1,1104,580,No,No,15,70,55,18.82
+ORD-10104,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-28,141001,1,260,160,No,No,10,150,65,0.0
+ORD-10105,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-13,620001,1,1349,750,No,No,10,180,45,43.22
+ORD-10105,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-13,620001,1,2374,1250,No,No,5,60,44,0.0
+ORD-10105,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-13,620001,1,275,160,No,No,5,150,65,0.0
+ORD-10106,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-17,440001,1,1424,750,No,No,5,180,45,34.22
+ORD-10106,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-08-17,440001,1,1439,890,No,No,20,95,51,43.58
+ORD-10107,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-07,700091,2,1329,620,No,No,5,80,78,19.22
+ORD-10108,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-27,411001,1,379,150,No,No,0,240,48,48.94
+ORD-10108,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-27,411001,1,408,190,No,No,5,115,51,34.33
+ORD-10109,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-09,201001,1,899,420,No,No,10,140,52,19.24
+ORD-10109,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-09,201001,1,569,210,No,No,5,160,46,62.36
+ORD-10110,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-27,110001,1,599,210,No,No,0,160,46,39.31
+ORD-10111,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-26,121001,1,1349,750,No,No,10,180,45,45.9
+ORD-10111,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-26,121001,1,2499,1250,No,No,0,60,44,60.13
+ORD-10112,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-07-13,411001,1,1614,750,No,No,5,50,70,0.0
+ORD-10113,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-08-31,641001,2,4299,2100,No,No,0,35,135,29.09
+ORD-10114,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-14,695001,1,386,190,No,No,10,115,51,58.71
+ORD-10115,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-10,110034,1,1199,550,No,No,0,110,68,56.55
+ORD-10116,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-16,600028,2,275,160,No,No,5,150,65,0.0
+ORD-10117,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-11,395001,1,1349,750,No,No,10,180,45,49.8
+ORD-10117,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-01-11,395001,1,2249,1250,No,Cancelled,10,60,44,0.0
+ORD-10118,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-04-11,600001,1,1329,620,No,No,5,80,62,0.0
+ORD-10119,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2025-12-25,641001,1,329,110,No,No,0,175,44,0.0
+ORD-10120,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-08-21,248001,1,4084,2100,No,No,5,35,135,18.38
+ORD-10120,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-21,248001,1,1139,550,No,No,5,110,68,0.0
+ORD-10120,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-21,248001,1,1139,550,No,No,5,110,68,0.0
+ORD-10121,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-01-04,713201,1,2699,1600,No,No,10,40,76,0.0
+ORD-10122,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-28,313001,1,4299,2100,No,No,0,35,135,0.0
+ORD-10123,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-14,411001,1,379,150,No,No,0,240,48,16.83
+ORD-10124,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-08,506001,2,399,140,No,No,0,190,46,52.17
+ORD-10125,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-16,734001,1,1019,550,No,No,15,110,82,18.95
+ORD-10126,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-10-05,560100,1,764,340,No,No,10,210,48,0.0
+ORD-10127,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-07-16,713201,2,313,110,No,No,5,175,60,17.87
+ORD-10128,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-26,380015,1,449,160,No,No,0,320,43,0.0
+ORD-10129,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-03,431001,1,379,140,No,No,5,190,46,0.0
+ORD-10129,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-02-03,431001,1,313,110,No,No,5,175,44,27.48
+ORD-10130,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-28,400601,1,1139,550,No,No,5,110,68,0.0
+ORD-10131,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-10-10,506001,1,429,190,No,No,0,115,51,64.86
+ORD-10132,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-05-13,713201,1,999,480,No,No,0,130,80,23.7
+ORD-10133,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-04,673001,1,379,140,No,No,5,190,46,64.15
+ORD-10134,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-05,110001,1,341,150,No,No,10,240,48,37.5
+ORD-10134,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-05,110001,1,429,190,No,No,0,115,51,24.1
+ORD-10135,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-05,823001,2,275,160,No,No,5,150,80,26.27
+ORD-10136,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-08-23,506001,1,1804,950,No,No,5,25,46,40.13
+ORD-10137,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-25,492001,1,404,160,No,No,10,320,43,0.0
+ORD-10138,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2025-12-24,248001,1,3654,2100,No,No,15,35,135,0.0
+ORD-10138,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2025-12-24,248001,1,1079,550,No,No,10,110,68,22.9
+ORD-10139,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-07-01,462001,1,1614,850,No,No,15,85,59,0.0
+ORD-10140,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-23,122001,1,1199,550,No,No,0,110,68,0.0
+ORD-10141,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2025-12-26,530001,1,303,150,No,No,20,240,48,51.06
+ORD-10142,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-08,560001,1,4299,2100,Returned,No,0,35,135,63.33
+ORD-10143,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-03-21,492001,1,1529,890,No,No,15,95,51,57.36
+ORD-10144,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-07-09,121001,1,399,140,No,No,0,190,46,0.0
+ORD-10145,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-10,506001,1,522,180,No,No,5,260,44,0.0
+ORD-10145,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-09-10,506001,3,427,160,No,No,5,320,43,35.07
+ORD-10146,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-21,411001,1,399,140,No,No,0,190,46,30.93
+ORD-10147,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-20,520001,1,1139,550,No,No,5,110,68,0.0
+ORD-10148,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-05-19,110085,1,899,480,No,No,10,130,65,63.35
+ORD-10149,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-23,248001,1,341,150,No,No,10,240,48,0.0
+ORD-10149,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-23,248001,1,386,190,No,No,10,115,51,0.0
+ORD-10149,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-09-23,248001,1,289,160,No,No,0,150,65,57.42
+ORD-10150,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-01-01,121001,3,949,480,No,No,5,130,65,41.66
+ORD-10151,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-06,380001,1,341,150,No,No,10,240,48,28.95
+ORD-10152,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-02,600028,1,386,190,No,No,10,115,51,43.02
+ORD-10153,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-04-20,506001,3,1169,580,No,No,10,70,55,0.0
+ORD-10154,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-27,416001,1,494,180,No,No,10,260,44,0.0
+ORD-10154,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-04-27,416001,1,404,160,No,No,10,320,43,26.28
+ORD-10155,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-30,411057,1,360,150,No,No,5,240,48,58.92
+ORD-10155,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-30,411057,1,429,190,No,No,0,115,51,60.4
+ORD-10155,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-30,411057,1,1804,950,No,No,5,25,46,60.66
+ORD-10156,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-02-28,282001,2,1519,950,No,No,20,25,46,63.11
+ORD-10157,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-28,410210,1,1424,750,No,No,5,180,45,21.71
+ORD-10157,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-04-28,410210,1,2499,1250,No,No,0,60,44,47.41
+ORD-10158,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-06,400050,1,359,140,No,No,10,190,46,56.35
+ORD-10159,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-21,700091,1,999,420,No,No,0,140,68,0.0
+ORD-10160,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-16,711101,1,1349,750,No,No,10,180,60,0.0
+ORD-10161,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-06-26,695001,1,260,160,No,No,10,150,65,0.0
+ORD-10162,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-24,600028,1,3439,2100,No,No,20,35,135,52.87
+ORD-10163,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-03-22,625001,1,949,480,No,No,5,130,65,20.61
+ORD-10164,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-07,695001,1,999,420,No,No,0,140,52,0.0
+ORD-10164,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-07,695001,1,539,210,No,No,10,160,46,17.89
+ORD-10165,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-07-25,522001,1,1169,580,No,No,10,70,55,0.0
+ORD-10166,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-01-02,751001,1,552,380,No,No,15,90,68,53.29
+ORD-10167,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-07-04,395001,2,1104,580,No,No,15,70,55,41.97
+ORD-10168,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-28,110092,1,999,420,Returned,No,0,140,52,42.22
+ORD-10168,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-28,110092,1,539,210,No,No,10,160,46,0.0
+ORD-10169,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-27,410210,1,509,210,Returned,No,15,160,46,0.0
+ORD-10170,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-18,302001,1,404,160,No,No,10,320,43,0.0
+ORD-10171,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2025-12-29,121001,1,764,340,No,No,10,210,48,31.03
+ORD-10172,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-04,201301,1,1399,620,No,No,0,80,62,23.76
+ORD-10173,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-07-07,834001,2,386,190,No,No,10,115,66,0.0
+ORD-10174,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-15,520001,1,359,140,No,No,10,190,46,60.74
+ORD-10175,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-09-14,221001,1,999,480,No,No,0,130,65,57.36
+ORD-10176,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-17,143001,1,899,420,No,No,10,140,52,0.0
+ORD-10177,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-27,834001,2,399,140,No,No,0,190,61,52.72
+ORD-10177,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-27,834001,2,296,110,No,No,10,175,60,0.0
+ORD-10178,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-14,506001,1,1399,620,No,No,0,80,62,0.0
+ORD-10179,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-07-29,700001,1,1234,580,No,No,5,70,70,0.0
+ORD-10180,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-09-26,492001,1,1899,850,No,No,0,85,59,62.17
+ORD-10181,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-05-22,620001,1,1079,550,No,No,10,110,68,0.0
+ORD-10182,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-02-10,751001,1,617,380,No,No,5,90,68,62.26
+ORD-10183,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2025-12-25,400001,1,296,110,Returned,No,10,175,44,0.0
+ORD-10184,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-10-13,462001,1,1424,750,Returned,No,5,180,45,29.33
+ORD-10185,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-08-15,823001,1,649,380,No,No,0,90,68,55.76
+ORD-10186,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-04-16,226001,1,3869,2100,No,No,10,35,135,0.0
+ORD-10187,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2025-12-17,110001,1,1234,580,No,No,5,70,55,47.25
+ORD-10188,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-19,403001,2,365,190,No,No,15,115,51,43.34
+ORD-10189,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-04-18,411001,1,1614,750,No,No,5,50,70,15.78
+ORD-10190,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-17,201301,1,399,140,No,No,0,190,46,34.46
+ORD-10191,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-03,711101,1,296,110,No,No,10,175,60,0.0
+ORD-10192,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-20,823001,1,4084,2100,No,No,5,35,150,0.0
+ORD-10192,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-20,823001,1,1199,550,No,No,0,110,82,0.0
+ORD-10193,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-10-13,530001,1,449,160,No,No,0,320,43,30.83
+ORD-10194,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-24,110001,1,399,140,No,No,0,190,46,20.16
+ORD-10194,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-01-24,110001,1,313,110,No,No,5,175,44,15.62
+ORD-10195,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-30,360001,1,359,160,No,No,20,320,43,23.48
+ORD-10196,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-17,520001,1,949,420,Returned,No,5,140,52,0.0
+ORD-10196,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-17,520001,1,569,210,No,No,5,160,46,0.0
+ORD-10197,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-21,711101,2,569,210,No,No,5,160,61,44.72
+ORD-10198,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-03,700091,1,399,140,No,No,0,190,61,46.65
+ORD-10199,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-21,625001,2,4299,2100,No,No,0,35,135,16.35
+ORD-10199,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-21,625001,1,1019,550,No,No,15,110,68,18.46
+ORD-10200,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-28,682001,1,494,180,No,No,10,260,44,35.04
+ORD-10200,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-28,682001,1,382,160,No,No,15,320,43,32.98
+ORD-10201,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-01,416001,1,319,140,No,No,20,190,46,63.29
+ORD-10201,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-01,416001,1,329,110,No,No,0,175,44,44.03
+ORD-10201,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-01,416001,1,360,150,No,No,5,240,48,40.02
+ORD-10202,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-05-26,400601,2,849,340,No,No,0,210,48,0.0
+ORD-10203,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-25,342001,1,1399,620,No,No,0,80,62,0.0
+ORD-10204,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-23,110085,1,1199,750,No,No,20,180,45,0.0
+ORD-10204,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-23,110085,1,1999,1250,No,No,20,60,44,0.0
+ORD-10205,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-10,226001,1,849,340,No,No,0,210,48,54.8
+ORD-10205,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-07-10,226001,1,539,210,No,No,10,160,46,0.0
+ORD-10206,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-28,636001,2,1199,550,No,No,0,110,68,0.0
+ORD-10207,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-30,342001,1,379,150,No,No,0,240,48,0.0
+ORD-10208,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-30,641001,1,999,420,No,No,0,140,52,49.67
+ORD-10208,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-30,641001,1,479,210,No,No,20,160,46,0.0
+ORD-10209,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-05-11,302001,2,275,160,No,No,5,150,65,47.65
+ORD-10210,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-28,474001,1,379,150,No,No,0,240,48,0.0
+ORD-10211,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-04-20,600028,1,2699,1600,No,No,10,40,61,0.0
+ORD-10212,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-01-28,500001,1,296,110,No,No,10,175,44,64.49
+ORD-10213,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-22,625001,1,3869,2100,No,No,10,35,135,26.85
+ORD-10214,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-28,713201,1,522,180,No,No,5,260,59,43.5
+ORD-10215,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-30,500081,3,2499,1250,No,No,0,60,44,60.01
+ORD-10216,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-01-18,121001,2,303,150,No,No,20,240,48,27.48
+ORD-10217,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-05-14,625001,1,522,180,No,No,5,260,44,46.68
+ORD-10218,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-17,208001,2,849,340,No,No,0,210,48,0.0
+ORD-10219,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-01-17,342001,2,404,160,No,No,10,320,43,39.74
+ORD-10220,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-15,506001,2,341,150,No,No,10,240,48,15.81
+ORD-10220,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-15,506001,2,429,190,No,No,0,115,51,0.0
+ORD-10221,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-06,520001,1,999,420,No,No,0,140,52,0.0
+ORD-10222,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-21,522001,1,399,140,No,No,0,190,46,0.0
+ORD-10223,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-30,600028,1,4299,2100,No,No,0,35,135,38.89
+ORD-10224,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-28,360001,1,2499,1250,No,No,0,60,44,47.08
+ORD-10225,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-12,431001,1,1424,750,No,No,5,180,45,0.0
+ORD-10226,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-29,842001,1,2249,1250,No,No,10,60,59,30.73
+ORD-10227,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-10,625001,1,494,180,No,No,10,260,44,40.48
+ORD-10227,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-10,625001,1,449,160,No,No,0,320,43,39.74
+ORD-10228,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-01-27,641001,1,799,480,No,No,20,130,65,0.0
+ORD-10229,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-09-18,282001,1,359,160,No,Cancelled,20,320,43,0.0
+ORD-10230,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-04-14,600001,1,4084,2100,No,No,5,35,135,0.0
+ORD-10230,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-04-14,600001,1,1139,550,No,No,5,110,68,25.16
+ORD-10231,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-18,143001,1,1199,750,No,No,20,180,45,20.8
+ORD-10231,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-18,143001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10232,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2025-12-07,121001,2,1804,950,No,No,5,25,46,0.0
+ORD-10233,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-02-03,500001,2,1799,890,No,No,0,95,51,0.0
+ORD-10234,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-22,440001,1,1019,550,No,No,15,110,68,59.71
+ORD-10235,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-29,600096,2,1499,750,No,No,0,180,45,23.95
+ORD-10236,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-19,781001,1,549,180,No,No,0,260,59,0.0
+ORD-10237,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-09,248001,2,1199,550,No,No,0,110,68,18.45
+ORD-10238,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-27,506001,1,807,340,No,No,5,210,48,51.98
+ORD-10239,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-04-04,313001,3,386,190,No,No,10,115,51,22.53
+ORD-10240,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-28,400601,1,1349,750,No,No,10,180,45,0.0
+ORD-10240,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-06-28,400601,1,1799,890,No,No,0,95,51,50.58
+ORD-10241,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-17,411001,1,260,160,No,No,10,150,65,0.0
+ORD-10242,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-18,695001,1,1709,890,No,No,5,95,51,0.0
+ORD-10243,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-11,226001,1,399,140,No,No,0,190,46,44.24
+ORD-10244,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-18,110034,2,4299,2100,No,No,0,35,135,0.0
+ORD-10244,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-18,110034,1,1079,550,No,No,10,110,68,0.0
+ORD-10244,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-18,110034,2,1199,550,No,No,0,110,68,0.0
+ORD-10245,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-08-20,411057,3,1899,950,No,No,0,25,46,27.49
+ORD-10246,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-25,110034,1,2699,1600,No,No,10,40,61,33.61
+ORD-10247,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-01-13,492001,1,519,380,No,No,20,90,53,19.6
+ORD-10248,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-19,110092,1,899,420,No,No,10,140,52,0.0
+ORD-10248,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-19,110092,1,509,210,No,No,15,160,46,0.0
+ORD-10249,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-10-11,625001,2,1139,550,No,No,5,110,68,0.0
+ORD-10250,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-27,625001,1,263,110,No,No,20,175,44,39.23
+ORD-10251,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-16,695001,1,1274,750,No,No,15,180,45,41.47
+ORD-10251,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-09-16,695001,1,1439,890,No,No,20,95,51,28.33
+ORD-10252,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2025-12-29,600028,1,365,190,No,No,15,115,51,0.0
+ORD-10253,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-12,380001,1,1274,750,No,No,15,180,45,0.0
+ORD-10254,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-10,751001,1,1424,750,Returned,No,5,180,60,0.0
+ORD-10254,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-10,751001,1,2249,1250,No,No,10,60,59,0.0
+ORD-10254,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-10,751001,1,360,150,No,No,5,240,62,58.03
+ORD-10255,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-01-07,395001,1,1699,750,No,No,0,50,70,36.84
+ORD-10256,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-07,700001,2,359,140,No,No,10,190,61,0.0
+ORD-10257,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-05-07,530001,2,649,380,No,No,0,90,53,0.0
+ORD-10258,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-10-05,700001,1,408,190,No,No,5,115,66,26.9
+ORD-10259,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-05-13,560034,2,584,380,No,No,10,90,53,0.0
+ORD-10260,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-03-18,625001,1,1709,850,Returned,No,10,85,59,0.0
+ORD-10261,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-02-24,221001,1,1299,580,No,No,0,70,55,49.36
+ORD-10262,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-22,302001,1,679,340,Returned,No,20,210,48,0.0
+ORD-10263,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-01-08,781001,1,343,190,No,No,20,115,66,0.0
+ORD-10264,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-23,823001,1,807,340,No,No,5,210,62,29.87
+ORD-10264,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-02-23,823001,1,599,210,No,No,0,160,61,0.0
+ORD-10265,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-02,800001,1,549,180,No,No,0,260,59,38.68
+ORD-10266,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-29,522001,2,4299,2100,No,No,0,35,135,0.0
+ORD-10267,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-14,395001,1,379,150,No,No,0,240,48,19.29
+ORD-10267,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-14,395001,1,408,190,No,No,5,115,51,57.04
+ORD-10268,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-25,282001,2,427,160,No,No,5,320,43,0.0
+ORD-10269,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2025-12-18,695001,1,959,550,No,No,20,110,68,0.0
+ORD-10270,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-24,600001,1,1999,1250,No,No,20,60,44,56.71
+ORD-10271,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-04-12,700001,1,649,380,No,No,0,90,68,0.0
+ORD-10272,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-07-23,400050,1,949,480,No,No,5,130,65,52.92
+ORD-10273,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-01-21,110034,1,2374,1250,No,No,5,60,44,0.0
+ORD-10274,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-06,248001,1,1499,750,No,No,0,180,45,0.0
+ORD-10275,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-05-19,641001,1,494,180,No,No,10,260,44,49.81
+ORD-10275,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-19,641001,1,382,160,No,No,15,320,43,0.0
+ORD-10276,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-14,500001,1,1329,620,No,No,5,80,62,40.83
+ORD-10277,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-06-10,422001,1,2849,1600,No,No,5,40,61,16.45
+ORD-10278,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-09,575001,1,1614,950,No,No,15,25,46,40.26
+ORD-10279,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-02,400601,1,379,150,No,No,0,240,48,49.44
+ORD-10279,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-02,400601,1,429,190,No,No,0,115,51,57.86
+ORD-10279,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-02,400601,1,494,180,No,No,10,260,44,0.0
+ORD-10280,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2025-12-05,452001,1,1699,750,No,No,0,50,70,0.0
+ORD-10281,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-04-20,800001,1,289,160,No,No,0,150,80,44.22
+ORD-10282,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2025-12-04,673001,2,408,190,No,No,5,115,51,39.09
+ORD-10283,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-22,500081,1,341,150,No,No,10,240,48,0.0
+ORD-10284,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-03,422001,1,359,140,No,No,10,190,46,64.87
+ORD-10285,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-12,282001,1,319,140,No,No,20,190,46,49.32
+ORD-10286,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-01,380001,2,280,110,No,No,15,175,44,0.0
+ORD-10287,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-12,834001,1,999,420,Returned,No,0,140,68,30.35
+ORD-10288,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-19,395001,2,1424,750,No,No,5,180,45,40.02
+ORD-10288,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-05-19,395001,2,2499,1250,No,No,0,60,44,21.87
+ORD-10289,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-03-13,734001,2,1614,750,No,No,5,50,85,39.38
+ORD-10290,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-01,700001,1,1349,750,No,No,10,180,60,53.18
+ORD-10291,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-15,122001,1,439,180,No,No,20,260,44,0.0
+ORD-10292,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-10,400050,1,449,160,Returned,No,0,320,43,0.0
+ORD-10293,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-05-26,522001,1,549,180,No,No,0,260,44,0.0
+ORD-10293,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-26,522001,2,359,160,No,No,20,320,43,0.0
+ORD-10293,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-26,522001,1,1529,890,No,No,15,95,51,0.0
+ORD-10294,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-02-06,600001,1,999,480,No,No,0,130,65,27.79
+ORD-10295,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-31,411057,1,1349,750,No,No,10,180,45,0.0
+ORD-10296,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-02,781001,1,999,420,No,No,0,140,68,46.14
+ORD-10297,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-09,282001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10298,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-13,636001,1,408,190,No,No,5,115,51,49.41
+ORD-10299,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-04,711101,2,1349,750,No,No,10,180,60,51.18
+ORD-10299,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-04,711101,1,2499,1250,No,No,0,60,59,0.0
+ORD-10300,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-26,411057,1,1349,750,No,No,10,180,45,59.51
+ORD-10300,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-26,411057,1,1799,890,No,No,0,95,51,62.75
+ORD-10301,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-04-17,110001,1,1804,850,No,No,5,85,59,38.91
+ORD-10302,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-04,560034,2,1499,750,No,No,0,180,45,48.92
+ORD-10303,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-03-03,390001,2,849,480,No,No,15,130,65,39.41
+ORD-10304,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-29,842001,1,359,140,No,No,10,190,61,58.66
+ORD-10304,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-29,842001,1,296,110,No,No,10,175,60,39.1
+ORD-10304,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-06-29,842001,1,617,380,No,No,5,90,68,45.65
+ORD-10305,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2025-12-06,560001,1,599,210,No,No,0,160,46,0.0
+ORD-10306,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-04-22,411057,1,1079,550,No,No,10,110,68,19.4
+ORD-10307,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-13,302001,1,379,140,No,No,5,190,46,54.59
+ORD-10308,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-10-13,520001,1,1329,620,No,No,5,80,62,57.22
+ORD-10309,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-19,834001,1,1699,750,No,No,0,50,85,15.11
+ORD-10310,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-05-31,530001,1,1104,580,No,No,15,70,55,35.46
+ORD-10311,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-04-10,575001,1,1169,580,No,No,10,70,55,0.0
+ORD-10312,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-28,110092,1,3439,2100,No,No,20,35,135,17.43
+ORD-10313,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-07-10,492001,2,1199,550,No,No,0,110,68,0.0
+ORD-10314,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-17,700091,3,509,210,No,No,15,160,61,63.52
+ORD-10315,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-20,121001,1,549,180,No,No,0,260,44,0.0
+ORD-10315,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-20,121001,1,404,160,No,No,10,320,43,0.0
+ORD-10316,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-03-02,695001,1,1529,750,No,No,10,50,70,50.51
+ORD-10317,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-31,506001,1,599,210,No,No,0,160,46,0.0
+ORD-10318,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-04-16,560001,1,1699,750,No,No,0,50,70,32.93
+ORD-10319,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-20,110034,1,449,160,No,No,0,320,43,54.84
+ORD-10320,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-04-27,411057,2,1519,850,No,No,20,85,59,0.0
+ORD-10321,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-08,575001,2,359,140,No,No,10,190,46,52.76
+ORD-10322,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-06,575001,1,429,190,No,No,0,115,51,0.0
+ORD-10323,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-21,110092,1,599,210,No,No,0,160,46,0.0
+ORD-10324,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-18,411001,1,1349,750,No,No,10,180,45,18.64
+ORD-10324,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-02-18,411001,1,1709,890,No,No,5,95,51,22.97
+ORD-10325,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-09-05,143001,2,1709,850,No,No,10,85,59,45.91
+ORD-10326,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-01,834001,1,386,190,No,No,10,115,66,46.06
+ORD-10327,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2025-12-21,700091,1,379,150,No,No,0,240,62,53.52
+ORD-10328,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-21,673001,2,1499,750,No,No,0,180,45,0.0
+ORD-10329,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-02,143001,1,849,340,No,No,0,210,48,53.76
+ORD-10329,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-02,143001,1,509,210,No,No,15,160,46,31.59
+ORD-10330,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-14,440001,1,1399,620,No,No,0,80,62,36.65
+ORD-10331,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2025-12-09,360001,1,1329,620,No,No,5,80,62,18.63
+ORD-10332,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-08-15,110034,1,1444,750,No,No,15,50,70,0.0
+ORD-10333,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-19,143001,2,379,150,No,No,0,240,48,63.27
+ORD-10334,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-06-10,400050,1,1399,620,No,No,0,80,62,30.23
+ORD-10335,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-26,600001,1,1699,750,No,No,0,50,70,0.0
+ORD-10336,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-03,403001,2,303,150,No,No,20,240,48,0.0
+ORD-10337,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-04,620001,1,1199,550,No,No,0,110,68,60.01
+ORD-10338,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-12,474001,1,1614,750,No,No,5,50,70,0.0
+ORD-10339,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-08,560034,1,849,340,No,No,0,210,48,0.0
+ORD-10339,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-07-08,560034,1,569,210,No,No,5,160,46,0.0
+ORD-10340,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-10-07,416001,1,360,150,No,No,5,240,48,0.0
+ORD-10341,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-01-08,400076,1,1614,750,No,No,5,50,70,0.0
+ORD-10342,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-13,751001,1,999,480,No,No,0,130,80,57.86
+ORD-10343,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-07,313001,1,2499,1250,No,No,0,60,44,49.21
+ORD-10344,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-08-21,121001,2,1709,950,No,No,10,25,46,32.94
+ORD-10345,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-23,474001,1,764,340,No,No,10,210,48,17.0
+ORD-10345,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-23,474001,1,599,210,No,No,0,160,46,0.0
+ORD-10345,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-23,474001,1,807,340,No,No,5,210,48,0.0
+ORD-10346,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-09-27,440001,2,1234,580,No,No,5,70,55,39.11
+ORD-10347,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-10-06,400001,1,2999,1600,No,No,0,40,61,0.0
+ORD-10348,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-04,110092,1,599,210,No,No,0,160,46,47.36
+ORD-10349,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-29,400076,1,949,420,Returned,No,5,140,52,0.0
+ORD-10349,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-29,400076,2,569,210,No,Cancelled,5,160,46,48.09
+ORD-10349,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-29,400076,1,449,160,No,No,0,320,43,23.53
+ORD-10350,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-29,201301,1,341,150,No,No,10,240,48,0.0
+ORD-10351,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-21,431001,2,1424,750,No,No,5,180,45,0.0
+ORD-10351,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-21,431001,1,2374,1250,Returned,No,5,60,44,20.88
+ORD-10351,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-21,431001,1,449,160,No,No,0,320,43,53.74
+ORD-10352,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-09,160001,1,275,160,No,No,5,150,65,32.53
+ORD-10353,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-21,110016,1,722,340,Returned,No,15,210,48,27.89
+ORD-10354,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-03,400001,1,2249,1250,No,No,10,60,44,0.0
+ORD-10355,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-18,800001,2,807,340,No,No,5,210,62,52.75
+ORD-10356,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-30,781001,1,569,210,No,No,5,160,61,0.0
+ORD-10357,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-22,121001,1,522,180,No,No,5,260,44,0.0
+ORD-10358,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-24,734001,1,549,180,No,No,0,260,59,56.16
+ORD-10359,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-07-30,823001,1,339,140,No,No,15,190,61,0.0
+ORD-10359,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-07-30,823001,2,329,110,No,No,0,175,60,15.54
+ORD-10359,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-30,823001,2,1529,890,No,No,15,95,66,40.53
+ORD-10360,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-29,560034,1,799,420,Returned,No,20,140,52,0.0
+ORD-10361,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-21,208001,1,1199,550,No,No,0,110,68,60.75
+ORD-10362,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-05-28,713201,1,849,340,No,No,0,210,62,0.0
+ORD-10363,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-27,695001,1,522,180,No,No,5,260,44,27.51
+ORD-10363,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-27,695001,1,449,160,No,No,0,320,43,0.0
+ORD-10364,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-23,342001,1,289,160,No,No,0,150,65,0.0
+ORD-10365,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-03-28,700001,1,1169,580,No,No,10,70,70,0.0
+ORD-10366,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-05-25,440001,1,2999,1600,No,No,0,40,61,61.51
+ORD-10367,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-08,682001,1,1899,950,No,No,0,25,46,32.8
+ORD-10368,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-01-24,110092,1,427,160,No,No,5,320,43,0.0
+ORD-10369,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-04,395001,3,1019,550,No,No,15,110,68,60.8
+ORD-10370,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-23,226001,1,1274,750,Returned,No,15,180,45,53.8
+ORD-10370,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-23,226001,1,1799,890,No,No,0,95,51,0.0
+ORD-10371,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-03-18,390001,1,1899,850,No,No,0,85,59,45.65
+ORD-10372,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-06-06,560100,1,2999,1600,No,No,0,40,61,0.0
+ORD-10373,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-06,248001,1,341,150,No,No,10,240,48,0.0
+ORD-10374,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-02-15,452001,1,1519,950,No,No,20,25,46,54.27
+ORD-10375,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-03,620001,1,1259,620,No,No,10,80,62,46.49
+ORD-10376,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-19,711101,1,549,180,No,No,0,260,59,47.49
+ORD-10376,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-19,711101,1,359,160,No,No,20,320,58,53.74
+ORD-10377,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-17,416001,1,849,340,No,No,0,210,48,0.0
+ORD-10378,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-10-10,248001,1,289,160,No,No,0,150,65,45.27
+ORD-10379,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-21,500001,2,359,140,No,No,10,190,46,0.0
+ORD-10380,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-12,122001,2,494,180,No,No,10,260,44,0.0
+ORD-10381,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-02,452001,1,1349,750,No,No,10,180,45,0.0
+ORD-10382,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-06-18,522001,1,4084,2100,No,No,5,35,135,0.0
+ORD-10383,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-05-16,452001,2,275,160,No,No,5,150,65,44.54
+ORD-10384,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-07-22,403001,1,1444,750,No,No,15,50,70,0.0
+ORD-10385,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-05-07,380015,1,2849,1600,No,No,5,40,61,0.0
+ORD-10386,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-31,400050,1,1199,550,No,No,0,110,68,54.84
+ORD-10387,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-07,395001,1,3869,2100,No,No,10,35,135,0.0
+ORD-10388,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-10,800001,1,1329,620,No,No,5,80,78,41.6
+ORD-10389,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-17,221001,1,949,420,No,No,5,140,52,0.0
+ORD-10389,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-17,221001,1,599,210,No,No,0,160,46,0.0
+ORD-10390,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-17,122001,1,399,140,No,No,0,190,46,0.0
+ORD-10391,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-13,395001,1,359,140,No,No,10,190,46,18.57
+ORD-10392,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-07-29,560100,2,329,110,No,No,0,175,44,37.15
+ORD-10393,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-18,575001,1,319,140,No,No,20,190,46,0.0
+ORD-10394,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-15,560001,2,1424,750,No,No,5,180,45,0.0
+ORD-10395,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2025-12-27,600001,1,1899,950,No,No,0,25,46,0.0
+ORD-10396,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-04,400050,1,899,480,No,No,10,130,65,0.0
+ORD-10397,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-08-13,110001,2,1709,850,Returned,No,10,85,59,0.0
+ORD-10398,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-01,110034,1,399,140,No,No,0,190,46,0.0
+ORD-10398,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-01,110034,2,313,110,No,No,5,175,44,24.49
+ORD-10399,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-06,751001,2,722,340,No,No,15,210,62,0.0
+ORD-10400,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-05-01,636001,1,4084,2100,No,No,5,35,135,33.2
+ORD-10401,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-10-14,641001,1,4084,2100,No,No,5,35,135,20.52
+ORD-10401,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-10-14,641001,1,1199,550,No,No,0,110,68,25.1
+ORD-10401,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-10-14,641001,1,649,380,No,No,0,90,53,41.29
+ORD-10402,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-29,620001,1,1274,750,No,No,15,180,45,33.05
+ORD-10402,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-29,620001,1,2124,1250,No,No,15,60,44,0.0
+ORD-10402,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-29,620001,1,807,340,No,No,5,210,48,0.0
+ORD-10403,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-21,160001,1,1329,620,No,No,5,80,62,0.0
+ORD-10404,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-12,282001,1,296,110,No,No,10,175,44,0.0
+ORD-10405,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-03-03,781001,1,1519,850,No,No,20,85,74,0.0
+ORD-10406,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-16,395001,2,1699,750,No,No,0,50,70,0.0
+ORD-10407,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-08,620001,2,4299,2100,No,No,0,35,135,0.0
+ORD-10408,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-02-08,520001,1,2699,1600,No,No,10,40,61,40.56
+ORD-10409,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-19,248001,1,379,140,No,No,5,190,46,0.0
+ORD-10409,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-19,248001,1,280,110,No,No,15,175,44,23.65
+ORD-10409,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-09-19,248001,2,1169,580,No,No,10,70,55,30.02
+ORD-10410,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-22,390001,1,379,140,No,No,5,190,46,0.0
+ORD-10410,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-22,390001,1,313,110,Returned,No,5,175,44,0.0
+ORD-10411,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-06,141001,1,999,420,No,No,0,140,52,52.64
+ORD-10411,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-06,141001,1,599,210,No,No,0,160,46,0.0
+ORD-10412,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-22,416001,1,449,160,No,No,0,320,43,53.1
+ORD-10413,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-08-04,834001,3,807,340,No,No,5,210,62,0.0
+ORD-10413,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-04,834001,1,569,210,Returned,No,5,160,61,0.0
+ORD-10414,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-08,700091,1,379,150,No,No,0,240,62,37.02
+ORD-10415,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-30,575001,1,2499,1250,No,No,0,60,44,22.38
+ORD-10416,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-04-27,400050,1,849,340,No,No,0,210,48,52.52
+ORD-10417,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-07,462001,1,386,190,No,No,10,115,51,27.77
+ORD-10418,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2025-12-31,506001,1,1614,950,No,No,15,25,46,60.64
+ORD-10419,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-03,110034,1,549,180,No,No,0,260,44,0.0
+ORD-10420,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-10-02,143001,1,379,150,No,No,0,240,48,52.22
+ORD-10420,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-10-02,143001,1,386,190,No,No,10,115,51,63.93
+ORD-10421,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-04-21,422001,2,341,150,No,No,10,240,48,0.0
+ORD-10422,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-16,734001,1,449,160,No,No,0,320,58,26.37
+ORD-10423,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-04-03,248001,1,275,160,No,No,5,150,65,55.01
+ORD-10424,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-09,522001,2,275,160,No,No,5,150,65,43.24
+ORD-10425,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-19,700001,1,1349,750,No,No,10,180,60,0.0
+ORD-10425,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-19,700001,1,2124,1250,No,No,15,60,59,0.0
+ORD-10425,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-02-19,700001,1,1899,950,No,No,0,25,61,28.34
+ORD-10426,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-09-17,600096,1,1899,950,No,No,0,25,46,38.44
+ORD-10427,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-10,560100,1,1199,550,No,No,0,110,68,0.0
+ORD-10428,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-18,221001,1,999,420,No,No,0,140,52,49.39
+ORD-10429,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-07-23,625001,1,359,140,No,No,10,190,46,43.6
+ORD-10430,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-09-01,141001,1,449,160,No,No,0,320,43,27.29
+ORD-10431,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-09-02,226001,1,1619,890,No,No,10,95,51,0.0
+ORD-10432,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-05,506001,1,599,210,No,No,0,160,46,37.58
+ORD-10433,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-14,110085,1,999,420,No,No,0,140,52,59.13
+ORD-10433,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-14,110085,1,599,210,No,No,0,160,46,0.0
+ORD-10434,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-02,110001,1,359,140,No,No,10,190,46,0.0
+ORD-10434,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-02-02,110001,1,296,110,No,No,10,175,44,22.5
+ORD-10434,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-02,110001,2,429,190,No,No,0,115,51,0.0
+ORD-10435,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-17,506001,1,2499,1250,No,No,0,60,44,57.77
+ORD-10436,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-05,400001,1,1079,550,No,No,10,110,68,15.33
+ORD-10437,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-07,500081,2,1199,550,No,No,0,110,68,0.0
+ORD-10438,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2025-12-17,248001,2,849,340,No,No,0,210,48,45.55
+ORD-10439,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-10-01,248001,1,1804,950,No,No,5,25,46,0.0
+ORD-10440,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-07,390001,2,449,160,No,No,0,320,43,31.46
+ORD-10441,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-30,141001,1,1499,750,No,No,0,180,45,50.34
+ORD-10441,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-06-30,141001,1,1619,890,No,No,10,95,51,61.36
+ORD-10441,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-06-30,141001,1,275,160,No,No,5,150,65,59.18
+ORD-10442,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-30,530001,1,1424,750,No,No,5,180,45,64.95
+ORD-10443,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-30,411001,1,849,340,Returned,No,0,210,48,53.35
+ORD-10443,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-30,411001,1,599,210,No,No,0,160,46,56.6
+ORD-10443,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-30,411001,1,764,340,No,No,10,210,48,16.78
+ORD-10444,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-08,462001,1,339,140,No,No,15,190,46,48.91
+ORD-10444,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-02-08,462001,1,329,110,No,No,0,175,44,54.79
+ORD-10445,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-03,201001,2,4084,2100,No,No,5,35,135,52.58
+ORD-10445,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-03,201001,1,1199,550,No,No,0,110,68,26.88
+ORD-10446,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-20,520001,1,1499,750,No,No,0,180,45,60.25
+ORD-10446,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-20,520001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10447,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-05-17,201301,3,2374,1250,No,No,5,60,44,0.0
+ORD-10448,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-17,160001,1,1499,750,No,No,0,180,45,47.95
+ORD-10448,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-06-17,160001,1,1709,890,No,No,5,95,51,0.0
+ORD-10449,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-09,506001,1,379,150,No,No,0,240,48,20.12
+ORD-10449,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-09,506001,1,408,190,No,No,5,115,51,43.7
+ORD-10450,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-02-26,440001,1,1399,620,No,No,0,80,62,0.0
+ORD-10451,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-14,800001,2,379,140,No,No,5,190,61,0.0
+ORD-10452,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-05-20,575001,1,439,180,No,No,20,260,44,0.0
+ORD-10453,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-28,110016,1,427,160,No,No,5,320,43,45.85
+ORD-10454,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-06-05,226001,2,1899,850,No,No,0,85,59,0.0
+ORD-10455,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-08-03,313001,1,807,340,No,No,5,210,48,20.35
+ORD-10456,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-09-11,440001,1,1329,620,No,No,5,80,62,34.19
+ORD-10457,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-05-24,580020,1,949,480,No,No,5,130,65,0.0
+ORD-10458,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-01-09,248001,1,2999,1600,No,No,0,40,61,0.0
+ORD-10459,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-26,431001,1,494,180,No,No,10,260,44,0.0
+ORD-10460,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-03-22,121001,1,289,160,No,No,0,150,65,34.5
+ORD-10461,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-09-22,302001,1,1614,850,No,No,15,85,59,0.0
+ORD-10462,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-26,110001,1,1529,750,No,No,10,50,70,63.39
+ORD-10463,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2025-12-01,834001,2,1104,580,No,No,15,70,70,0.0
+ORD-10464,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-05-12,390001,1,4299,2100,No,No,0,35,135,33.01
+ORD-10465,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-02,201001,1,2849,1600,No,No,5,40,61,63.75
+ORD-10466,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-08,416001,2,341,150,No,No,10,240,48,36.21
+ORD-10467,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-07-19,360001,1,1804,950,No,No,5,25,46,35.54
+ORD-10468,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-06,248001,1,386,190,No,No,10,115,51,22.1
+ORD-10469,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-27,500081,2,1499,750,No,No,0,180,45,18.9
+ORD-10470,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-03,492001,1,379,140,No,No,5,190,46,0.0
+ORD-10470,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-03,492001,1,263,110,No,No,20,175,44,44.88
+ORD-10471,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-05,403001,1,999,420,No,No,0,140,52,21.34
+ORD-10471,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-05,403001,1,539,210,No,No,10,160,46,0.0
+ORD-10472,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-11,400050,2,899,480,No,No,10,130,65,0.0
+ORD-10473,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-31,474001,1,1499,750,No,No,0,180,45,64.68
+ORD-10473,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-03-31,474001,1,1799,890,No,No,0,95,51,0.0
+ORD-10474,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-26,411057,1,449,160,No,No,0,320,43,52.62
+ORD-10475,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-30,600096,1,449,160,No,Cancelled,0,320,43,37.44
+ORD-10476,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-11,141001,2,1709,890,No,No,5,95,51,57.92
+ORD-10477,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-05-21,500001,1,4299,2100,No,No,0,35,135,48.89
+ORD-10477,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-05-21,500001,3,1199,550,Returned,Cancelled,0,110,68,0.0
+ORD-10478,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-29,110016,1,404,160,No,No,10,320,43,17.84
+ORD-10479,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-10-01,600001,1,1699,750,No,No,0,50,70,59.99
+ORD-10480,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-16,560100,1,522,180,No,No,5,260,44,28.82
+ORD-10481,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-07,700091,1,849,340,No,No,0,210,62,23.9
+ORD-10482,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-05,474001,1,949,420,Returned,No,5,140,52,0.0
+ORD-10483,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-10-11,110034,1,399,140,No,No,0,190,46,0.0
+ORD-10484,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-12,201001,1,1499,750,No,No,0,180,45,0.0
+ORD-10485,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-02,673001,1,379,140,No,No,5,190,46,0.0
+ORD-10486,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-26,400001,1,549,180,No,No,0,260,44,0.0
+ORD-10487,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-05-05,208001,1,467,180,No,No,15,260,44,29.5
+ORD-10488,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-14,560066,1,429,190,No,No,0,115,51,39.33
+ORD-10489,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-13,570001,1,807,340,No,No,5,210,48,37.47
+ORD-10489,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-07-13,570001,3,599,210,Returned,No,0,160,46,0.0
+ORD-10490,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-30,600001,1,494,180,No,No,10,260,44,61.24
+ORD-10491,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-19,201301,2,1424,750,No,No,5,180,45,0.0
+ORD-10492,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2025-12-26,522001,1,1619,890,No,No,10,95,51,0.0
+ORD-10493,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-10-01,600028,3,359,140,No,No,10,190,46,21.87
+ORD-10493,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-10-01,600028,2,296,110,No,No,10,175,44,0.0
+ORD-10494,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-31,500081,1,339,140,No,No,15,190,46,45.62
+ORD-10494,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-01-31,500081,1,329,110,No,Cancelled,0,175,44,0.0
+ORD-10495,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-01-15,506001,1,296,110,No,No,10,175,44,35.6
+ORD-10496,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-28,410210,1,549,180,No,No,0,260,44,0.0
+ORD-10497,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-12,641001,1,365,190,No,No,15,115,51,46.32
+ORD-10498,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-17,500081,2,949,420,No,No,5,140,52,0.0
+ORD-10498,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-17,500081,1,599,210,No,No,0,160,46,52.92
+ORD-10499,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2025-12-23,110034,1,584,380,No,No,10,90,53,51.07
+ORD-10500,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-30,492001,1,399,140,No,No,0,190,46,0.0
+ORD-10500,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-30,492001,2,329,110,No,No,0,175,44,0.0
+ORD-10501,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-21,342001,1,303,150,No,No,20,240,48,17.98
+ORD-10501,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-21,342001,1,365,190,No,No,15,115,51,0.0
+ORD-10502,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-05-01,560001,1,999,480,No,No,0,130,65,0.0
+ORD-10503,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-25,474001,1,949,420,Returned,No,5,140,52,27.39
+ORD-10504,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-07-11,492001,2,552,380,No,No,15,90,53,51.67
+ORD-10505,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-16,410210,1,539,210,Returned,No,10,160,46,0.0
+ORD-10506,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2025-12-07,221001,1,2849,1600,No,No,5,40,61,0.0
+ORD-10507,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-24,248001,1,1349,750,No,No,10,180,45,33.52
+ORD-10508,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-26,400001,2,1799,890,Returned,No,0,95,51,0.0
+ORD-10509,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-10-10,751001,1,807,340,No,No,5,210,62,60.5
+ORD-10510,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-05,411057,1,1424,750,No,No,5,180,45,0.0
+ORD-10510,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-06-05,411057,3,1799,890,No,No,0,95,51,44.01
+ORD-10511,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-18,600028,1,1199,550,No,No,0,110,68,56.48
+ORD-10512,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-07-29,143001,1,1329,620,No,No,5,80,62,62.04
+ORD-10513,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-03,570001,1,3654,2100,No,No,15,35,135,0.0
+ORD-10514,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-04-21,110085,2,1139,550,No,No,5,110,68,42.07
+ORD-10515,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-06,452001,1,1274,750,No,No,15,180,45,35.58
+ORD-10515,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-02-06,452001,1,1709,890,No,No,5,95,51,57.1
+ORD-10516,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-16,342001,1,549,180,No,No,0,260,44,0.0
+ORD-10516,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-16,342001,1,359,160,No,No,20,320,43,24.11
+ORD-10516,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-07-16,342001,1,1169,580,No,No,10,70,55,0.0
+ORD-10517,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-29,411001,1,1399,620,No,No,0,80,62,63.9
+ORD-10518,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-14,395001,1,429,190,No,No,0,115,51,62.39
+ORD-10519,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-13,201001,1,386,190,No,No,10,115,51,64.03
+ORD-10520,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-20,201301,2,399,140,No,No,0,190,46,0.0
+ORD-10521,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-09,110085,1,849,340,No,No,0,210,48,0.0
+ORD-10521,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-09,110085,2,599,210,Returned,No,0,160,46,0.0
+ORD-10522,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-14,673001,1,1139,550,No,No,5,110,68,0.0
+ORD-10523,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-07,395001,1,1499,750,No,No,0,180,45,0.0
+ORD-10524,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-16,282001,1,679,340,No,No,20,210,48,0.0
+ORD-10525,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-27,110001,1,399,140,No,No,0,190,46,0.0
+ORD-10525,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-27,110001,1,296,110,No,No,10,175,44,0.0
+ORD-10525,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-27,110001,1,313,110,No,No,5,175,44,30.2
+ORD-10526,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-09-13,313001,1,1804,950,No,No,5,25,46,29.38
+ORD-10527,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-03-02,474001,1,1529,750,No,No,10,50,70,33.09
+ORD-10528,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-04,403001,1,799,420,No,No,20,140,52,15.88
+ORD-10529,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-12,560001,1,1619,890,No,No,10,95,51,0.0
+ORD-10530,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-01,411057,1,1499,750,No,No,0,180,45,58.62
+ORD-10530,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-01,411057,2,2249,1250,No,No,10,60,44,19.79
+ORD-10531,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-23,380001,1,1499,750,No,No,0,180,45,20.12
+ORD-10532,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-18,695001,2,1499,750,No,Cancelled,0,180,45,0.0
+ORD-10532,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-18,695001,1,2499,1250,No,No,0,60,44,63.51
+ORD-10533,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-02-27,520001,2,1899,950,No,No,0,25,46,0.0
+ORD-10534,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-01-10,800001,1,341,150,No,No,10,240,62,0.0
+ORD-10535,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-08-20,422001,1,289,160,No,No,0,150,65,0.0
+ORD-10536,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-10-05,580020,1,2999,1600,No,No,0,40,61,0.0
+ORD-10537,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-09-23,713201,1,275,160,No,No,5,150,80,53.16
+ORD-10538,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-28,600001,1,386,190,Returned,No,10,115,51,61.02
+ORD-10539,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-08-01,380015,1,1899,950,No,No,0,25,46,0.0
+ORD-10540,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-21,600096,1,379,140,No,No,5,190,46,0.0
+ORD-10541,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-04-27,834001,1,2499,1250,No,No,0,60,59,57.05
+ORD-10542,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-26,781001,1,365,190,No,No,15,115,66,33.37
+ORD-10543,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2025-12-07,474001,1,539,210,Returned,No,10,160,46,63.88
+ORD-10544,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-02-25,431001,1,1709,950,No,No,10,25,46,0.0
+ORD-10545,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-13,500081,1,404,160,No,No,10,320,43,0.0
+ORD-10546,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-10-05,208001,1,1139,550,No,No,5,110,68,0.0
+ORD-10547,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-07,400601,1,1499,750,No,No,0,180,45,0.0
+ORD-10547,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-07,400601,1,2249,1250,No,No,10,60,44,38.3
+ORD-10548,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-04-30,682001,1,1614,950,No,No,15,25,46,0.0
+ORD-10549,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-07-09,110092,1,1804,850,Returned,No,5,85,59,30.15
+ORD-10550,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-02-23,474001,1,1709,850,No,No,10,85,59,41.97
+ORD-10551,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-29,452001,1,2999,1600,No,No,0,40,61,53.32
+ORD-10552,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-25,700091,1,899,420,Returned,No,10,140,68,0.0
+ORD-10552,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-25,700091,1,599,210,No,No,0,160,61,27.38
+ORD-10553,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-09,416001,1,1799,890,Returned,No,0,95,51,58.17
+ORD-10554,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-09-17,673001,1,1804,950,No,No,5,25,46,0.0
+ORD-10555,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-20,110016,1,2499,1250,No,No,0,60,44,0.0
+ORD-10556,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-10-11,520001,1,539,210,No,No,10,160,46,29.37
+ORD-10557,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2025-12-25,520001,1,1169,580,Returned,No,10,70,55,0.0
+ORD-10558,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-22,500001,1,539,210,No,No,10,160,46,36.65
+ORD-10559,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-03,700001,1,322,150,No,No,15,240,62,0.0
+ORD-10559,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-03,700001,1,386,190,No,No,10,115,66,0.0
+ORD-10560,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-30,823001,1,329,110,No,No,0,175,60,53.28
+ORD-10561,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-11,221001,1,1709,890,No,No,5,95,51,0.0
+ORD-10562,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-10-04,641001,1,2499,1250,No,No,0,60,44,36.81
+ORD-10563,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-19,575001,1,522,180,No,No,5,260,44,54.11
+ORD-10563,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-19,575001,1,382,160,No,No,15,320,43,0.0
+ORD-10564,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-27,380015,1,341,150,No,No,10,240,48,40.01
+ORD-10565,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-01-31,160001,1,949,480,No,No,5,130,65,53.66
+ORD-10566,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-05-10,711101,1,296,110,No,No,10,175,60,0.0
+ORD-10567,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-03-20,500081,1,2849,1600,No,No,5,40,61,0.0
+ORD-10568,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-07-05,452001,2,365,190,No,No,15,115,51,16.05
+ORD-10569,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-10-07,410210,2,1529,750,No,No,10,50,70,30.46
+ORD-10570,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-04,110092,1,849,340,No,No,0,210,48,30.04
+ORD-10571,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-03-31,520001,1,246,160,No,No,15,150,65,0.0
+ORD-10572,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-11,474001,2,539,210,No,No,10,160,46,49.92
+ORD-10573,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-08-17,431001,1,899,480,No,No,10,130,65,0.0
+ORD-10574,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-05,842001,1,1804,950,No,No,5,25,61,0.0
+ORD-10575,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-22,122001,1,449,160,No,No,0,320,43,0.0
+ORD-10576,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-30,700091,1,999,420,No,No,0,140,68,26.22
+ORD-10577,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-12,834001,2,439,180,No,No,20,260,59,0.0
+ORD-10578,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-06-24,800001,2,1899,950,No,Cancelled,0,25,61,53.67
+ORD-10579,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-21,682001,2,2699,1600,No,No,10,40,61,0.0
+ORD-10580,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-16,600001,1,949,420,No,No,5,140,52,0.0
+ORD-10581,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-04-14,641001,1,260,160,No,Cancelled,10,150,65,0.0
+ORD-10582,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-15,226001,1,359,140,No,No,10,190,46,0.0
+ORD-10583,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-05-20,641001,1,1709,850,No,No,10,85,59,15.27
+ORD-10584,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-16,390001,1,399,140,No,No,0,190,46,0.0
+ORD-10584,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-16,390001,1,329,110,No,No,0,175,44,0.0
+ORD-10584,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-16,390001,1,319,140,No,No,20,190,46,0.0
+ORD-10585,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-03,823001,1,549,180,No,No,0,260,59,0.0
+ORD-10586,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-08-09,201001,1,617,380,No,No,5,90,53,0.0
+ORD-10587,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-29,636001,2,1499,750,No,No,0,180,45,39.65
+ORD-10587,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-29,636001,2,2124,1250,No,No,15,60,44,24.03
+ORD-10588,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-02-25,673001,1,1399,620,No,Cancelled,0,80,62,24.03
+ORD-10589,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-09,625001,2,549,180,No,No,0,260,44,0.0
+ORD-10590,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-09-29,110034,1,1709,950,No,No,10,25,46,44.71
+ORD-10591,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-03,711101,2,449,160,No,No,0,320,58,43.46
+ORD-10592,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-19,411057,1,1709,950,No,No,10,25,46,0.0
+ORD-10593,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-04-10,560066,1,1299,580,No,No,0,70,55,62.72
+ORD-10594,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-17,110092,2,339,140,No,No,15,190,46,0.0
+ORD-10595,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-06-07,673001,1,4084,2100,No,No,5,35,135,36.71
+ORD-10595,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-07,673001,1,1199,550,No,No,0,110,68,0.0
+ORD-10596,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-02-18,682001,1,1614,750,No,No,5,50,70,0.0
+ORD-10597,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-04,520001,1,1199,550,No,No,0,110,68,0.0
+ORD-10598,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-07-06,221001,1,999,480,No,No,0,130,65,0.0
+ORD-10599,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-07-25,560066,1,360,150,No,No,5,240,48,52.87
+ORD-10600,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-07-19,636001,1,329,110,No,No,0,175,44,36.69
+ORD-10601,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-10,400001,1,1424,750,No,No,5,180,45,51.3
+ORD-10602,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-05,380015,1,386,190,No,No,10,115,51,0.0
+ORD-10603,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2025-12-09,570001,1,2849,1600,No,No,5,40,61,24.55
+ORD-10604,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-04,313001,1,1424,750,No,Cancelled,5,180,45,0.0
+ORD-10604,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-05-04,313001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10604,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-05-04,313001,1,1709,950,No,No,10,25,46,43.93
+ORD-10605,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-10,530001,1,379,150,No,No,0,240,48,0.0
+ORD-10605,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-10,530001,1,365,190,No,No,15,115,51,37.42
+ORD-10606,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-07-12,400076,1,4084,2100,No,No,5,35,135,57.67
+ORD-10607,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-07-28,122001,1,379,140,No,No,5,190,46,0.0
+ORD-10608,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-30,560001,1,2699,1600,No,No,10,40,61,20.05
+ORD-10609,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-01,682001,1,1499,750,No,No,0,180,45,40.17
+ORD-10609,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-01,682001,1,1799,890,No,No,0,95,51,39.32
+ORD-10610,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-24,380001,1,339,140,No,No,15,190,46,20.21
+ORD-10611,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2025-12-26,842001,1,343,190,No,No,20,115,66,20.09
+ORD-10612,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-14,411001,1,2499,1250,No,No,0,60,44,53.1
+ORD-10613,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-13,110016,1,949,420,No,No,5,140,52,32.07
+ORD-10613,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-13,110016,1,599,210,No,No,0,160,46,0.0
+ORD-10613,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-08-13,110016,1,849,340,No,No,0,210,48,0.0
+ORD-10614,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-08,221001,2,275,160,No,No,5,150,65,0.0
+ORD-10615,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-06,160001,1,1999,1250,No,No,20,60,44,48.01
+ORD-10616,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-16,248001,2,494,180,No,No,10,260,44,0.0
+ORD-10616,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-16,248001,1,404,160,No,No,10,320,43,0.0
+ORD-10617,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-06-25,302001,1,275,160,No,No,5,150,65,47.44
+ORD-10618,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-12,520001,1,4299,2100,No,No,0,35,135,0.0
+ORD-10618,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-12,520001,1,1139,550,No,No,5,110,68,0.0
+ORD-10619,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-09-03,636001,3,449,160,No,No,0,320,43,32.72
+ORD-10620,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2025-12-25,110092,1,999,480,No,No,0,130,65,50.73
+ORD-10621,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-31,600096,1,899,420,No,No,10,140,52,27.38
+ORD-10622,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-17,160001,1,379,150,No,No,0,240,48,0.0
+ORD-10623,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-01,800001,1,1199,550,No,No,0,110,82,34.74
+ORD-10624,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-15,492001,1,509,210,No,No,15,160,46,22.22
+ORD-10625,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-02-04,474001,1,2549,1600,No,No,15,40,61,52.32
+ORD-10626,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-13,395001,2,2499,1250,No,No,0,60,44,20.89
+ORD-10627,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-06,395001,1,849,420,No,No,15,140,52,0.0
+ORD-10627,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-06,395001,1,599,210,No,No,0,160,46,0.0
+ORD-10627,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-05-06,395001,1,329,110,No,No,0,175,44,0.0
+ORD-10628,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-10-07,122001,1,1139,550,No,No,5,110,68,0.0
+ORD-10629,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-10-16,221001,1,289,160,No,No,0,150,65,0.0
+ORD-10630,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-15,560034,1,1079,550,No,No,10,110,68,24.62
+ORD-10631,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-10-13,751001,1,1799,890,No,No,0,95,66,0.0
+ORD-10632,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-30,560100,1,899,420,No,No,10,140,52,0.0
+ORD-10633,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-08-31,700091,2,1799,890,No,No,0,95,66,30.87
+ORD-10634,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-11,110001,1,899,420,No,No,10,140,52,17.95
+ORD-10634,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-11,110001,2,599,210,No,No,0,160,46,0.0
+ORD-10635,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-11,221001,2,722,340,Returned,No,15,210,48,26.82
+ORD-10636,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-18,695001,1,2374,1250,No,No,5,60,44,0.0
+ORD-10637,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-03-30,400076,1,1614,750,No,No,5,50,70,0.0
+ORD-10638,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-01-12,695001,3,1169,580,No,No,10,70,55,37.59
+ORD-10639,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2025-12-01,313001,1,1699,750,No,No,0,50,70,0.0
+ORD-10640,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-08,390001,1,296,110,No,No,10,175,44,18.5
+ORD-10641,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-01-15,226001,1,303,150,No,No,20,240,48,55.1
+ORD-10642,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-25,636001,1,404,160,No,No,10,320,43,31.42
+ORD-10643,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-07,400001,1,1499,750,No,No,0,180,45,34.64
+ORD-10644,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-11,440001,1,275,160,No,No,5,150,65,0.0
+ORD-10645,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-10-04,380001,1,263,110,No,No,20,175,44,0.0
+ORD-10646,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-05,600028,1,359,140,No,No,10,190,46,55.42
+ORD-10647,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-24,600096,1,408,190,No,No,5,115,51,0.0
+ORD-10648,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-06-21,110085,1,949,480,No,No,5,130,65,43.26
+ORD-10649,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-01-03,122001,2,2549,1600,No,No,15,40,61,0.0
+ORD-10650,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-12,143001,2,449,160,No,No,0,320,43,57.69
+ORD-10651,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-15,823001,1,569,210,No,No,5,160,61,0.0
+ORD-10652,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-25,411057,1,379,150,No,No,0,240,48,26.28
+ORD-10652,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-25,411057,1,343,190,No,No,20,115,51,0.0
+ORD-10653,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-02,110016,1,1499,750,No,No,0,180,45,0.0
+ORD-10653,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-02,110016,1,1799,890,No,No,0,95,51,53.79
+ORD-10654,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-10-14,842001,1,549,180,No,No,0,260,59,0.0
+ORD-10655,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-03,122001,1,1709,890,No,No,5,95,51,0.0
+ORD-10656,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-14,208001,1,899,420,Returned,No,10,140,52,59.0
+ORD-10657,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-10-14,110016,1,329,110,No,No,0,175,44,18.38
+ORD-10658,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-10,248001,1,379,140,No,No,5,190,46,0.0
+ORD-10658,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-10,248001,1,313,110,No,No,5,175,44,0.0
+ORD-10659,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-09-04,201301,3,379,140,No,No,5,190,46,0.0
+ORD-10659,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-09-04,201301,1,313,110,No,No,5,175,44,47.03
+ORD-10660,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-14,431001,3,522,180,No,No,5,260,44,45.81
+ORD-10661,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-03,711101,2,1424,750,No,No,5,180,60,0.0
+ORD-10661,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-03,711101,1,1619,890,No,No,10,95,66,0.0
+ORD-10662,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-23,560100,1,1499,750,No,No,0,180,45,0.0
+ORD-10663,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-26,380015,1,849,340,No,No,0,210,48,0.0
+ORD-10663,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-26,380015,1,599,210,No,No,0,160,46,21.86
+ORD-10664,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-01-26,734001,1,1709,850,No,No,10,85,74,64.88
+ORD-10665,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-11,431001,1,2374,1250,No,No,5,60,44,0.0
+ORD-10666,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-04-05,411001,2,1399,620,No,No,0,80,62,29.0
+ORD-10667,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-03,673001,1,289,160,No,No,0,150,65,0.0
+ORD-10668,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-08-18,360001,1,1614,750,No,No,5,50,70,0.0
+ORD-10669,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-08-05,682001,1,899,480,No,No,10,130,65,37.6
+ORD-10670,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-31,226001,2,4299,2100,No,No,0,35,135,0.0
+ORD-10670,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-31,226001,1,1199,550,No,No,0,110,68,36.31
+ORD-10671,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-07-28,823001,1,379,150,No,No,0,240,62,32.95
+ORD-10672,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-12,530001,1,1079,550,No,No,10,110,68,0.0
+ORD-10673,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-20,751001,1,359,140,No,No,10,190,61,21.89
+ORD-10673,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2025-12-20,751001,2,296,110,No,No,10,175,60,29.09
+ORD-10674,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-27,208001,1,379,150,No,No,0,240,48,58.27
+ORD-10675,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-03-27,600096,1,2849,1600,No,No,5,40,61,32.03
+ORD-10676,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-13,700001,2,4084,2100,No,No,5,35,150,0.0
+ORD-10677,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-10,248001,1,807,340,No,No,5,210,48,0.0
+ORD-10678,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-06,208001,1,427,160,No,No,5,320,43,0.0
+ORD-10679,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-05-19,403001,1,849,480,No,No,15,130,65,0.0
+ORD-10680,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-31,360001,1,379,150,No,No,0,240,48,45.17
+ORD-10680,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-31,360001,1,429,190,No,No,0,115,51,0.0
+ORD-10681,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-29,141001,1,1199,750,No,No,20,180,45,34.45
+ORD-10681,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-29,141001,2,1799,890,No,No,0,95,51,48.24
+ORD-10681,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-29,141001,1,949,480,No,No,5,130,65,37.95
+ORD-10682,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-14,400001,2,4084,2100,No,No,5,35,135,39.55
+ORD-10683,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-07-25,248001,2,341,150,No,No,10,240,48,35.75
+ORD-10683,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-07-25,248001,1,408,190,No,No,5,115,51,49.93
+ORD-10684,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-18,226001,2,1799,890,No,No,0,95,51,18.34
+ORD-10685,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-22,682001,1,399,140,No,No,0,190,46,35.5
+ORD-10686,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-23,620001,1,1424,750,No,No,5,180,45,0.0
+ORD-10686,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-02-23,620001,1,1799,890,No,No,0,95,51,38.21
+ORD-10686,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-23,620001,1,429,190,No,No,0,115,51,0.0
+ORD-10687,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-30,500081,1,2499,1250,No,No,0,60,44,0.0
+ORD-10688,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-01-09,400050,1,2999,1600,Returned,No,0,40,61,0.0
+ORD-10689,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-25,160001,2,399,140,No,No,0,190,46,0.0
+ORD-10690,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-06-12,575001,1,1299,580,No,No,0,70,55,0.0
+ORD-10691,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-09,431001,2,399,140,No,No,0,190,46,0.0
+ORD-10692,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-17,700091,1,949,420,No,No,5,140,68,0.0
+ORD-10693,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-01,700091,1,399,140,No,No,0,190,61,0.0
+ORD-10693,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-01,700091,1,329,110,No,No,0,175,60,20.09
+ORD-10693,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-01,700091,1,679,340,No,No,20,210,62,44.99
+ORD-10694,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-17,121001,1,399,140,No,No,0,190,46,0.0
+ORD-10694,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-17,121001,1,296,110,No,No,10,175,44,0.0
+ORD-10695,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2025-12-11,110092,1,329,110,No,No,0,175,44,0.0
+ORD-10696,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-15,410210,1,365,190,No,No,15,115,51,16.98
+ORD-10697,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-07-01,506001,1,1899,950,No,No,0,25,46,64.42
+ORD-10698,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-24,390001,1,1899,950,No,No,0,25,46,0.0
+ORD-10699,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-11,580020,1,764,340,No,No,10,210,48,0.0
+ORD-10699,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-02-11,580020,1,599,210,No,No,0,160,46,28.59
+ORD-10700,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-08-04,416001,1,1234,580,No,No,5,70,55,0.0
+ORD-10701,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-18,462001,2,1424,750,No,No,5,180,45,0.0
+ORD-10701,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-18,462001,1,2374,1250,No,No,5,60,44,0.0
+ORD-10702,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-08,452001,2,1349,750,No,No,10,180,45,0.0
+ORD-10703,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-21,395001,3,849,340,No,No,0,210,48,0.0
+ORD-10704,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-16,560001,1,549,180,No,No,0,260,44,0.0
+ORD-10704,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-09-16,560001,1,449,160,No,No,0,320,43,61.07
+ORD-10705,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-06-04,400601,1,1614,750,No,No,5,50,70,62.59
+ORD-10706,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-21,400050,1,3654,2100,No,No,15,35,135,0.0
+ORD-10706,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-21,400050,2,1199,550,No,No,0,110,68,34.14
+ORD-10707,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-05-07,221001,2,649,380,No,No,0,90,53,28.45
+ORD-10708,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-18,226001,1,1424,750,No,No,5,180,45,0.0
+ORD-10709,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-02,506001,1,2699,1600,No,No,10,40,61,37.53
+ORD-10710,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-19,560100,1,263,110,No,No,20,175,44,20.46
+ORD-10711,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-24,416001,1,522,180,No,No,5,260,44,0.0
+ORD-10711,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-24,416001,1,449,160,No,No,0,320,43,0.0
+ORD-10711,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-24,416001,1,1499,750,No,No,0,180,45,61.61
+ORD-10712,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-07-31,734001,1,1299,580,No,No,0,70,70,0.0
+ORD-10713,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-23,390001,2,386,190,Returned,No,10,115,51,0.0
+ORD-10714,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-10,400601,1,341,150,No,No,10,240,48,47.94
+ORD-10715,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-08-01,673001,3,2399,1600,No,Cancelled,20,40,61,0.0
+ORD-10716,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2025-12-24,700091,1,764,340,No,No,10,210,62,62.07
+ORD-10717,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-08-01,110016,1,849,340,No,No,0,210,48,40.23
+ORD-10718,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-04,682001,1,949,420,No,No,5,140,52,0.0
+ORD-10719,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-29,462001,1,899,420,No,No,10,140,52,0.0
+ORD-10720,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2025-12-15,560001,1,1899,950,No,No,0,25,46,48.53
+ORD-10721,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-08,143001,1,1199,550,No,No,0,110,68,18.23
+ORD-10722,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-25,390001,1,404,160,No,No,10,320,43,0.0
+ORD-10723,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-30,600028,2,1349,750,No,No,10,180,45,62.7
+ORD-10723,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-30,600028,1,2499,1250,No,No,0,60,44,63.99
+ORD-10723,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-30,600028,1,329,110,No,No,0,175,44,45.08
+ORD-10724,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-24,110034,1,1399,620,No,No,0,80,62,37.79
+ORD-10725,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-10-04,506001,1,313,110,No,No,5,175,44,0.0
+ORD-10726,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-20,462001,1,799,420,Returned,No,20,140,52,0.0
+ORD-10727,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-18,600028,2,1499,750,No,No,0,180,45,47.96
+ORD-10728,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-02-20,400076,1,1519,850,No,No,20,85,59,29.15
+ORD-10729,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-03-10,781001,1,2849,1600,No,No,5,40,76,37.88
+ORD-10730,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-22,248001,1,849,340,No,No,0,210,48,0.0
+ORD-10731,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-21,110034,1,343,190,No,No,20,115,51,19.8
+ORD-10732,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-31,560066,1,2499,1250,No,No,0,60,44,27.25
+ORD-10733,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-30,641001,1,999,420,No,No,0,140,52,48.54
+ORD-10734,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-15,313001,1,494,180,No,No,10,260,44,0.0
+ORD-10735,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-08,673001,1,341,150,No,No,10,240,48,36.68
+ORD-10735,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-08,673001,1,429,190,No,No,0,115,51,24.24
+ORD-10736,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2025-12-11,226001,1,1329,620,No,No,5,80,62,54.5
+ORD-10737,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-02,580020,1,275,160,No,No,5,150,65,21.15
+ORD-10738,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-04,248001,1,439,180,No,No,20,260,44,36.15
+ORD-10738,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-04,248001,2,449,160,No,No,0,320,43,54.14
+ORD-10739,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-31,842001,3,399,140,No,No,0,190,61,0.0
+ORD-10739,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-31,842001,1,329,110,No,No,0,175,60,62.87
+ORD-10740,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-10-05,781001,1,949,420,No,No,5,140,68,0.0
+ORD-10740,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-10-05,781001,1,509,210,No,No,15,160,61,0.0
+ORD-10741,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-15,440001,1,807,340,No,No,5,210,48,40.57
+ORD-10742,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-02-22,282001,1,1899,850,No,No,0,85,59,0.0
+ORD-10743,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-30,110085,1,599,210,No,No,0,160,46,0.0
+ORD-10744,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-26,500081,1,722,340,No,No,15,210,48,0.0
+ORD-10744,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-26,500081,2,569,210,No,No,5,160,46,42.58
+ORD-10745,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-10-08,110016,2,1899,950,No,No,0,25,46,41.58
+ORD-10746,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-10-01,208001,1,2849,1600,No,No,5,40,61,0.0
+ORD-10747,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-16,411057,1,899,480,No,No,10,130,65,36.95
+ORD-10748,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-05-31,313001,1,722,340,No,No,15,210,48,0.0
+ORD-10749,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-14,522001,1,849,340,No,No,0,210,48,0.0
+ORD-10750,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2025-12-30,416001,1,1189,620,No,No,15,80,62,51.54
+ORD-10751,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-03,682001,2,386,190,No,No,10,115,51,52.3
+ORD-10752,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-06,143001,1,679,340,No,No,20,210,48,45.46
+ORD-10753,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-10-07,302001,2,427,160,No,No,5,320,43,40.68
+ORD-10754,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-27,800001,2,999,420,No,No,0,140,68,57.89
+ORD-10755,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-04-28,520001,1,1804,950,No,No,5,25,46,62.96
+ORD-10756,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-08-21,410210,2,289,160,Returned,No,0,150,65,0.0
+ORD-10757,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-24,400001,1,569,210,No,No,5,160,46,35.54
+ORD-10758,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-07,400001,1,999,420,No,No,0,140,52,20.43
+ORD-10759,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-07-13,842001,1,4299,2100,No,No,0,35,150,60.05
+ORD-10759,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-07-13,842001,1,1199,550,No,No,0,110,82,0.0
+ORD-10759,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-07-13,842001,1,408,190,No,No,5,115,66,0.0
+ORD-10760,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-23,695001,2,449,160,No,No,0,320,43,0.0
+ORD-10761,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-26,695001,2,1424,750,No,Cancelled,5,180,45,29.11
+ORD-10762,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-12,800001,1,849,420,No,No,15,140,68,24.92
+ORD-10762,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-12,800001,1,539,210,No,No,10,160,61,0.0
+ORD-10763,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-29,201001,1,1499,750,Returned,No,0,180,45,34.02
+ORD-10763,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-09-29,201001,1,1619,890,No,No,10,95,51,0.0
+ORD-10764,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-01,673001,1,1499,750,No,No,0,180,45,0.0
+ORD-10765,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-25,560100,1,339,140,No,No,15,190,46,33.18
+ORD-10765,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2025-12-25,560100,1,329,110,Returned,No,0,175,44,31.56
+ORD-10766,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-04,141001,1,807,340,Returned,No,5,210,48,45.09
+ORD-10767,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-22,570001,1,1499,750,No,No,0,180,45,22.68
+ORD-10767,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-22,570001,1,2374,1250,No,No,5,60,44,57.3
+ORD-10767,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-22,570001,1,399,140,No,No,0,190,46,0.0
+ORD-10768,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-07-12,431001,2,1079,550,No,No,10,110,68,29.48
+ORD-10769,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-16,422001,1,549,180,No,No,0,260,44,23.28
+ORD-10770,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-08-18,360001,1,1299,580,Returned,No,0,70,55,15.44
+ORD-10771,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-20,342001,1,339,140,No,No,15,190,46,0.0
+ORD-10772,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-25,411001,1,849,420,No,No,15,140,52,17.58
+ORD-10773,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-07,580020,1,1424,750,No,No,5,180,45,42.46
+ORD-10774,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-07,221001,3,807,340,Returned,No,5,210,48,28.98
+ORD-10775,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-04-11,400076,1,386,190,No,No,10,115,51,0.0
+ORD-10776,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-11,781001,1,359,140,No,No,10,190,61,0.0
+ORD-10776,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-11,781001,1,329,110,No,No,0,175,60,0.0
+ORD-10777,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-05,560066,1,999,420,No,No,0,140,52,18.47
+ORD-10777,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-05,560066,1,599,210,No,No,0,160,46,0.0
+ORD-10778,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-27,121001,1,379,150,No,No,0,240,48,47.22
+ORD-10779,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-23,122001,1,899,420,Returned,No,10,140,52,55.91
+ORD-10779,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2025-12-23,122001,2,599,210,No,No,0,160,46,55.77
+ORD-10780,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-05-07,711101,1,849,340,No,No,0,210,62,0.0
+ORD-10781,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-05,530001,1,599,210,No,No,0,160,46,0.0
+ORD-10782,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-26,600028,1,494,180,No,No,10,260,44,26.23
+ORD-10783,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-24,380001,2,339,140,No,No,15,190,46,44.98
+ORD-10783,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-24,380001,1,329,110,No,No,0,175,44,32.42
+ORD-10784,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-01-23,500001,2,1529,750,No,No,10,50,70,0.0
+ORD-10785,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-15,201301,1,360,150,No,No,5,240,48,0.0
+ORD-10785,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-15,201301,1,386,190,No,No,10,115,51,63.64
+ORD-10786,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-10-05,711101,1,617,380,No,No,5,90,68,26.51
+ORD-10787,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-12,492001,1,1259,620,No,No,10,80,62,0.0
+ORD-10788,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-15,400076,1,4299,2100,No,No,0,35,135,53.93
+ORD-10789,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-02-10,530001,1,280,110,No,No,15,175,44,0.0
+ORD-10790,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-09,110092,1,449,160,No,No,0,320,43,48.14
+ORD-10791,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-07,462001,1,289,160,No,No,0,150,65,55.69
+ORD-10792,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-15,560100,1,2124,1250,No,No,15,60,44,0.0
+ORD-10793,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-07,506001,1,1499,750,No,No,0,180,45,37.71
+ORD-10793,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2025-12-07,506001,1,1799,890,No,No,0,95,51,0.0
+ORD-10794,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-19,500001,3,4299,2100,No,No,0,35,135,0.0
+ORD-10795,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-05,834001,1,2374,1250,No,No,5,60,59,0.0
+ORD-10796,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2025-12-28,395001,1,1899,950,No,No,0,25,46,0.0
+ORD-10797,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-24,560001,1,1349,750,No,No,10,180,45,16.62
+ORD-10798,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-04-17,416001,1,1259,620,No,No,10,80,62,15.42
+ORD-10799,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-01,506001,1,1199,550,No,No,0,110,68,31.57
+ORD-10800,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-15,110016,1,296,110,No,No,10,175,44,0.0
+ORD-10801,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-21,201001,1,1999,1250,No,No,20,60,44,22.04
+ORD-10802,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-21,695001,1,382,160,No,No,15,320,43,0.0
+ORD-10803,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-03,823001,1,319,140,No,No,20,190,61,64.72
+ORD-10804,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-19,400050,2,1259,620,No,No,10,80,62,0.0
+ORD-10805,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-01,560001,1,379,140,No,No,5,190,46,37.1
+ORD-10805,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-05-01,560001,2,280,110,No,No,15,175,44,0.0
+ORD-10805,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-01,560001,1,949,420,No,No,5,140,52,0.0
+ORD-10806,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-20,700001,1,399,140,No,No,0,190,61,47.19
+ORD-10807,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-04-05,834001,1,1899,850,Returned,No,0,85,74,19.68
+ORD-10808,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-27,313001,1,289,160,No,No,0,150,65,53.41
+ORD-10809,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-03-13,208001,1,379,150,No,No,0,240,48,22.28
+ORD-10809,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-03-13,208001,1,408,190,No,No,5,115,51,0.0
+ORD-10810,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-04,823001,1,849,340,No,No,0,210,62,0.0
+ORD-10811,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-01,416001,1,1274,750,No,No,15,180,45,0.0
+ORD-10811,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-01,416001,2,2499,1250,No,No,0,60,44,23.23
+ORD-10812,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-28,282001,1,1119,620,No,No,20,80,62,56.15
+ORD-10813,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-09-14,575001,1,1359,750,No,No,20,50,70,30.83
+ORD-10814,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-16,342001,1,1079,550,No,No,10,110,68,64.41
+ORD-10815,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-02-03,302001,1,899,480,No,No,10,130,65,45.05
+ORD-10816,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-21,713201,1,1499,750,No,No,0,180,60,0.0
+ORD-10816,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-03-21,713201,1,1439,890,No,No,20,95,66,36.29
+ORD-10817,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-05-21,110085,1,4084,2100,No,No,5,35,135,0.0
+ORD-10818,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-07-12,506001,2,649,380,No,No,0,90,53,0.0
+ORD-10819,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2025-12-09,221001,1,1614,750,No,No,5,50,70,57.59
+ORD-10820,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-19,600028,1,1189,620,No,No,15,80,62,38.2
+ORD-10821,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-21,400001,1,399,140,No,No,0,190,46,60.47
+ORD-10822,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-03,400001,1,599,210,No,No,0,160,46,45.0
+ORD-10823,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-21,560034,1,343,190,No,No,20,115,51,55.07
+ORD-10824,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-22,800001,1,999,420,No,No,0,140,68,0.0
+ORD-10824,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-22,800001,1,569,210,No,No,5,160,61,56.87
+ORD-10825,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-20,700091,1,4084,2100,No,No,5,35,150,16.26
+ORD-10825,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-20,700091,1,959,550,No,No,20,110,82,0.0
+ORD-10825,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-02-20,700091,1,329,110,No,No,0,175,60,55.35
+ORD-10826,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-12,636001,2,949,420,No,No,5,140,52,0.0
+ORD-10827,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-07-24,110092,2,849,420,No,No,15,140,52,35.69
+ORD-10827,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-07-24,110092,1,569,210,No,No,5,160,46,46.68
+ORD-10827,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-24,110092,1,549,180,No,No,0,260,44,46.56
+ORD-10828,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2025-12-17,110092,1,408,190,No,No,5,115,51,61.33
+ORD-10829,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-09,400601,1,1199,550,No,No,0,110,68,0.0
+ORD-10830,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-09,600028,1,2499,1250,No,No,0,60,44,38.35
+ORD-10831,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-11,823001,1,599,210,No,No,0,160,61,0.0
+ORD-10832,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-20,110034,1,296,110,No,No,10,175,44,36.19
+ORD-10833,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-19,700001,1,522,180,No,No,5,260,59,0.0
+ORD-10834,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-24,410210,1,949,420,No,No,5,140,52,34.92
+ORD-10835,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-28,560100,1,599,210,No,No,0,160,46,0.0
+ORD-10836,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-10,110092,1,379,140,No,No,5,190,46,0.0
+ORD-10837,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-25,600001,1,1709,890,No,No,5,95,51,0.0
+ORD-10838,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-04,823001,1,679,340,No,No,20,210,62,0.0
+ORD-10838,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-07-04,823001,1,599,210,No,No,0,160,61,57.81
+ORD-10838,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-04,823001,3,467,180,No,No,15,260,59,0.0
+ORD-10839,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-31,141001,2,1424,750,No,No,5,180,45,0.0
+ORD-10839,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-31,141001,1,2249,1250,No,No,10,60,44,0.0
+ORD-10840,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-07-21,682001,1,429,190,No,No,0,115,51,0.0
+ORD-10841,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2025-12-06,121001,1,3869,2100,No,No,10,35,135,15.25
+ORD-10841,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2025-12-06,121001,1,1199,550,No,No,0,110,68,0.0
+ORD-10842,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-05,440001,1,359,140,No,No,10,190,46,0.0
+ORD-10843,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-05-13,201301,2,275,160,No,No,5,150,65,43.89
+ORD-10844,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-08,500081,1,2499,1250,No,No,0,60,44,47.97
+ORD-10845,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-16,440001,1,849,340,No,No,0,210,48,53.08
+ORD-10845,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-16,440001,1,599,210,No,No,0,160,46,57.39
+ORD-10845,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-16,440001,1,849,340,No,No,0,210,48,46.02
+ORD-10846,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-14,208001,2,949,420,Returned,No,5,140,52,0.0
+ORD-10846,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-14,208001,1,599,210,No,No,0,160,46,41.54
+ORD-10847,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-30,636001,1,379,140,No,No,5,190,46,0.0
+ORD-10847,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-05-30,636001,1,313,110,No,No,5,175,44,0.0
+ORD-10848,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-06-25,560066,1,1329,620,No,No,5,80,62,25.98
+ORD-10849,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-28,410210,1,999,420,No,No,0,140,52,0.0
+ORD-10850,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-20,110016,1,449,160,No,No,0,320,43,29.4
+ORD-10851,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2025-12-02,110016,1,1444,750,No,No,15,50,70,23.33
+ORD-10852,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-20,342001,1,303,150,No,No,20,240,48,15.49
+ORD-10852,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-20,342001,1,408,190,Returned,No,5,115,51,17.26
+ORD-10853,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2025-12-09,403001,1,807,340,No,No,5,210,48,0.0
+ORD-10854,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-05-21,302001,1,1709,850,No,No,10,85,59,30.06
+ORD-10855,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-05-20,160001,2,275,160,No,No,5,150,65,16.04
+ORD-10856,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-29,600028,1,2499,1250,No,No,0,60,44,0.0
+ORD-10857,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-01-15,570001,1,1299,580,No,No,0,70,55,64.37
+ORD-10858,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-08-27,560066,1,275,160,No,No,5,150,65,0.0
+ORD-10859,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-08-24,734001,1,2849,1600,No,No,5,40,76,0.0
+ORD-10860,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-05,682001,1,2374,1250,No,No,5,60,44,0.0
+ORD-10861,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-07,506001,2,379,150,No,Cancelled,0,240,48,0.0
+ORD-10861,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-07,506001,2,429,190,No,No,0,115,51,40.1
+ORD-10861,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-07,506001,2,569,210,No,No,5,160,46,0.0
+ORD-10862,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-11,823001,1,2374,1250,No,No,5,60,59,36.13
+ORD-10863,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-01-20,636001,1,949,480,No,No,5,130,65,0.0
+ORD-10864,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-13,620001,1,467,180,No,No,15,260,44,56.69
+ORD-10864,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-13,620001,1,427,160,No,No,5,320,43,32.88
+ORD-10865,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-31,800001,1,365,190,No,No,15,115,66,0.0
+ORD-10866,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-02-10,520001,1,949,480,No,No,5,130,65,0.0
+ORD-10867,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-20,122001,1,1274,750,No,No,15,180,45,0.0
+ORD-10868,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-01-24,711101,1,341,150,No,No,10,240,62,40.54
+ORD-10869,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2025-12-28,580020,2,1399,620,No,No,0,80,62,0.0
+ORD-10870,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-05-09,400001,1,999,480,No,No,0,130,65,27.36
+ORD-10871,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-23,452001,1,4084,2100,No,No,5,35,135,28.01
+ORD-10871,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-23,452001,1,1139,550,No,No,5,110,68,0.0
+ORD-10871,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-01-23,452001,1,2999,1600,No,No,0,40,61,49.98
+ORD-10872,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-13,452001,1,807,340,No,No,5,210,48,0.0
+ORD-10873,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-24,313001,1,569,210,No,Cancelled,5,160,46,0.0
+ORD-10874,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-10-14,842001,1,386,190,No,No,10,115,66,0.0
+ORD-10875,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-08-15,580020,1,1169,580,No,No,10,70,55,0.0
+ORD-10876,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-02-10,500081,2,1699,750,No,No,0,50,70,45.29
+ORD-10877,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-03,248001,1,1199,550,No,No,0,110,68,44.22
+ORD-10878,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-06-25,431001,1,2999,1600,No,No,0,40,61,64.07
+ORD-10879,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-04-01,110034,2,1709,950,No,No,10,25,46,20.72
+ORD-10880,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-07,842001,2,467,180,No,No,15,260,59,0.0
+ORD-10881,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-20,834001,1,341,150,No,No,10,240,62,19.3
+ORD-10881,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-20,834001,1,343,190,No,No,20,115,66,0.0
+ORD-10882,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2025-12-03,380015,2,1399,620,No,No,0,80,62,41.41
+ORD-10883,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-08,580020,1,4084,2100,No,No,5,35,135,0.0
+ORD-10884,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-07-07,390001,1,1329,620,No,No,5,80,62,0.0
+ORD-10885,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-09-03,711101,2,1899,850,No,No,0,85,74,0.0
+ORD-10886,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-04-27,440001,1,949,420,No,No,5,140,52,59.59
+ORD-10887,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-25,452001,1,429,190,No,No,0,115,51,17.97
+ORD-10888,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-03-15,781001,1,1614,850,Returned,No,15,85,74,43.19
+ORD-10889,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-10-09,410210,1,4299,2100,No,No,0,35,135,0.0
+ORD-10889,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-10-09,410210,1,1199,550,No,No,0,110,68,0.0
+ORD-10890,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-05-05,600096,2,764,340,No,No,10,210,48,0.0
+ORD-10890,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-05-05,600096,1,539,210,No,No,10,160,46,0.0
+ORD-10891,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-07-13,110092,1,429,190,No,No,0,115,51,0.0
+ORD-10892,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-09-28,400050,1,275,160,No,Cancelled,5,150,65,55.63
+ORD-10893,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-09,422001,1,1274,750,No,No,15,180,45,0.0
+ORD-10893,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-09,422001,1,1619,890,No,No,10,95,51,0.0
+ORD-10894,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-01,600028,1,949,420,No,No,5,140,52,30.94
+ORD-10895,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-04,695001,1,4299,2100,No,No,0,35,135,26.53
+ORD-10895,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-04,695001,1,1199,550,No,No,0,110,68,0.0
+ORD-10896,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-31,842001,1,4084,2100,No,No,5,35,150,0.0
+ORD-10897,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-01-13,422001,1,379,150,No,No,0,240,48,0.0
+ORD-10897,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-01-13,422001,1,429,190,No,No,0,115,51,0.0
+ORD-10897,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-13,422001,1,1189,620,No,No,15,80,62,44.55
+ORD-10898,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-15,734001,2,494,180,No,No,10,260,59,42.66
+ORD-10899,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-27,143001,1,949,480,No,No,5,130,65,61.23
+ORD-10900,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-06,400050,3,764,340,No,No,10,210,48,0.0
+ORD-10901,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-20,380015,1,1349,750,No,No,10,180,45,0.0
+ORD-10901,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-20,380015,1,1799,890,No,No,0,95,51,35.43
+ORD-10901,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-20,380015,1,329,110,No,No,0,175,44,37.02
+ORD-10902,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-04-12,500081,1,807,340,Returned,No,5,210,48,0.0
+ORD-10902,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-12,500081,1,509,210,No,No,15,160,46,18.04
+ORD-10903,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-04-12,620001,1,379,150,No,No,0,240,48,20.66
+ORD-10904,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-09,641001,2,4299,2100,No,No,0,35,135,0.0
+ORD-10904,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-09,641001,1,1079,550,No,No,10,110,68,23.02
+ORD-10904,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-01-09,641001,1,849,480,No,No,15,130,65,55.4
+ORD-10905,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-19,673001,2,449,160,No,No,0,320,43,0.0
+ORD-10906,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-01-10,440001,1,343,190,No,No,20,115,51,21.06
+ORD-10907,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-08-28,411057,1,1699,750,No,No,0,50,70,31.43
+ORD-10908,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-04,600096,1,399,140,No,No,0,190,46,0.0
+ORD-10909,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-05-30,834001,1,617,380,No,No,5,90,68,56.34
+ORD-10910,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-03,143001,1,427,160,No,No,5,320,43,0.0
+ORD-10911,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-06-28,282001,1,2549,1600,No,No,15,40,61,23.34
+ORD-10912,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-03,636001,1,449,160,No,No,0,320,43,0.0
+ORD-10913,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-24,440001,2,289,160,No,No,0,150,65,20.95
+ORD-10914,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-22,110034,1,1799,890,No,No,0,95,51,0.0
+ORD-10915,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-12,530001,1,494,180,No,No,10,260,44,22.61
+ORD-10916,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2025-12-04,395001,1,4299,2100,No,No,0,35,135,26.61
+ORD-10917,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-08-10,734001,1,3869,2100,No,No,10,35,150,59.12
+ORD-10917,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-10,734001,1,1139,550,No,No,5,110,82,0.0
+ORD-10918,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-27,506001,2,379,150,No,No,0,240,48,61.23
+ORD-10918,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-05-27,506001,1,429,190,No,No,0,115,51,16.37
+ORD-10919,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-21,751001,1,899,420,No,No,10,140,68,36.33
+ORD-10920,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-07-16,160001,2,1499,750,No,No,0,180,45,0.0
+ORD-10920,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-07-16,160001,1,2499,1250,No,No,0,60,44,52.21
+ORD-10921,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-24,440001,1,494,180,No,No,10,260,44,16.92
+ORD-10921,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-24,440001,1,404,160,No,No,10,320,43,56.88
+ORD-10922,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-10-17,410210,1,949,480,No,No,5,130,65,0.0
+ORD-10923,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-07-29,201001,1,1899,950,No,No,0,25,46,51.16
+ORD-10924,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-20,400001,1,1079,550,No,No,10,110,68,46.55
+ORD-10925,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-31,713201,1,449,160,No,No,0,320,58,54.84
+ORD-10926,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-19,380001,1,679,340,No,No,20,210,48,0.0
+ORD-10927,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-07-17,700091,1,999,420,No,No,0,140,68,39.19
+ORD-10927,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-07-17,700091,1,569,210,No,No,5,160,61,0.0
+ORD-10928,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-17,600001,1,359,140,No,No,10,190,46,0.0
+ORD-10929,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-07-15,800001,1,584,380,No,No,10,90,68,0.0
+ORD-10930,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-06-28,600028,1,2849,1600,No,No,5,40,61,0.0
+ORD-10931,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-10-06,751001,1,341,150,No,No,10,240,62,47.75
+ORD-10932,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-08-23,580020,1,2849,1600,No,No,5,40,61,60.53
+ORD-10933,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-05-19,221001,1,649,380,No,No,0,90,53,0.0
+ORD-10934,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-08-06,411001,1,849,340,No,No,0,210,48,0.0
+ORD-10934,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-06,411001,1,539,210,No,No,10,160,46,0.0
+ORD-10935,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-08-16,282001,2,1399,620,No,No,0,80,62,57.97
+ORD-10936,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-15,800001,1,1499,750,No,No,0,180,60,29.56
+ORD-10937,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-01-17,600028,1,1189,620,No,No,15,80,62,0.0
+ORD-10938,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-12,226001,1,313,110,No,No,5,175,44,37.35
+ORD-10939,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-08-02,403001,3,999,420,No,No,0,140,52,27.5
+ORD-10939,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-02,403001,1,569,210,No,No,5,160,46,26.62
+ORD-10940,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-10,620001,2,449,160,No,No,0,320,43,28.41
+ORD-10941,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-03-18,834001,1,899,480,No,No,10,130,80,57.93
+ORD-10942,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-01-11,110034,1,2499,1250,No,No,0,60,44,0.0
+ORD-10943,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-28,410210,1,1139,550,No,No,5,110,68,0.0
+ORD-10944,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2025-12-05,530001,2,449,160,No,No,0,320,43,23.3
+ORD-10945,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-04-28,160001,2,379,150,No,No,0,240,48,0.0
+ORD-10946,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-05-19,121001,1,4299,2100,No,No,0,35,135,0.0
+ORD-10947,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-07,575001,1,1399,620,No,No,0,80,62,0.0
+ORD-10948,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-13,600028,2,722,340,No,No,15,210,48,35.16
+ORD-10948,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-13,600028,1,569,210,No,No,5,160,46,0.0
+ORD-10949,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-21,500081,1,899,420,No,No,10,140,52,28.86
+ORD-10949,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-21,500081,1,509,210,No,No,15,160,46,0.0
+ORD-10950,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-03-29,600001,1,2124,1250,No,No,15,60,44,0.0
+ORD-10951,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-19,842001,1,1079,550,No,No,10,110,82,50.31
+ORD-10952,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-05-31,522001,1,807,340,No,No,5,210,48,28.89
+ORD-10953,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-12,823001,1,1079,550,No,No,10,110,82,0.0
+ORD-10954,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-13,380015,1,379,140,No,No,5,190,46,24.55
+ORD-10955,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-10,560066,1,429,190,No,No,0,115,51,0.0
+ORD-10956,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-07,620001,1,1424,750,No,No,5,180,45,50.21
+ORD-10957,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-20,422001,2,280,110,No,No,15,175,44,38.67
+ORD-10958,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-09-06,110034,1,849,420,Returned,No,15,140,52,0.0
+ORD-10958,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-09-06,110034,1,539,210,No,No,10,160,46,0.0
+ORD-10959,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-03-10,400076,2,289,160,No,No,0,150,65,0.0
+ORD-10960,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-08,208001,1,549,180,No,No,0,260,44,0.0
+ORD-10961,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-27,842001,1,4084,2100,No,No,5,35,150,19.3
+ORD-10961,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-27,842001,2,1199,550,No,No,0,110,82,0.0
+ORD-10961,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-27,842001,1,1424,750,Returned,No,5,180,60,0.0
+ORD-10962,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-10,342001,2,807,340,No,No,5,210,48,21.64
+ORD-10963,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2025-12-28,390001,1,2999,1600,No,No,0,40,61,23.86
+ORD-10964,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-05-01,636001,1,1804,950,No,No,5,25,46,0.0
+ORD-10965,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-02-26,410210,1,949,480,No,No,5,130,65,49.1
+ORD-10966,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-04-27,580020,1,1399,620,No,No,0,80,62,0.0
+ORD-10967,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-04-13,410210,1,1139,550,No,No,5,110,68,47.92
+ORD-10968,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2025-12-18,700091,2,549,180,No,No,0,260,59,20.01
+ORD-10969,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-02,522001,1,1424,750,No,No,5,180,45,27.18
+ORD-10969,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-06-02,522001,1,1709,890,No,No,5,95,51,0.0
+ORD-10970,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-30,695001,1,549,180,No,No,0,260,44,63.26
+ORD-10970,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-30,695001,2,449,160,No,No,0,320,43,0.0
+ORD-10971,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-05-20,411057,1,899,420,No,No,10,140,52,0.0
+ORD-10972,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-14,575001,1,999,420,No,No,0,140,52,0.0
+ORD-10973,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-11,395001,1,1349,750,No,No,10,180,45,50.31
+ORD-10973,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-11,395001,1,2499,1250,No,No,0,60,44,0.0
+ORD-10974,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-17,506001,1,449,160,No,No,0,320,43,44.32
+ORD-10975,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-03-24,560066,1,1709,850,No,No,10,85,59,47.28
+ORD-10976,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-02-09,682001,1,4084,2100,No,No,5,35,135,16.74
+ORD-10976,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-02-09,682001,2,1139,550,No,No,5,110,68,38.25
+ORD-10976,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-02-09,682001,1,1259,620,No,No,10,80,62,15.61
+ORD-10977,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-05-13,122001,1,1234,580,No,No,5,70,55,30.15
+ORD-10978,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-04-12,110085,1,379,150,No,No,0,240,48,33.24
+ORD-10979,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-02,800001,1,599,210,No,No,0,160,61,24.88
+ORD-10980,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-10-11,342001,1,3654,2100,No,No,15,35,135,33.46
+ORD-10981,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-07-06,734001,1,379,150,No,No,0,240,62,0.0
+ORD-10982,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-05-02,410210,1,1169,580,No,No,10,70,55,0.0
+ORD-10983,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-13,682001,3,899,420,No,No,10,140,52,51.63
+ORD-10984,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-08-26,403001,1,1799,890,No,No,0,95,51,34.1
+ORD-10985,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-01-10,734001,1,379,150,No,No,0,240,62,59.15
+ORD-10986,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-07-10,110085,3,949,480,No,No,5,130,65,17.44
+ORD-10987,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-20,452001,1,849,340,No,No,0,210,48,0.0
+ORD-10988,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-03,506001,1,1499,750,No,No,0,180,45,19.86
+ORD-10988,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-03-03,506001,1,1619,890,No,No,10,95,51,45.47
+ORD-10989,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-07-24,282001,1,1614,850,Returned,No,15,85,59,0.0
+ORD-10990,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-07-16,201001,1,359,140,No,No,10,190,46,0.0
+ORD-10991,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-09-19,416001,1,1399,620,No,No,0,80,62,0.0
+ORD-10992,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-11,302001,1,1499,750,No,No,0,180,45,16.17
+ORD-10993,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-04-25,834001,1,408,190,No,No,5,115,66,0.0
+ORD-10994,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-06-21,600001,1,439,180,No,No,20,260,44,0.0
+ORD-10994,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-21,600001,1,382,160,No,No,15,320,43,48.21
+ORD-10994,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-21,600001,1,949,420,No,No,5,140,52,26.25
+ORD-10995,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-25,682001,2,999,420,No,No,0,140,52,0.0
+ORD-10996,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-21,313001,1,427,160,No,No,5,320,43,0.0
+ORD-10997,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-15,600028,1,1274,750,No,No,15,180,45,38.6
+ORD-10997,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-15,600028,1,2499,1250,No,No,0,60,44,42.6
+ORD-10998,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-03-09,560001,1,522,180,No,No,5,260,44,0.0
+ORD-10999,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-03,400601,1,849,340,No,No,0,210,48,55.18
+ORD-10999,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-03,400601,2,509,210,No,No,15,160,46,18.49
+ORD-11000,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2025-12-17,221001,2,429,190,No,No,0,115,51,21.05
+ORD-11001,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-10-07,143001,2,599,210,No,No,0,160,46,17.0
+ORD-11002,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-06-23,673001,1,4299,2100,No,No,0,35,135,54.58
+ORD-11003,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-02-25,380015,2,1709,850,No,No,10,85,59,18.7
+ORD-11004,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-08-09,625001,1,1899,850,No,No,0,85,59,0.0
+ORD-11005,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2025-12-19,121001,1,764,340,No,No,10,210,48,30.24
+ORD-11005,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2025-12-19,121001,1,539,210,No,No,10,160,46,0.0
+ORD-11006,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-10-08,530001,1,1614,950,No,No,15,25,46,0.0
+ORD-11007,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-05,673001,1,408,190,No,No,5,115,51,0.0
+ORD-11008,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-08-14,700001,2,1234,580,No,No,5,70,70,33.99
+ORD-11009,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-03,734001,1,899,420,No,No,10,140,68,60.64
+ORD-11009,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-03,734001,2,539,210,No,No,10,160,61,26.42
+ORD-11010,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-14,380015,1,599,210,Returned,No,0,160,46,52.06
+ORD-11011,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-10,422001,1,1079,550,No,No,10,110,68,26.42
+ORD-11012,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-22,560066,1,467,180,No,No,15,260,44,0.0
+ORD-11012,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-07-22,560066,1,449,160,No,No,0,320,43,0.0
+ORD-11012,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-07-22,560066,2,849,340,No,No,0,210,48,37.09
+ORD-11013,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-01,575001,1,360,150,No,No,5,240,48,0.0
+ORD-11013,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-08-01,575001,1,408,190,No,No,5,115,51,27.59
+ORD-11014,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-27,500001,1,2374,1250,No,No,5,60,44,27.45
+ORD-11015,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-20,834001,1,494,180,No,Cancelled,10,260,59,40.48
+ORD-11016,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-08-11,560001,1,1444,750,No,No,15,50,70,24.68
+ORD-11017,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-25,600096,1,359,140,No,No,10,190,46,31.19
+ORD-11017,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-01-25,600096,1,329,110,No,No,0,175,44,31.28
+ORD-11018,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-22,452001,1,329,110,No,No,0,175,44,30.18
+ORD-11019,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-02-13,522001,1,399,140,No,No,0,190,46,0.0
+ORD-11019,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-02-13,522001,2,329,110,No,No,0,175,44,15.97
+ORD-11020,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-14,580020,2,1899,950,No,No,0,25,46,51.95
+ORD-11021,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-03-21,695001,1,999,420,No,No,0,140,52,62.6
+ORD-11022,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2025-12-24,360001,1,289,160,No,No,0,150,65,0.0
+ORD-11023,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-05-25,500081,1,1234,580,No,No,5,70,55,51.62
+ORD-11024,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-02-16,201001,1,949,480,No,No,5,130,65,42.83
+ORD-11025,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-04-29,400076,1,341,150,No,No,10,240,48,52.36
+ORD-11026,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-20,560100,1,359,140,No,No,10,190,46,0.0
+ORD-11026,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-20,560100,1,313,110,No,No,5,175,44,0.0
+ORD-11027,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-28,422001,1,1139,550,No,No,5,110,68,54.51
+ORD-11028,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-08-09,506001,1,1614,750,No,No,5,50,70,54.93
+ORD-11029,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-01-14,248001,3,1529,750,No,No,10,50,70,0.0
+ORD-11030,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-20,201001,1,1799,890,No,No,0,95,51,36.62
+ORD-11031,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-11,208001,2,1499,750,No,No,0,180,45,0.0
+ORD-11032,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-03-25,492001,1,1709,850,No,No,10,85,59,0.0
+ORD-11033,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-22,201001,1,467,180,No,No,15,260,44,0.0
+ORD-11033,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-09-22,201001,1,382,160,No,No,15,320,43,0.0
+ORD-11033,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-22,201001,1,1199,750,No,No,20,180,45,16.36
+ORD-11034,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-07-14,110092,1,1169,580,No,No,10,70,55,0.0
+ORD-11035,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-06-23,575001,1,1424,750,No,No,5,180,45,0.0
+ORD-11035,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-23,575001,2,2249,1250,No,No,10,60,44,0.0
+ORD-11035,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-23,575001,1,999,420,No,No,0,140,52,62.24
+ORD-11036,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2025-12-09,400001,2,599,210,No,No,0,160,46,0.0
+ORD-11037,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-03,600096,1,1799,890,No,No,0,95,51,0.0
+ORD-11038,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-15,411001,1,1424,750,Returned,No,5,180,45,0.0
+ORD-11038,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-15,411001,1,1799,890,No,No,0,95,51,0.0
+ORD-11038,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-05-15,411001,1,1804,950,No,No,5,25,46,33.25
+ORD-11039,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-01-26,560001,2,4299,2100,No,No,0,35,135,0.0
+ORD-11039,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-26,560001,2,1199,550,No,No,0,110,68,0.0
+ORD-11040,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-12,141001,1,319,140,No,No,20,190,46,57.81
+ORD-11040,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-12,141001,1,329,110,No,No,0,175,44,0.0
+ORD-11041,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-07-29,620001,1,1709,850,No,No,10,85,59,24.81
+ORD-11042,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-23,673001,1,1899,950,No,No,0,25,46,0.0
+ORD-11043,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-26,620001,3,764,340,No,No,10,210,48,52.99
+ORD-11044,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-06,700091,1,382,160,No,No,15,320,58,0.0
+ORD-11045,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-25,575001,1,1349,750,No,No,10,180,45,0.0
+ORD-11046,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-08-04,462001,2,1519,950,No,No,20,25,46,28.14
+ORD-11047,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-07-14,110092,1,549,180,No,No,0,260,44,0.0
+ORD-11048,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-07,781001,2,2249,1250,No,No,10,60,59,0.0
+ORD-11049,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2025-12-14,751001,1,341,150,No,No,10,240,62,42.66
+ORD-11049,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2025-12-14,751001,2,343,190,No,No,20,115,66,59.28
+ORD-11050,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-19,570001,1,359,140,No,No,10,190,46,41.53
+ORD-11051,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-25,143001,2,949,420,No,No,5,140,52,0.0
+ORD-11052,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-10-13,600028,1,339,140,No,No,15,190,46,0.0
+ORD-11053,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-24,530001,1,1139,550,No,No,5,110,68,0.0
+ORD-11054,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-08,620001,1,494,180,No,No,10,260,44,22.02
+ORD-11055,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-08-04,560001,2,399,140,No,No,0,190,46,0.0
+ORD-11056,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-03-10,625001,2,1799,890,No,No,0,95,51,62.22
+ORD-11057,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-16,580020,1,549,180,No,No,0,260,44,0.0
+ORD-11058,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-10-03,452001,1,1499,750,No,No,0,180,45,58.76
+ORD-11058,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-10-03,452001,2,2499,1250,No,No,0,60,44,36.3
+ORD-11059,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-02-25,474001,1,799,420,No,No,20,140,52,0.0
+ORD-11060,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-11,823001,2,449,160,No,No,0,320,58,0.0
+ORD-11061,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-08-18,711101,3,289,160,No,No,0,150,80,0.0
+ORD-11062,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-08-11,600028,1,494,180,No,No,10,260,44,33.79
+ORD-11063,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-23,390001,1,1349,750,No,No,10,180,45,36.09
+ORD-11063,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-23,390001,1,2249,1250,No,No,10,60,44,43.67
+ORD-11064,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-08-25,410210,1,296,110,No,No,10,175,44,16.21
+ORD-11065,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-05-18,110016,2,1499,750,No,No,0,180,45,27.44
+ORD-11065,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-05-18,110016,1,1799,890,No,No,0,95,51,0.0
+ORD-11066,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-21,580020,1,341,150,No,No,10,240,48,0.0
+ORD-11067,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-08-13,110001,1,722,340,Returned,No,15,210,48,46.97
+ORD-11067,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-08-13,110001,1,599,210,No,No,0,160,46,0.0
+ORD-11068,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-07-13,380015,1,649,380,No,No,0,90,53,43.02
+ORD-11069,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-09-13,143001,1,1274,750,No,No,15,180,45,0.0
+ORD-11069,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-13,143001,1,2499,1250,No,No,0,60,44,51.81
+ORD-11069,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-13,143001,2,2249,1250,No,No,10,60,44,0.0
+ORD-11070,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-26,842001,1,679,340,Returned,No,20,210,62,25.95
+ORD-11071,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-26,842001,1,849,340,Returned,No,0,210,62,35.73
+ORD-11072,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-09,403001,2,3439,2100,No,No,20,35,135,55.17
+ORD-11072,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-09-09,403001,1,1199,550,No,No,0,110,68,0.0
+ORD-11073,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-06-01,440001,2,1999,1250,No,No,20,60,44,0.0
+ORD-11074,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-08-17,452001,2,2499,1250,No,No,0,60,44,56.05
+ORD-11075,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-25,313001,1,4084,2100,No,No,5,35,135,0.0
+ORD-11076,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-18,834001,1,260,160,No,No,10,150,80,28.8
+ORD-11077,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-04-09,400601,1,1019,550,No,No,15,110,68,41.92
+ORD-11078,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-05-05,711101,1,1259,620,No,No,10,80,78,63.54
+ORD-11079,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2025-12-28,380001,1,399,140,No,No,0,190,46,0.0
+ORD-11080,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-10-04,560066,2,1349,750,No,No,10,180,45,0.0
+ORD-11081,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-06-17,221001,2,4299,2100,No,No,0,35,135,0.0
+ORD-11082,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-04-09,682001,3,807,340,No,No,5,210,48,16.02
+ORD-11082,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-04-09,682001,1,479,210,Returned,No,20,160,46,0.0
+ORD-11083,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-08-28,400050,1,1499,750,No,No,0,180,45,39.91
+ORD-11083,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-08-28,400050,1,1439,890,No,No,20,95,51,0.0
+ORD-11084,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-06-10,248001,1,949,420,No,No,5,140,52,54.68
+ORD-11084,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-06-10,248001,1,509,210,No,No,15,160,46,44.51
+ORD-11085,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-02-24,110016,3,1444,750,No,No,15,50,70,34.44
+ORD-11086,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-07-18,110085,1,1799,890,No,No,0,95,51,17.08
+ORD-11087,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2025-12-31,462001,1,584,380,No,No,10,90,53,31.03
+ORD-11088,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-08-27,403001,1,1329,620,No,No,5,80,62,0.0
+ORD-11089,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-12,530001,1,599,210,Returned,No,0,160,46,45.48
+ORD-11090,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-05-06,682001,1,359,140,No,No,10,190,46,30.36
+ORD-11091,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-27,248001,1,522,180,No,No,5,260,44,0.0
+ORD-11092,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-09-02,411057,1,1614,750,No,No,5,50,70,17.24
+ORD-11093,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-03-20,110016,1,1899,950,No,No,0,25,46,45.65
+ORD-11094,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2025-12-24,390001,1,289,160,No,No,0,150,65,64.35
+ORD-11095,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-27,395001,1,569,210,No,No,5,160,46,49.02
+ORD-11096,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-10-17,522001,1,404,160,No,No,10,320,43,0.0
+ORD-11097,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-03-08,474001,1,3869,2100,No,No,10,35,135,0.0
+ORD-11097,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-08,474001,1,1199,550,No,No,0,110,68,62.77
+ORD-11097,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-03-08,474001,1,1529,750,No,No,10,50,70,28.07
+ORD-11098,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-31,226001,2,275,160,No,No,5,150,65,38.45
+ORD-11099,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-01-25,110085,1,1709,950,No,No,10,25,46,0.0
+ORD-11100,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-02-12,842001,2,1619,890,No,No,10,95,66,0.0
+ORD-11101,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-09-18,400050,2,1614,850,No,No,15,85,59,34.57
+ORD-11102,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-02-17,530001,1,1899,950,No,No,0,25,46,0.0
+ORD-11103,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-04-05,141001,1,379,140,No,No,5,190,46,31.08
+ORD-11103,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-05,141001,1,280,110,No,Cancelled,15,175,44,0.0
+ORD-11103,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-04-05,141001,1,649,380,No,No,0,90,53,16.76
+ORD-11104,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-09-06,440001,1,4299,2100,No,No,0,35,135,26.88
+ORD-11105,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-08-09,620001,2,4299,2100,No,No,0,35,135,0.0
+ORD-11106,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-02-28,360001,1,379,150,No,No,0,240,48,50.53
+ORD-11107,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-09-04,600096,1,2499,1250,No,No,0,60,44,37.62
+ORD-11108,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-06-17,313001,1,1709,850,No,No,10,85,59,0.0
+ORD-11109,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-10,380015,1,1329,620,No,No,5,80,62,0.0
+ORD-11110,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-01-25,751001,2,1709,850,No,No,10,85,74,0.0
+ORD-11111,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-09-09,560001,1,552,380,No,No,15,90,53,23.62
+ORD-11112,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-09-15,201001,1,999,480,No,No,0,130,65,53.13
+ORD-11113,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-08-07,700001,1,360,150,No,No,5,240,62,0.0
+ORD-11114,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2025-12-11,400050,1,379,150,No,No,0,240,48,62.9
+ORD-11115,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-05-07,431001,1,260,160,No,No,10,150,65,0.0
+ORD-11116,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-21,834001,1,849,420,No,No,15,140,68,49.99
+ORD-11117,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-04-23,625001,1,522,180,No,No,5,260,44,0.0
+ORD-11118,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-06-13,462001,1,399,140,No,No,0,190,46,43.34
+ORD-11118,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-06-13,462001,2,263,110,No,No,20,175,44,0.0
+ORD-11119,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-05-03,226001,2,1999,1250,No,No,20,60,44,0.0
+ORD-11120,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-01-12,380001,1,339,140,No,No,15,190,46,24.6
+ORD-11121,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-04-23,160001,1,1499,750,No,No,0,180,45,0.0
+ORD-11122,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-07-10,734001,1,379,150,No,No,0,240,62,46.21
+ORD-11123,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-09-20,400076,1,341,150,No,No,10,240,48,57.68
+ORD-11123,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-09-20,400076,1,408,190,No,No,5,115,51,42.62
+ORD-11124,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-08-08,506001,1,260,160,No,No,10,150,65,0.0
+ORD-11125,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-02-04,110034,1,1274,750,Returned,Cancelled,15,180,45,58.51
+ORD-11125,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2026-02-04,110034,1,2499,1250,No,No,0,60,44,58.67
+ORD-11125,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-02-04,110034,1,1899,850,No,No,0,85,59,0.0
+ORD-11126,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-11,560100,1,1499,750,No,No,0,180,45,0.0
+ORD-11127,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-08-29,570001,3,2849,1600,No,No,5,40,61,58.25
+ORD-11128,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-01-01,842001,1,849,420,No,No,15,140,68,0.0
+ORD-11128,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-01,842001,1,599,210,No,No,0,160,61,0.0
+ORD-11129,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-06-21,530001,1,1139,550,No,No,5,110,68,47.74
+ORD-11130,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-04-08,506001,1,1799,890,No,No,0,95,51,19.0
+ORD-11131,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-07-17,400050,1,1529,750,No,No,10,50,70,62.96
+ORD-11132,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-09-18,636001,1,764,340,No,No,10,210,48,42.3
+ORD-11133,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-03-08,600096,1,1424,750,No,No,5,180,45,63.61
+ORD-11134,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2026-07-26,313001,1,2849,1600,Returned,No,5,40,61,0.0
+ORD-11135,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-02-15,208001,1,509,210,No,No,15,160,46,0.0
+ORD-11136,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2025-12-09,226001,1,807,340,No,No,5,210,48,28.88
+ORD-11137,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-03-08,474001,1,1019,550,No,No,15,110,68,0.0
+ORD-11138,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-01-24,431001,1,549,180,No,No,0,260,44,0.0
+ORD-11139,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-08-09,400050,1,1699,750,No,No,0,50,70,41.48
+ORD-11140,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-05-24,395001,1,303,150,No,No,20,240,48,0.0
+ORD-11141,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-03-18,700091,2,617,380,No,No,5,90,68,0.0
+ORD-11142,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-24,248001,2,359,160,No,No,20,320,43,50.41
+ORD-11143,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-10-09,641001,1,1614,950,No,No,15,25,46,0.0
+ORD-11144,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-14,700091,1,494,180,No,No,10,260,59,17.95
+ORD-11144,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-14,700091,1,427,160,No,No,5,320,58,22.31
+ORD-11144,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-02-14,700091,1,1399,620,No,No,0,80,78,56.21
+ORD-11145,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-03-07,110092,1,849,340,No,No,0,210,48,29.91
+ORD-11145,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-03-07,110092,1,599,210,Returned,No,0,160,46,0.0
+ORD-11146,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-07,313001,1,429,190,No,No,0,115,51,0.0
+ORD-11147,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-04-20,342001,1,4299,2100,No,No,0,35,135,42.63
+ORD-11148,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-06-07,201301,1,1329,620,No,No,5,80,62,16.73
+ORD-11149,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-04-24,700091,2,1699,750,No,No,0,50,85,0.0
+ORD-11150,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-04,121001,3,849,340,No,No,0,210,48,42.26
+ORD-11150,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-04,121001,1,569,210,No,No,5,160,46,55.72
+ORD-11150,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-01-04,121001,1,1199,550,No,No,0,110,68,0.0
+ORD-11151,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-09-12,400601,1,1899,950,No,No,0,25,46,40.03
+ORD-11152,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-05-15,360001,1,1529,750,No,No,10,50,70,42.5
+ORD-11153,PROD-E104,KeyTech RGB Mechanical Keyboard,Electronics,2025-12-21,575001,1,2999,1600,No,No,0,40,61,0.0
+ORD-11154,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-23,226001,1,549,180,No,No,0,260,44,0.0
+ORD-11154,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-02-23,226001,1,382,160,No,No,15,320,43,37.28
+ORD-11155,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-08-20,208001,1,3654,2100,No,No,15,35,135,56.65
+ORD-11155,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-08-20,208001,1,1019,550,No,No,15,110,68,0.0
+ORD-11156,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-10-17,600096,1,275,160,No,No,5,150,65,0.0
+ORD-11157,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-05-20,580020,1,427,160,No,No,5,320,43,39.01
+ORD-11158,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-10-02,506001,2,549,180,No,Cancelled,0,260,44,0.0
+ORD-11159,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2025-12-26,400050,1,649,380,No,No,0,90,53,0.0
+ORD-11160,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-03-21,570001,1,449,160,No,No,0,320,43,0.0
+ORD-11161,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-01-31,520001,1,764,340,Returned,No,10,210,48,15.72
+ORD-11161,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-01-31,520001,1,599,210,No,No,0,160,46,28.5
+ORD-11161,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-31,520001,1,275,160,No,No,5,150,65,0.0
+ORD-11162,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-12,400601,3,360,150,No,No,5,240,48,29.04
+ORD-11162,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-06-12,400601,1,408,190,No,No,5,115,51,0.0
+ORD-11163,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-07,641001,3,329,110,No,No,0,175,44,50.15
+ORD-11164,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-03-29,411057,1,399,140,No,No,0,190,46,22.28
+ORD-11164,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-03-29,411057,1,329,110,No,No,0,175,44,32.37
+ORD-11165,PROD-B404,PurePore Activated Charcoal Scrub,Beauty,2026-04-29,201301,1,313,110,No,No,5,175,44,59.24
+ORD-11166,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-05-20,380001,1,3869,2100,No,No,10,35,135,64.14
+ORD-11167,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-02-13,734001,1,260,160,No,No,10,150,80,0.0
+ORD-11168,PROD-G501,Himalayan Harvest Organic Green Tea 250g,Groceries,2026-06-21,416001,3,360,150,No,No,5,240,48,0.0
+ORD-11169,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-09-08,560034,1,1614,750,No,No,5,50,70,0.0
+ORD-11170,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-06-21,160001,1,1169,580,No,No,10,70,55,0.0
+ORD-11171,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-07-21,201001,1,289,160,No,No,0,150,65,0.0
+ORD-11172,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-02-12,440001,1,849,340,No,No,0,210,48,24.55
+ORD-11173,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2025-12-09,400601,2,1424,750,No,No,5,180,45,30.01
+ORD-11173,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-09,400601,1,2499,1250,No,No,0,60,44,45.74
+ORD-11173,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2025-12-09,400601,1,1614,750,No,No,5,50,70,0.0
+ORD-11174,PROD-B403,RootPure Ayurvedic Bhringraj Hair Oil,Beauty,2026-07-31,360001,1,379,140,No,No,5,190,46,64.73
+ORD-11175,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-06-13,410210,1,449,160,No,No,0,320,43,46.56
+ORD-11176,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-01-18,342001,1,1804,850,No,No,5,85,59,37.56
+ORD-11177,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-10-11,221001,1,999,480,No,No,0,130,65,0.0
+ORD-11178,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-04-20,403001,1,649,380,No,No,0,90,53,60.11
+ORD-11179,PROD-H301,CrispWave Digital Air Fryer 4.5L,Home & Kitchen,2026-04-30,560001,2,4299,2100,No,No,0,35,135,0.0
+ORD-11179,PROD-H302,ChefPro Granite Non-Stick Pan 28cm,Home & Kitchen,2026-04-30,560001,1,1079,550,No,No,10,110,68,0.0
+ORD-11179,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-04-30,560001,1,1614,950,No,No,15,25,46,55.42
+ORD-11180,PROD-E101,AcousticBass Wireless Earbuds,Electronics,2026-01-29,110016,1,1349,750,Returned,No,10,180,45,46.74
+ORD-11180,PROD-E102,PowerCore 20000mAh Fast Power Bank,Electronics,2026-01-29,110016,1,1709,890,No,No,5,95,51,0.0
+ORD-11181,PROD-F204,StreetStyle Unisex Oversized Hoodie,Fashion,2026-01-03,110001,1,1104,580,No,No,15,70,55,0.0
+ORD-11182,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-02-21,110001,1,439,180,No,No,20,260,44,0.0
+ORD-11183,PROD-H303,OrthoSnooze Contour Memory Foam Pillow,Home & Kitchen,2026-03-05,492001,1,1399,620,No,No,0,80,62,0.0
+ORD-11184,PROD-E103,PulseFit Pro Smartwatch (AMOLED),Electronics,2025-12-31,673001,1,2374,1250,Returned,No,5,60,44,0.0
+ORD-11185,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-04-04,462001,1,1804,950,No,No,5,25,46,42.07
+ORD-11186,PROD-G502,NatureVeda Cold-Pressed Mustard Oil 1L,Groceries,2026-01-06,201301,1,260,160,No,No,10,150,65,0.0
+ORD-11187,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2026-02-23,625001,1,509,210,No,No,15,160,46,17.15
+ORD-11188,PROD-G503,NutriCrunch California Jumbo Almonds 500g,Groceries,2026-05-14,226001,1,617,380,No,No,5,90,53,0.0
+ORD-11189,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-10-11,673001,1,1699,750,No,No,0,50,70,36.64
+ORD-11190,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2025-12-16,282001,1,999,420,No,No,0,140,52,32.07
+ORD-11190,PROD-F205,Tuscan Tan Genuine Leather Belt,Fashion,2025-12-16,282001,2,569,210,No,No,5,160,46,39.39
+ORD-11191,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-09-28,834001,1,522,180,No,No,5,260,59,32.12
+ORD-11192,PROD-B401,GlowMatrix 10% Vitamin C Radiance Serum,Beauty,2026-08-22,431001,1,549,180,No,No,0,260,44,0.0
+ORD-11192,PROD-B402,SunShield Matte Gel Sunscreen SPF 50,Beauty,2026-08-22,431001,1,359,160,No,No,20,320,43,28.93
+ORD-11193,PROD-F201,UrbanCraft Men's Slim Fit Chinos,Fashion,2026-10-03,800001,1,899,420,No,No,10,140,68,0.0
+ORD-11194,PROD-F202,VedicWeave Embroidered Cotton Kurti,Fashion,2026-06-04,751001,1,807,340,Returned,No,5,210,62,0.0
+ORD-11195,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-04-06,580020,1,1444,750,No,No,15,50,70,0.0
+ORD-11196,PROD-F203,AeroStride Breathable Running Shoes,Fashion,2026-04-18,403001,1,1899,850,No,No,0,85,59,34.65
+ORD-11197,PROD-E105,HyperSync 7-in-1 USB-C Hub,Electronics,2026-01-04,570001,1,1614,950,No,No,15,25,46,36.02
+ORD-11198,PROD-H304,AuraGleam Cordless Electric Kettle 1.8L,Home & Kitchen,2026-04-16,411057,1,999,480,No,No,0,130,65,0.0
+ORD-11199,PROD-G504,ArtisanRoast Dark Chocolate Granola 400g,Groceries,2026-02-01,380015,1,429,190,No,No,0,115,51,0.0
+ORD-11200,PROD-H305,SilkCloud 400TC Egyptian Cotton Bedsheet,Home & Kitchen,2026-01-19,800001,1,1699,750,No,No,0,50,85,0.0
