@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "GeoCommerce AI — Portfolio-Level Regional E-Commerce Demand Intelligence Platform",
   "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm run install:all && npm run build:frontend",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
     "test:backend": "cd backend && node --test tests/api.test.js",
-    "test:e2e": "node tests/run_e2e.js",
-    "build:frontend": "cd frontend && npm run build"
+    "test:e2e": "node tests/run_e2e.js"
   },
   "author": "GeoCommerce AI Team",
   "license": "MIT"

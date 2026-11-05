@@ -1,0 +1,37 @@
+services:
+  # Node.js Express Backend
+  - type: web
+    name: geocommerce-api
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GROK_API_KEY
+        sync: false
+      - key: GROK_MODEL
+        value: openai/gpt-oss-120b
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RESEND_FROM_EMAIL
+        value: GeoCommerce AI <onboarding@resend.dev>
+      - key: FRONTEND_URL
+        sync: false
+
+  # Python FastAPI ML Microservice
+  - type: web
+    name: geocommerce-ml
+    env: python
+    plan: free
+    rootDir: ml_service
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT

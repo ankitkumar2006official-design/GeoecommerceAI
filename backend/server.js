@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 require('dotenv').config();
 const express = require('express');
@@ -71,7 +72,19 @@ app.use('/api/copilot', copilotRoutes);
 app.use('/api/scenarios', scenarioRoutes);
 app.use('/api/reports', reportRoutes);
 
-// Global 404 handler
+// Serve Frontend static assets in production if available
+const frontendDist = path.resolve(__dirname, '../frontend/dist');
+if (fs.existsSync(frontendDist)) {
+  app.use(express.static(frontendDist));
+  app.get('*', (req, res, next) => {
+    if (req.originalUrl.startsWith('/api') || req.originalUrl.startsWith('/health') || req.originalUrl.startsWith('/db-status')) {
+      return next();
+    }
+    res.sendFile(path.join(frontendDist, 'index.html'));
+  });
+}
+
+// Global 404 handler for unmatched API routes
 app.use((req, res) => {
   res.status(404).json({ error: `Route not found: ${req.method} ${req.originalUrl}` });
 });
