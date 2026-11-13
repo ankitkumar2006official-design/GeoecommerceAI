@@ -2,12 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parser');
 const xlsx = require('xlsx');
+const mongoose = require('mongoose');
 const Sale = require('../models/Sale');
 const UploadLog = require('../models/UploadLog');
 const User = require('../models/User');
 const { lookupPincode } = require('../utils/geoHelper');
+const { validateFileSignature } = require('../utils/fileValidator');
 const { syncDerivedCollections, clearSellerCollections } = require('../services/syncService');
 const { resolveActiveDatasetId, setActiveDataset, listSellerDatasets } = require('../services/datasetService');
+
+// Concurrency and resource limits
+let activeUploads = 0;
+const MAX_CONCURRENT_UPLOADS = 5;
+const MAX_DATASET_ROWS = 50000;
 
 // Flexible header normalizer
 function normalizeKey(key) {
@@ -239,31 +246,85 @@ exports.uploadSalesFile = async (req, res) => {
   const ext = path.extname(originalName).toLowerCase();
   const sellerId = req.sellerId;
 
+  // Protect server memory from concurrent oversized file processing
+  if (activeUploads >= MAX_CONCURRENT_UPLOADS) {
+    if (filePath && fs.existsSync(filePath)) {
+      try { fs.unlinkSync(filePath); } catch (_) {}
+    }
+    return res.status(503).json({
+      error: 'Upload server is currently handling maximum concurrent imports. Please retry in a few moments.'
+    });
+  }
+
+  activeUploads++;
+
   try {
+    // 1. Validate actual file signature/magic bytes to prevent MIME spoofing
+    validateFileSignature(filePath, ext);
+
     let rows = [];
 
+    // 2. Stream-parse records with immediate termination on row threshold
     if (ext === '.csv') {
       rows = await new Promise((resolve, reject) => {
         const results = [];
-        fs.createReadStream(filePath)
-          .pipe(csv())
-          .on('data', (data) => results.push(data))
-          .on('end', () => resolve(results))
-          .on('error', (err) => reject(err));
+        let count = 0;
+        let streamAborted = false;
+        const readStream = fs.createReadStream(filePath);
+        const parser = csv();
+
+        readStream
+          .pipe(parser)
+          .on('headers', (headers) => {
+            if (!headers || headers.length === 0) {
+              streamAborted = true;
+              readStream.destroy();
+              return reject(new Error('Uploaded CSV file has empty or missing header row.'));
+            }
+          })
+          .on('data', (data) => {
+            count++;
+            if (count > MAX_DATASET_ROWS) {
+              streamAborted = true;
+              readStream.destroy();
+              return reject(new Error(`Dataset exceeds maximum allowed limit of ${MAX_DATASET_ROWS.toLocaleString()} rows (received over ${MAX_DATASET_ROWS.toLocaleString()}). Please upload a smaller file.`));
+            }
+            results.push(data);
+          })
+          .on('end', () => {
+            if (!streamAborted) resolve(results);
+          })
+          .on('error', (err) => {
+            if (!streamAborted) reject(err);
+          });
       });
     } else if (ext === '.xlsx' || ext === '.xls') {
-      const workbook = xlsx.readFile(filePath);
+      // Enforce workbook complexity and resource boundaries for XLSX
+      const workbook = xlsx.readFile(filePath, { sheetRows: MAX_DATASET_ROWS + 5 });
+      if (!workbook.SheetNames || workbook.SheetNames.length === 0) {
+        throw new Error('Excel workbook contains no sheets.');
+      }
+      if (workbook.SheetNames.length > 10) {
+        throw new Error('Excel workbook exceeds complexity limit of 10 worksheets.');
+      }
       const sheetName = workbook.SheetNames[0];
       const sheet = workbook.Sheets[sheetName];
+      if (!sheet) {
+        throw new Error('First worksheet in Excel file is empty.');
+      }
+      if (sheet['!ref']) {
+        const range = xlsx.utils.decode_range(sheet['!ref']);
+        const sheetRows = range.e.r - range.s.r;
+        if (sheetRows > MAX_DATASET_ROWS) {
+          throw new Error(`Dataset exceeds maximum allowed limit of ${MAX_DATASET_ROWS.toLocaleString()} rows (received ${sheetRows.toLocaleString()}). Please upload a smaller file.`);
+        }
+      }
       rows = xlsx.utils.sheet_to_json(sheet, { defval: '' });
+      if (rows.length > MAX_DATASET_ROWS) {
+        throw new Error(`Dataset exceeds maximum allowed limit of ${MAX_DATASET_ROWS.toLocaleString()} rows (received ${rows.length.toLocaleString()}). Please upload a smaller file.`);
+      }
     } else {
-      fs.unlinkSync(filePath);
       return res.status(400).json({ error: 'Unsupported file format. Please upload .csv or .xlsx' });
-    }
-
-    // Clean up uploaded temp file
-    if (fs.existsSync(filePath)) {
-      fs.unlinkSync(filePath);
     }
 
     if (rows.length === 0) {
@@ -380,17 +441,50 @@ exports.uploadSalesFile = async (req, res) => {
     }
 
     if (validDocs.length > 0) {
-      await Sale.insertMany(validDocs, { ordered: false });
+      let session = null;
+      let transactionStarted = false;
+      try {
+        session = await mongoose.startSession();
+        session.startTransaction();
+        transactionStarted = true;
+      } catch (sessionErr) {
+        // Fallback for standalone dev instances that don't support replica set transactions
+        session = null;
+        transactionStarted = false;
+      }
 
-      // Mark previous upload logs as inactive
-      await UploadLog.updateMany({ sellerId }, { $set: { isActive: false } });
+      try {
+        const sessionOpts = session ? { session } : {};
 
-      // Update active dataset on user record
-      await User.findByIdAndUpdate(sellerId, { activeDatasetId: datasetId });
+        // 1. Insert sales documents
+        await Sale.insertMany(validDocs, { ordered: false, ...sessionOpts });
 
-      // Re-synchronize derived collections for this active dataset
-      await clearSellerCollections(sellerId);
-      await syncDerivedCollections(sellerId, validDocs);
+        // 2. Mark previous upload logs as inactive
+        await UploadLog.updateMany({ sellerId }, { $set: { isActive: false } }, sessionOpts);
+
+        // 3. Update active dataset on user record
+        await User.findByIdAndUpdate(sellerId, { activeDatasetId: datasetId }, sessionOpts);
+
+        // 4. Re-synchronize derived collections for this active dataset within transaction session
+        await clearSellerCollections(sellerId, session);
+        await syncDerivedCollections(sellerId, validDocs, session);
+
+        if (transactionStarted && session) {
+          await session.commitTransaction();
+        }
+      } catch (ingestErr) {
+        if (transactionStarted && session) {
+          await session.abortTransaction();
+        } else {
+          // Compensating rollback for standalone mode
+          await Sale.deleteMany({ sellerId, datasetId });
+        }
+        throw ingestErr;
+      } finally {
+        if (session) {
+          session.endSession();
+        }
+      }
     }
 
     const log = new UploadLog({
@@ -425,8 +519,19 @@ exports.uploadSalesFile = async (req, res) => {
       preview: validDocs.slice(0, 5)
     });
   } catch (err) {
-    if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
-    res.status(500).json({ error: `File processing error: ${err.message}` });
+    const isClientError =
+      err.message.includes('exceeds maximum allowed limit') ||
+      err.message.includes('Invalid') ||
+      err.message.includes('Security Rejection') ||
+      err.message.includes('Unsupported file format') ||
+      err.message.includes('empty');
+    const statusCode = isClientError ? 400 : 500;
+    res.status(statusCode).json({ error: isClientError ? err.message : `File processing error: ${err.message}` });
+  } finally {
+    activeUploads = Math.max(0, activeUploads - 1);
+    if (filePath && fs.existsSync(filePath)) {
+      try { fs.unlinkSync(filePath); } catch (_) {}
+    }
   }
 };
 
@@ -461,10 +566,6 @@ exports.loadSampleData = async (req, res) => {
         .on('end', () => resolve(results))
         .on('error', (e) => reject(e));
     });
-
-    // Clear previous sample if requested or append
-    await Sale.deleteMany({ sellerId });
-    await clearSellerCollections(sellerId);
 
     const datasetId = 'ds_demo_' + Date.now();
 
@@ -513,35 +614,72 @@ exports.loadSampleData = async (req, res) => {
       };
     });
 
-    await Sale.insertMany(docs);
-    await syncDerivedCollections(sellerId, docs);
+    let session = null;
+    let transactionStarted = false;
+    try {
+      session = await mongoose.startSession();
+      session.startTransaction();
+      transactionStarted = true;
+    } catch (sessionErr) {
+      session = null;
+      transactionStarted = false;
+    }
 
-    await UploadLog.updateMany({ sellerId }, { $set: { isActive: false } });
+    try {
+      const sessionOpts = session ? { session } : {};
 
-    const log = new UploadLog({
-      sellerId,
-      datasetId,
-      datasetName: 'Demo Dataset',
-      isActive: true,
-      filename: 'sample_sales_data.csv (Demo Dataset)',
-      fileSize: 180000,
-      totalRows: docs.length,
-      validRows: docs.length,
-      invalidRows: 0,
-      duplicateRows: 0,
-      status: 'completed',
-      errors: []
-    });
-    await log.save();
+      // 1. Clear previous sample records and derived collections within session
+      await Sale.deleteMany({ sellerId }, sessionOpts);
+      await clearSellerCollections(sellerId, session);
 
-    await User.findByIdAndUpdate(sellerId, { activeDatasetId: datasetId });
+      // 2. Insert sample sales documents
+      await Sale.insertMany(docs, { ordered: false, ...sessionOpts });
 
-    res.json({
-      message: `Sample e-commerce dataset loaded successfully! ${docs.length} verified records populated.`,
-      datasetId,
-      activeDataset: true,
-      count: docs.length
-    });
+      // 3. Synchronize derived collections within the same session
+      await syncDerivedCollections(sellerId, docs, session);
+
+      // 4. Update previous upload logs
+      await UploadLog.updateMany({ sellerId }, { $set: { isActive: false } }, sessionOpts);
+
+      const log = new UploadLog({
+        sellerId,
+        datasetId,
+        datasetName: 'Demo Dataset',
+        isActive: true,
+        filename: path.basename(sampleCsvPath) + ' (Demo Dataset)',
+        fileSize: 180000,
+        totalRows: docs.length,
+        validRows: docs.length,
+        invalidRows: 0,
+        duplicateRows: 0,
+        status: 'completed',
+        errors: []
+      });
+      await log.save(sessionOpts);
+
+      // 5. Update active dataset on user record
+      await User.findByIdAndUpdate(sellerId, { activeDatasetId: datasetId }, sessionOpts);
+
+      if (transactionStarted && session) {
+        await session.commitTransaction();
+      }
+
+      res.json({
+        message: `Sample e-commerce dataset loaded successfully! ${docs.length} verified records populated.`,
+        datasetId,
+        activeDataset: true,
+        count: docs.length
+      });
+    } catch (txErr) {
+      if (transactionStarted && session) {
+        await session.abortTransaction();
+      }
+      throw txErr;
+    } finally {
+      if (session) {
+        session.endSession();
+      }
+    }
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -558,10 +696,11 @@ exports.listDatasets = async (req, res) => {
 
 exports.setActiveDatasetEndpoint = async (req, res) => {
   try {
-    const { datasetId } = req.body;
-    if (!datasetId) {
-      return res.status(400).json({ error: 'datasetId is required.' });
+    const rawDatasetId = req.body.datasetId;
+    if (typeof rawDatasetId !== 'string' || !rawDatasetId.trim() || rawDatasetId.startsWith('$')) {
+      return res.status(400).json({ error: 'Valid datasetId string is required.' });
     }
+    const datasetId = rawDatasetId.trim();
     const result = await setActiveDataset(req.sellerId, datasetId);
     res.json({
       message: `Active dataset successfully switched to ${datasetId}.`,

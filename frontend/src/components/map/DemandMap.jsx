@@ -36,7 +36,7 @@ export default function DemandMap({ points = [], selectedState = 'All', onSelect
   const maxUnits = Math.max(1, ...points.map((p) => p.units || 1));
 
   return (
-    <div className="relative w-full h-[520px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm bg-slate-900">
+    <div className="relative w-full h-[520px] rounded-xl overflow-hidden border border-slate-200/90 dark:border-slate-800/90 shadow-card bg-slate-900">
       <MapContainer
         center={mapCenter}
         zoom={zoomLevel}
@@ -52,18 +52,18 @@ export default function DemandMap({ points = [], selectedState = 'All', onSelect
         />
 
         {points.map((pt, idx) => {
-          // Calculate proportional radius between 6px and 24px
+          // Proportional radius between 6px and 22px
           const ratio = (pt.units || 1) / maxUnits;
-          const radius = Math.max(7, Math.min(26, 7 + ratio * 19));
+          const radius = Math.max(7, Math.min(24, 7 + ratio * 17));
 
-          // Color scale: Red/Orange for very high intensity, Blue for moderate
-          let color = '#0284c7'; // default brand blue
-          let fillColor = '#38bdf8';
+          // Semantic color palette
+          let color = '#2563eb';
+          let fillColor = '#60a5fa';
           if (ratio > 0.6) {
-            color = '#e11d48'; // crimson
+            color = '#e11d48';
             fillColor = '#fb7185';
           } else if (ratio > 0.3) {
-            color = '#f59e0b'; // amber
+            color = '#d97706';
             fillColor = '#fbbf24';
           }
 
@@ -75,7 +75,7 @@ export default function DemandMap({ points = [], selectedState = 'All', onSelect
               pathOptions={{
                 color: color,
                 fillColor: fillColor,
-                fillOpacity: 0.75,
+                fillOpacity: 0.8,
                 weight: 2
               }}
               eventHandlers={{
@@ -83,31 +83,31 @@ export default function DemandMap({ points = [], selectedState = 'All', onSelect
               }}
             >
               <Popup>
-                <div className="p-2 min-w-[210px] space-y-1.5 text-slate-800 dark:text-slate-100">
-                  <div className="flex items-center gap-1.5 border-b border-slate-200 dark:border-slate-700 pb-1.5">
-                    <MapPin className="w-4 h-4 text-brand-500" />
+                <div className="p-3 min-w-[210px] space-y-2 text-slate-800 dark:text-slate-100 font-sans">
+                  <div className="flex items-center gap-1.5 border-b border-slate-100 dark:border-slate-800 pb-2">
+                    <MapPin className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400 shrink-0" />
                     <div>
-                      <p className="font-bold text-xs">{pt.city} ({pt.pincode})</p>
-                      <p className="text-[10px] text-slate-400">{pt.state}</p>
+                      <p className="font-semibold text-xs leading-none">{pt.city} ({pt.pincode})</p>
+                      <p className="text-[10px] text-slate-400 mt-0.5">{pt.state}</p>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-2 gap-2 text-[11px] pt-1">
+                  <div className="grid grid-cols-2 gap-2 text-[11px]">
                     <div>
-                      <span className="text-slate-400 block text-[9px] uppercase">Demand</span>
-                      <span className="font-bold font-mono">{pt.units} units</span>
+                      <span className="text-slate-400 block text-[9px] uppercase font-medium">Demand</span>
+                      <span className="font-semibold tabular-nums">{pt.units} units</span>
                     </div>
                     <div>
-                      <span className="text-slate-400 block text-[9px] uppercase">Revenue</span>
-                      <span className="font-bold font-mono text-emerald-600 dark:text-emerald-400">
+                      <span className="text-slate-400 block text-[9px] uppercase font-medium">Revenue</span>
+                      <span className="font-semibold tabular-nums text-emerald-600 dark:text-emerald-400">
                         ₹{Math.round(pt.revenue).toLocaleString('en-IN')}
                       </span>
                     </div>
                   </div>
 
-                  <div className="pt-1.5 border-t border-slate-200 dark:border-slate-700 text-[10px]">
-                    <span className="text-slate-400 block">Top Area Product:</span>
-                    <p className="font-semibold text-brand-600 dark:text-brand-400 truncate">{pt.topProduct}</p>
+                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800 text-[10px]">
+                    <span className="text-slate-400 block text-[9px] uppercase font-medium">Top Product:</span>
+                    <p className="font-medium text-brand-600 dark:text-brand-400 truncate mt-0.5">{pt.topProduct}</p>
                   </div>
                 </div>
               </Popup>
@@ -117,22 +117,21 @@ export default function DemandMap({ points = [], selectedState = 'All', onSelect
       </MapContainer>
 
       {/* Demand Intensity Legend */}
-      <div className="absolute bottom-4 right-4 z-[400] bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-3 rounded-xl border border-slate-200 dark:border-slate-800 shadow-lg text-[10px] space-y-1.5 pointer-events-auto">
-        <p className="font-bold text-slate-700 dark:text-slate-200 text-xs">Demand Intensity</p>
+      <div className="absolute bottom-4 right-4 z-[400] bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-3 rounded-xl border border-slate-200/90 dark:border-slate-800/90 shadow-card text-[10px] space-y-1.5 pointer-events-auto">
+        <p className="font-semibold text-slate-800 dark:text-slate-200 text-xs">Demand Density</p>
         <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-rose-500 inline-block" />
+          <span className="w-2.5 h-2.5 rounded-full bg-rose-500 inline-block" />
           <span className="text-slate-500 dark:text-slate-400">Surging Volume (&gt;60%)</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-amber-500 inline-block" />
-          <span className="text-slate-500 dark:text-slate-400">High Volume (30-60%)</span>
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block" />
+          <span className="text-slate-500 dark:text-slate-400">Moderate Volume (30-60%)</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="w-3 h-3 rounded-full bg-sky-500 inline-block" />
-          <span className="text-slate-500 dark:text-slate-400">Steady Baseline (&lt;30%)</span>
+          <span className="w-2.5 h-2.5 rounded-full bg-brand-500 inline-block" />
+          <span className="text-slate-500 dark:text-slate-400">Baseline Demand (&lt;30%)</span>
         </div>
       </div>
     </div>
   );
 }
-

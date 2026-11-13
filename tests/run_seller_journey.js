@@ -1,3 +1,4 @@
+require('./setupTestEnv');
 const { startServer } = require('../backend/server');
 const { spawn } = require('child_process');
 

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { getModel } = require('./modelFactory');
 
 const analyticsSchema = new mongoose.Schema({
   sellerId: {
@@ -61,6 +60,6 @@ const analyticsSchema = new mongoose.Schema({
 analyticsSchema.index({ sellerId: 1, snapshotDate: -1 });
 analyticsSchema.index({ sellerId: 1, period: 1 });
 
-const MongooseAnalytics = mongoose.model('Analytics', analyticsSchema);
-module.exports = getModel('Analytics', MongooseAnalytics);
+const Analytics = mongoose.models.Analytics || mongoose.model('Analytics', analyticsSchema);
+module.exports = Analytics;
 

@@ -1,6 +1,12 @@
 const jwt = require('jsonwebtoken');
+const { isProtectedEnv, assertProtectedEnvironment } = require('../config/environment');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'geocommerce_super_secret_jwt_key_2026';
+
+// Fail fast on application boot if JWT_SECRET is missing or insecure in protected environments (production & staging)
+if (isProtectedEnv()) {
+  assertProtectedEnvironment();
+}
 
 function authMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;

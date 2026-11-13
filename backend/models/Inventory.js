@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { getModel } = require('./modelFactory');
 
 const inventorySchema = new mongoose.Schema({
   sellerId: {
@@ -64,6 +63,6 @@ const inventorySchema = new mongoose.Schema({
 inventorySchema.index({ sellerId: 1, productId: 1 }, { unique: true });
 inventorySchema.index({ sellerId: 1, status: 1 });
 
-const MongooseInventory = mongoose.model('Inventory', inventorySchema);
-module.exports = getModel('Inventory', MongooseInventory);
+const Inventory = mongoose.models.Inventory || mongoose.model('Inventory', inventorySchema);
+module.exports = Inventory;
 

@@ -19,6 +19,7 @@ export default function WarehouseAdvisor() {
   const [numHubs, setNumHubs] = useState(2);
   const [currentHubs, setCurrentHubs] = useState(['Gurugram (NCR Hub)']);
   const [loading, setLoading] = useState(true);
+  const [reoptimizing, setReoptimizing] = useState(false);
   const [error, setError] = useState(null);
 
   const availableHubs = [
@@ -29,9 +30,10 @@ export default function WarehouseAdvisor() {
     'Hyderabad Hub'
   ];
 
-  const fetchWarehouseAdvisor = async () => {
+  const fetchWarehouseAdvisor = async (isManual = false) => {
     try {
-      setLoading(true);
+      if (isManual) setReoptimizing(true);
+      else setLoading(true);
       setError(null);
       const res = await api.post('/ml/warehouse-optimizer', {
         currentWarehouses: currentHubs,
@@ -42,6 +44,7 @@ export default function WarehouseAdvisor() {
       setError(err.response?.data?.error || err.message);
     } finally {
       setLoading(false);
+      setReoptimizing(false);
     }
   };
 
@@ -62,40 +65,46 @@ export default function WarehouseAdvisor() {
   return (
     <div className="space-y-6">
       {/* Title */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-1">
         <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <Building2 className="w-6 h-6 text-brand-500" />
-            <span>Warehouse Location Advisor &amp; Logistics Optimizer</span>
-          </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            K-Means facility location &amp; demand-weighted centroid optimization minimizing ton-km delivery distances across India.
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+              <Building2 className="w-5 h-5 text-brand-600 dark:text-brand-400" />
+              <span>Warehouse Location Advisor &amp; Logistics Optimizer</span>
+            </h1>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 border border-brand-200/60 dark:border-brand-800/60 font-semibold">
+              K-Means Centroid Clustered
+            </span>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Facility location modeling minimizing ton-km freight transit distance and SLA delivery times across India.
           </p>
         </div>
 
         <button
-          onClick={fetchWarehouseAdvisor}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300 self-start sm:self-auto transition"
+          onClick={() => fetchWarehouseAdvisor(true)}
+          disabled={reoptimizing}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-medium text-slate-700 dark:text-slate-200 self-start sm:self-auto transition shadow-subtle disabled:opacity-50"
         >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Re-optimize Hubs</span>
+          <RefreshCw className={`w-3.5 h-3.5 ${reoptimizing ? 'animate-spin text-brand-600' : 'text-slate-400'}`} />
+          <span>{reoptimizing ? 'Optimizing...' : 'Re-optimize Hubs'}</span>
         </button>
       </div>
 
       {/* Configuration Bar */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4 text-xs">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 shadow-card space-y-4 text-xs">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
-            <h4 className="font-bold text-slate-900 dark:text-white">Active Warehouse Setup</h4>
-            <p className="text-slate-400 text-[11px]">Select your current warehouse facilities to calculate the baseline comparison:</p>
+            <h3 className="font-semibold text-slate-900 dark:text-white text-xs">Current Active Warehouses</h3>
+            <p className="text-slate-400 text-[11px] mt-0.5">Select existing fulfillment facilities to compare against K-Means centroids:</p>
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-slate-400">Proposed Hubs Count (K):</span>
+            <span className="text-slate-400 text-[11px] font-medium">Proposed Hubs (K):</span>
             <select
               value={numHubs}
               onChange={(e) => setNumHubs(Number(e.target.value))}
-              className="bg-slate-100 dark:bg-slate-800 rounded-xl px-3 py-1.5 font-bold text-slate-800 dark:text-slate-200 focus:outline-none"
+              className="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg px-2.5 py-1.5 font-semibold text-slate-800 dark:text-slate-200 text-xs focus:outline-none cursor-pointer"
             >
               <option value={1}>1 Central Super-Hub</option>
               <option value={2}>2 Regional Hubs (Recommended)</option>
@@ -112,10 +121,10 @@ export default function WarehouseAdvisor() {
               <button
                 key={hub}
                 onClick={() => toggleCurrentHub(hub)}
-                className={`px-3 py-1.5 rounded-xl font-semibold transition flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all flex items-center gap-1.5 shadow-subtle ${
                   isSelected
-                    ? 'bg-brand-600 text-white shadow-sm'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-brand-600 text-white font-semibold'
+                    : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 <Building2 className="w-3.5 h-3.5" />
@@ -149,67 +158,65 @@ export default function WarehouseAdvisor() {
               color="emerald"
             />
             <StatCard
-              title="Estimated Freight Savings"
+              title="Est. Shipping Savings"
               value={`₹${(data.optimized_recommendation?.estimated_shipping_savings_inr || 0).toLocaleString('en-IN')}`}
-              subtext="Courier ton-km cost reduction"
+              subtext="Ton-km courier cost reduction"
               icon={TrendingUp}
               color="emerald"
             />
             <StatCard
-              title="Transit Velocity Gain"
+              title="Delivery Speed Improvement"
               value={data.optimized_recommendation?.speed_to_customer_improvement || 'Faster'}
-              subtext="Expected SLA improvement"
+              subtext="Projected customer SLA reduction"
               icon={Building2}
               color="brand"
             />
           </div>
 
           {/* Recommended Warehouses Cards */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white">
-                  K-Means Recommended Fulfillment Centers
-                </h3>
-                <p className="text-[11px] text-slate-400">
-                  Optimal warehouse coordinates calculated from real demand clustering across Indian PIN codes.
-                </p>
-              </div>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 shadow-card space-y-4">
+            <div>
+              <h2 className="text-sm font-semibold text-slate-900 dark:text-white">
+                K-Means Optimal Fulfillment Hubs
+              </h2>
+              <p className="text-[11px] text-slate-400 dark:text-slate-500">
+                Recommended geographic coordinates calculated from order volume clustering across Indian PIN codes.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {data.optimized_recommendation?.recommended_hubs?.map((hub, idx) => (
                 <div
                   key={idx}
-                  className="p-5 rounded-2xl border border-brand-200 dark:border-brand-900/60 bg-brand-50/40 dark:bg-brand-950/20 space-y-3"
+                  className="p-5 rounded-xl border border-brand-200/80 dark:border-brand-900/60 bg-brand-50/20 dark:bg-brand-950/20 space-y-3 shadow-subtle"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs font-bold text-brand-600 dark:text-brand-400">
+                    <span className="font-mono text-xs font-semibold text-brand-600 dark:text-brand-400">
                       Hub Cluster #{hub.cluster_index}
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-brand-600 text-white font-mono font-bold text-xs">
-                      {hub.demand_share_pct}% Demand Share
+                    <span className="px-2 py-0.5 rounded-md bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300 font-mono font-semibold text-[10px] border border-brand-200 dark:border-brand-800">
+                      {hub.demand_share_pct}% Volume Share
                     </span>
                   </div>
 
-                  <h4 className="text-base font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-brand-500" />
+                  <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+                    <MapPin className="w-4 h-4 text-brand-600 dark:text-brand-400 shrink-0" />
                     <span>{hub.recommended_location}</span>
-                  </h4>
+                  </h3>
 
-                  <div className="grid grid-cols-2 gap-3 text-xs font-mono bg-white dark:bg-slate-900 p-3 rounded-xl border border-slate-200 dark:border-slate-800">
+                  <div className="grid grid-cols-2 gap-3 text-xs font-mono bg-white dark:bg-slate-900 p-2.5 rounded-lg border border-slate-200/80 dark:border-slate-800">
                     <div>
-                      <span className="text-[10px] text-slate-400 block uppercase">Cluster Volume</span>
-                      <span className="font-bold text-slate-900 dark:text-white">{hub.served_units} units</span>
+                      <span className="text-[9px] text-slate-400 uppercase block font-medium">Cluster Units</span>
+                      <span className="font-semibold text-slate-900 dark:text-white">{hub.served_units}</span>
                     </div>
                     <div>
-                      <span className="text-[10px] text-slate-400 block uppercase">Centroid Coords</span>
-                      <span className="font-bold text-slate-700 dark:text-slate-300">{hub.center_lat}, {hub.center_lng}</span>
+                      <span className="text-[9px] text-slate-400 uppercase block font-medium">Centroid Coords</span>
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">{hub.center_lat}, {hub.center_lng}</span>
                     </div>
                   </div>
 
-                  <p className="text-xs text-slate-600 dark:text-slate-400 font-medium">
-                    Regional Focus: <strong>{hub.regional_focus}</strong> — Captures high-density consumer delivery radius with minimal courier transit hops.
+                  <p className="text-xs text-slate-600 dark:text-slate-400">
+                    Regional Focus: <strong className="text-slate-900 dark:text-white">{hub.regional_focus}</strong> — Captures high-density consumer delivery radius with minimal courier transit hops.
                   </p>
                 </div>
               ))}
@@ -217,12 +224,11 @@ export default function WarehouseAdvisor() {
           </div>
 
           {/* Logistics Disclaimer */}
-          <div className="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 text-xs text-slate-500">
-            <strong>Logistics Calculation Notice:</strong> {data.disclaimer}
+          <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-850/60 border border-slate-200/80 dark:border-slate-800 text-xs text-slate-500 shadow-subtle">
+            <strong className="text-slate-700 dark:text-slate-300 font-semibold">Logistics Modeling Note:</strong> {data.disclaimer}
           </div>
         </>
       )}
     </div>
   );
 }
-

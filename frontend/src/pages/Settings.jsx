@@ -130,47 +130,47 @@ export default function Settings() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Title */}
-      <div>
-        <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-          <SettingsIcon className="w-6 h-6 text-brand-500" />
-          <span>Settings &amp; Sales Data Ingestion</span>
+      <div className="pb-1">
+        <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+          <SettingsIcon className="w-5 h-5 text-brand-600 dark:text-brand-400" />
+          <span>Settings &amp; Data Pipeline Management</span>
         </h1>
-        <p className="text-xs text-slate-500 dark:text-slate-400">
-          Upload marketplace sales reports, manage store profile, and inspect ingestion error logs.
+        <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+          Ingest multi-channel sales reports, maintain store credentials, and inspect automated data cleansing logs.
         </p>
       </div>
 
       {/* Grid: Upload Box + Merchant Profile */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Upload Form Box */}
-        <div className="lg:col-span-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
+        <div className="lg:col-span-2 bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 sm:p-6 shadow-card space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-              <UploadCloud className="w-4 h-4 text-brand-500" />
-              <span>Upload CSV or Excel Sales File</span>
-            </h3>
-            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500">
-              .csv, .xlsx, .xls
+            <h2 className="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+              <UploadCloud className="w-4 h-4 text-brand-600 dark:text-brand-400" />
+              <span>Import Marketplace Sales Orders</span>
+            </h2>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-medium">
+              CSV, XLSX, XLS
             </span>
           </div>
 
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Upload files exported from Amazon Seller Central, Flipkart Seller Hub, Meesho, or Shopify. Our parser automatically normalizes and maps column headers.
+          <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            Upload transaction exports from Amazon Seller Central, Flipkart Seller Hub, Meesho, or Shopify. The ingestion parser automatically validates headers and dedupes entries.
           </p>
 
           <form onSubmit={handleUpload} className="space-y-4">
-            <div className="border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-6 text-center hover:border-brand-500 transition cursor-pointer relative bg-slate-50 dark:bg-slate-800/30">
+            <div className="border-2 border-dashed border-slate-300 dark:border-slate-700/80 rounded-xl p-6 text-center hover:border-brand-500 dark:hover:border-brand-500 transition-colors cursor-pointer relative bg-slate-50/50 dark:bg-slate-950/40">
               <input
                 type="file"
                 accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
                 onChange={handleFileChange}
                 className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
               />
-              <FileSpreadsheet className="w-10 h-10 text-brand-500 mx-auto mb-2" />
-              <p className="text-xs font-bold text-slate-800 dark:text-slate-200">
-                {file ? file.name : 'Choose a CSV / Excel file or drag & drop here'}
+              <FileSpreadsheet className="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto mb-2" />
+              <p className="text-xs font-semibold text-slate-800 dark:text-slate-200">
+                {file ? file.name : 'Choose a CSV or Excel file or drag & drop here'}
               </p>
               <p className="text-[10px] text-slate-400 mt-1">
                 {file ? `${(file.size / 1024).toFixed(1)} KB` : 'Maximum file size: 50MB'}
@@ -181,44 +181,44 @@ export default function Settings() {
               <button
                 type="submit"
                 disabled={!file || uploading}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs disabled:opacity-50 transition shadow-sm"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs disabled:opacity-50 transition shadow-subtle"
               >
                 <UploadCloud className="w-4 h-4" />
-                <span>{uploading ? 'Processing & Validating...' : 'Process & Import File'}</span>
+                <span>{uploading ? 'Processing File...' : 'Process & Ingest File'}</span>
               </button>
 
               <button
                 type="button"
                 onClick={handleLoadSample}
                 disabled={loadingSample}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-500/10 hover:bg-brand-500/20 text-brand-700 dark:text-brand-300 border border-brand-500/30 text-xs font-semibold transition"
+                className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 text-xs font-medium transition shadow-subtle"
               >
-                <Database className="w-4 h-4 text-brand-500" />
-                <span>{loadingSample ? 'Seeding...' : 'Load Verified Demo Dataset (1,500+ Orders)'}</span>
+                <Database className="w-4 h-4 text-brand-600 dark:text-brand-400" />
+                <span>{loadingSample ? 'Seeding...' : 'Load Demo Dataset (1,500+ Orders)'}</span>
               </button>
             </div>
           </form>
 
           {/* Validation Report Alert */}
           {uploadResult && (
-            <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 text-xs space-y-2 animate-fadeIn">
-              <div className="flex items-center gap-2 font-bold">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+            <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs space-y-2 animate-fadeIn">
+              <div className="flex items-center gap-2 font-semibold">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>{uploadResult.message}</span>
               </div>
 
               {uploadResult.summary && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-emerald-500/20 font-mono text-[11px]">
-                  <div>Total Rows: <strong>{uploadResult.summary.totalRows}</strong></div>
-                  <div>Valid Imported: <strong className="text-emerald-600 dark:text-emerald-400">{uploadResult.summary.validImported}</strong></div>
-                  <div>Duplicates Skipped: <strong>{uploadResult.summary.duplicateRows}</strong></div>
-                  <div>Rejected Invalid: <strong className="text-rose-500">{uploadResult.summary.rejectedRows}</strong></div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-emerald-200/80 dark:border-emerald-800/60 font-mono text-[11px]">
+                  <div>Total Rows: <strong className="text-slate-900 dark:text-white">{uploadResult.summary.totalRows}</strong></div>
+                  <div>Valid Ingested: <strong className="text-emerald-600 dark:text-emerald-400">{uploadResult.summary.validImported}</strong></div>
+                  <div>Duplicates Skipped: <strong className="text-slate-700 dark:text-slate-300">{uploadResult.summary.duplicateRows}</strong></div>
+                  <div>Rejected Invalid: <strong className="text-rose-600 dark:text-rose-400">{uploadResult.summary.rejectedRows}</strong></div>
                 </div>
               )}
 
               {uploadResult.errors && uploadResult.errors.length > 0 && (
-                <div className="pt-2 border-t border-emerald-500/20 text-[11px] text-slate-600 dark:text-slate-300 space-y-1">
-                  <span className="font-bold text-rose-500 block">Sample Rejected Records (Not Silently Discarded):</span>
+                <div className="pt-2 border-t border-emerald-200/80 dark:border-emerald-800/60 text-[11px] text-slate-600 dark:text-slate-300 space-y-1">
+                  <span className="font-semibold text-rose-600 dark:text-rose-400 block">Sample Rejected Records (Zero Silent Discards):</span>
                   {uploadResult.errors.slice(0, 5).map((err, i) => (
                     <p key={i} className="text-slate-500 dark:text-slate-400">
                       • Row {err.row}: {err.reason}
@@ -230,63 +230,63 @@ export default function Settings() {
           )}
 
           {uploadError && (
-            <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-700 dark:text-rose-400 text-xs flex items-center gap-2">
+            <div className="p-3.5 rounded-xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 text-rose-700 dark:text-rose-300 text-xs flex items-center gap-2">
               <AlertTriangle className="w-4 h-4 shrink-0" />
               <span>{uploadError}</span>
             </div>
           )}
 
           {/* Field mapping guide */}
-          <div className="pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-400 space-y-1">
-            <span className="font-bold text-slate-700 dark:text-slate-300 block">Required Header Columns:</span>
+          <div className="pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 dark:text-slate-400 space-y-1">
+            <span className="font-medium text-slate-700 dark:text-slate-300 block">Required Header Columns:</span>
             <p>Order ID, Product ID, Product Name, Product Category, Order Date, Delivery PIN Code, Quantity, Selling Price</p>
-            <span className="font-bold text-slate-700 dark:text-slate-300 block pt-1">Optional Columns:</span>
+            <span className="font-medium text-slate-700 dark:text-slate-300 block pt-1">Optional Enriched Columns:</span>
             <p>Cost Price, Return Status, Cancellation Status, Discount, Inventory Quantity, Shipping Cost, Advertising Spend</p>
           </div>
         </div>
 
         {/* Merchant Profile Box */}
-        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            <Store className="w-4 h-4 text-brand-500" />
-            <span>Store Profile &amp; Settings</span>
-          </h3>
+        <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 sm:p-6 shadow-card space-y-4">
+          <h2 className="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+            <Store className="w-4 h-4 text-brand-600 dark:text-brand-400" />
+            <span>Store Profile &amp; Identity</span>
+          </h2>
 
           <form onSubmit={handleProfileSave} className="space-y-4 text-xs">
-            <div className="space-y-1">
-              <label className="text-slate-500 font-semibold">Merchant Full Name</label>
+            <div className="space-y-1.5">
+              <label className="text-slate-700 dark:text-slate-300 font-medium block">Merchant Full Name</label>
               <input
                 type="text"
                 value={sellerName}
                 onChange={(e) => setSellerName(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none"
+                className="w-full px-3 py-2 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-brand-500 transition"
               />
             </div>
 
-            <div className="space-y-1">
-              <label className="text-slate-500 font-semibold">Store / Brand Name</label>
+            <div className="space-y-1.5">
+              <label className="text-slate-700 dark:text-slate-300 font-medium block">Store / Brand Name</label>
               <input
                 type="text"
                 value={storeName}
                 onChange={(e) => setStoreName(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-100 focus:outline-none"
+                className="w-full px-3 py-2 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-brand-500 transition"
               />
             </div>
 
-            <div className="space-y-1">
-              <label className="text-slate-500 font-semibold">Registered Email</label>
+            <div className="space-y-1.5">
+              <label className="text-slate-700 dark:text-slate-300 font-medium block">Registered Email</label>
               <input
                 type="email"
                 disabled
                 value={user?.email || ''}
-                className="w-full px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 text-slate-400 cursor-not-allowed"
+                className="w-full px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 text-slate-400 cursor-not-allowed text-xs"
               />
             </div>
 
             {profileMsg && (
               <p
-                className={`text-[11px] font-semibold ${
-                  profileMsg.type === 'success' ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-500'
+                className={`text-[11px] font-medium ${
+                  profileMsg.type === 'success' ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'
                 }`}
               >
                 {profileMsg.text}
@@ -296,7 +296,7 @@ export default function Settings() {
             <button
               type="submit"
               disabled={savingProfile}
-              className="w-full py-2.5 px-4 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-bold transition disabled:opacity-50"
+              className="w-full py-2 px-4 rounded-lg bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-white text-white dark:text-slate-900 font-semibold text-xs shadow-subtle transition disabled:opacity-50"
             >
               {savingProfile ? 'Saving...' : 'Update Store Profile'}
             </button>
@@ -305,13 +305,18 @@ export default function Settings() {
       </div>
 
       {/* Upload History Table */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-4">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 sm:p-6 shadow-card space-y-4">
         <div className="flex items-center justify-between">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            <History className="w-4 h-4 text-brand-500" />
-            <span>Upload History &amp; Audit Log</span>
-          </h3>
-          <span className="text-xs font-mono text-slate-400">{history.length} uploads logged</span>
+          <div>
+            <h2 className="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+              <History className="w-4 h-4 text-brand-600 dark:text-brand-400" />
+              <span>Data Ingestion History &amp; Audit Log</span>
+            </h2>
+            <p className="text-[11px] text-slate-400 dark:text-slate-500">
+              Immutable ledger of imported sales datasets with row validation and deduplication status.
+            </p>
+          </div>
+          <span className="text-xs font-mono text-slate-400">{history.length} batches</span>
         </div>
 
         {loadingHistory ? (
@@ -319,9 +324,9 @@ export default function Settings() {
         ) : history.length === 0 ? (
           <p className="text-xs text-slate-400 p-4">No uploads logged yet for your merchant account.</p>
         ) : (
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto rounded-lg border border-slate-200/70 dark:border-slate-800">
             <table className="w-full text-left text-xs">
-              <thead className="bg-slate-50 dark:bg-slate-800/50 text-slate-500 uppercase tracking-wider font-semibold border-b border-slate-200 dark:border-slate-800">
+              <thead className="bg-slate-50 dark:bg-slate-800/60 text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-200/70 dark:border-slate-800 text-[10px]">
                 <tr>
                   <th className="px-4 py-3">File Name</th>
                   <th className="px-4 py-3">Timestamp</th>
@@ -332,10 +337,10 @@ export default function Settings() {
                   <th className="px-4 py-3">Status</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-normal">
                 {history.map((log) => (
-                  <tr key={log._id} className="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition">
-                    <td className="px-4 py-3 font-bold text-slate-900 dark:text-white truncate max-w-[200px]">
+                  <tr key={log._id} className="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition">
+                    <td className="px-4 py-3 font-medium text-slate-900 dark:text-white truncate max-w-[200px]">
                       {log.filename}
                     </td>
                     <td className="px-4 py-3 text-slate-500 font-mono text-[11px]">
@@ -348,19 +353,19 @@ export default function Settings() {
                       })}
                     </td>
                     <td className="px-4 py-3 font-mono text-slate-600 dark:text-slate-400">{log.totalRows}</td>
-                    <td className="px-4 py-3 font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                    <td className="px-4 py-3 font-mono font-semibold text-emerald-600 dark:text-emerald-400">
                       {log.validRows}
                     </td>
                     <td className="px-4 py-3 font-mono text-slate-500">{log.duplicateRows}</td>
                     <td className="px-4 py-3 font-mono text-rose-500">{log.invalidRows}</td>
                     <td className="px-4 py-3">
                       <span
-                        className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase font-mono ${
+                        className={`px-2 py-0.5 rounded-md text-[10px] font-semibold uppercase font-mono ${
                           log.status === 'completed'
-                            ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
+                            ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800'
                             : log.status === 'partial'
-                            ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400'
-                            : 'bg-rose-500/10 text-rose-600 dark:text-rose-400'
+                            ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800'
+                            : 'bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-800'
                         }`}
                       >
                         {log.status}
@@ -376,4 +381,3 @@ export default function Settings() {
     </div>
   );
 }
-

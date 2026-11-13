@@ -8,7 +8,8 @@ import {
   AlertCircle,
   RefreshCw,
   Boxes,
-  Layers
+  Layers,
+  ChevronRight
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -17,7 +18,8 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  Cell
+  Cell,
+  CartesianGrid
 } from 'recharts';
 import api from '../services/api';
 import LoadingSkeleton from '../components/common/LoadingSkeleton';
@@ -28,11 +30,13 @@ export default function ProductAnalytics() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState(null);
 
-  const fetchProducts = async () => {
+  const fetchProducts = async (isManual = false) => {
     try {
-      setLoading(true);
+      if (isManual) setRefreshing(true);
+      else setLoading(true);
       setError(null);
       const params = {};
       if (selectedCategory !== 'All') params.category = selectedCategory;
@@ -43,6 +47,7 @@ export default function ProductAnalytics() {
       setError(err.response?.data?.error || err.message);
     } finally {
       setLoading(false);
+      setRefreshing(false);
     }
   };
 
@@ -61,50 +66,51 @@ export default function ProductAnalytics() {
   return (
     <div className="space-y-6">
       {/* Title */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-1">
         <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <Package className="w-6 h-6 text-brand-500" />
-            <span>Product Demand & Profitability</span>
+          <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+            <Package className="w-5 h-5 text-brand-600 dark:text-brand-400" />
+            <span>Product Demand &amp; Profitability</span>
           </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            SKU velocity, revenue contribution, gross margin percentage, and regional return rates.
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            SKU velocity, gross margin contribution, order frequency, and regional return rates.
           </p>
         </div>
 
         <button
-          onClick={fetchProducts}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300 self-start sm:self-auto transition"
+          onClick={() => fetchProducts(true)}
+          disabled={refreshing}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-medium text-slate-700 dark:text-slate-200 self-start sm:self-auto transition shadow-subtle disabled:opacity-50"
         >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Refresh</span>
+          <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin text-brand-600' : 'text-slate-400'}`} />
+          <span>{refreshing ? 'Refreshing...' : 'Refresh'}</span>
         </button>
       </div>
 
       {/* Filter / Search Bar */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-3.5 shadow-card flex flex-wrap items-center justify-between gap-3 text-xs">
         <div className="relative flex-1 min-w-[200px]">
-          <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400" />
+          <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400 pointer-events-none" />
           <input
             type="text"
             placeholder="Search by product name or SKU..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            className="w-full pl-9 pr-3 py-1.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-brand-500 placeholder:text-slate-400 transition"
           />
         </div>
 
         <div className="flex items-center gap-2">
-          <span className="text-slate-400">Category:</span>
+          <span className="text-slate-400 text-[11px] font-medium">Category:</span>
           <div className="flex items-center gap-1 overflow-x-auto">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition ${
+                className={`px-2.5 py-1 rounded-md text-xs font-medium whitespace-nowrap transition-all ${
                   selectedCategory === cat
-                    ? 'bg-brand-600 text-white shadow-sm'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    ? 'bg-brand-600 text-white font-semibold shadow-subtle'
+                    : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 {cat}
@@ -120,29 +126,32 @@ export default function ProductAnalytics() {
         <EmptyState title="No products found" description="Upload sales data or select 'All' categories." />
       ) : (
         <>
-          {/* Top 6 Revenue SKUs Chart */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm">
-            <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-1">
-              Top Products by Revenue & Volume
-            </h3>
-            <p className="text-[11px] text-slate-400 mb-4">Leading revenue generating SKUs across catalog</p>
+          {/* Top 8 Revenue SKUs Chart */}
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 shadow-card">
+            <h2 className="text-sm font-semibold text-slate-900 dark:text-white">
+              Leading Products by Revenue Contribution
+            </h2>
+            <p className="text-[11px] text-slate-400 dark:text-slate-500 mb-4">Top grossing SKUs across the active merchant catalog (INR ₹)</p>
 
             <div className="h-60 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={filtered.slice(0, 8)} margin={{ top: 10, right: 10, left: 0, bottom: 25 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#94a3b8" opacity={0.15} />
                   <XAxis
                     dataKey="productName"
                     stroke="#94a3b8"
                     fontSize={10}
                     tickLine={false}
+                    axisLine={false}
                     interval={0}
-                    angle={-15}
+                    angle={-12}
                     textAnchor="end"
                   />
                   <YAxis
                     stroke="#94a3b8"
                     fontSize={11}
                     tickLine={false}
+                    axisLine={false}
                     tickFormatter={(v) => `₹${(v / 1000).toFixed(0)}k`}
                   />
                   <Tooltip
@@ -150,29 +159,33 @@ export default function ProductAnalytics() {
                     contentStyle={{
                       backgroundColor: '#0f172a',
                       border: '1px solid #1e293b',
-                      borderRadius: '0.75rem',
+                      borderRadius: '0.5rem',
                       color: '#fff',
-                      fontSize: '12px'
+                      fontSize: '11px',
+                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                     }}
                   />
-                  <Bar dataKey="revenue" fill="#0284c7" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="revenue" fill="#2563eb" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
           </div>
 
           {/* Product Performance Table */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 shadow-card space-y-4">
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-bold text-slate-900 dark:text-white">Product Catalog Leaderboard</h3>
+              <div>
+                <h2 className="text-sm font-semibold text-slate-900 dark:text-white">Catalog Performance Leaderboard</h2>
+                <p className="text-[11px] text-slate-400 dark:text-slate-500">Comprehensive unit economics, return rates, and geographical distribution</p>
+              </div>
               <span className="text-xs font-mono text-slate-400">{filtered.length} SKUs</span>
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto rounded-lg border border-slate-200/70 dark:border-slate-800">
               <table className="w-full text-left text-xs">
-                <thead className="bg-slate-50 dark:bg-slate-800/50 text-slate-500 uppercase tracking-wider font-semibold border-b border-slate-200 dark:border-slate-800">
+                <thead className="bg-slate-50 dark:bg-slate-800/60 text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-200/70 dark:border-slate-800 text-[10px]">
                   <tr>
-                    <th className="px-4 py-3">Product Name</th>
+                    <th className="px-4 py-3">Product Name &amp; SKU</th>
                     <th className="px-4 py-3">Category</th>
                     <th className="px-4 py-3">Avg Price</th>
                     <th className="px-4 py-3">Units Sold</th>
@@ -182,30 +195,30 @@ export default function ProductAnalytics() {
                     <th className="px-4 py-3">Geographic Reach</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-normal">
                   {filtered.map((p) => (
-                    <tr key={p.productId} className="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition">
+                    <tr key={p.productId} className="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition">
                       <td className="px-4 py-3">
-                        <p className="font-bold text-slate-900 dark:text-white truncate max-w-[200px]">{p.productName}</p>
+                        <p className="font-medium text-slate-900 dark:text-white truncate max-w-[220px]">{p.productName}</p>
                         <span className="text-[10px] text-slate-400 font-mono">{p.productId}</span>
                       </td>
                       <td className="px-4 py-3">
-                        <span className="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px] font-semibold text-slate-600 dark:text-slate-300">
+                        <span className="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-[10px] font-medium text-slate-600 dark:text-slate-300">
                           {p.category}
                         </span>
                       </td>
-                      <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300">
+                      <td className="px-4 py-3 tabular-nums text-slate-700 dark:text-slate-300">
                         ₹{Number(p.avgSellingPrice).toLocaleString('en-IN')}
                       </td>
-                      <td className="px-4 py-3 font-mono font-semibold text-slate-800 dark:text-slate-200">
+                      <td className="px-4 py-3 tabular-nums font-medium text-slate-800 dark:text-slate-200">
                         {p.unitsSold}
                       </td>
-                      <td className="px-4 py-3 font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                      <td className="px-4 py-3 tabular-nums font-semibold text-emerald-600 dark:text-emerald-400">
                         ₹{Number(p.revenue).toLocaleString('en-IN')}
                       </td>
                       <td className="px-4 py-3">
                         <span
-                          className={`font-mono font-bold text-xs ${
+                          className={`font-semibold tabular-nums text-xs ${
                             p.profitMarginPct >= 40
                               ? 'text-emerald-600 dark:text-emerald-400'
                               : 'text-amber-600 dark:text-amber-400'
@@ -216,16 +229,16 @@ export default function ProductAnalytics() {
                       </td>
                       <td className="px-4 py-3">
                         <span
-                          className={`font-mono text-xs ${
+                          className={`tabular-nums text-xs ${
                             p.returnRatePct > 10
-                              ? 'text-rose-500 font-bold'
+                              ? 'text-rose-600 dark:text-rose-400 font-semibold'
                               : 'text-slate-500 dark:text-slate-400'
                           }`}
                         >
                           {p.returnRatePct}%
                         </span>
                       </td>
-                      <td className="px-4 py-3 font-mono text-slate-500 dark:text-slate-400">
+                      <td className="px-4 py-3 tabular-nums text-slate-500 dark:text-slate-400">
                         {p.geographicSpread} States
                       </td>
                     </tr>
@@ -239,4 +252,3 @@ export default function ProductAnalytics() {
     </div>
   );
 }
-

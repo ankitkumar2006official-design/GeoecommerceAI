@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams, Link, useNavigate } from 'react-router-dom';
-import { Layers, CheckCircle2, AlertCircle, ArrowRight, Mail, RefreshCw } from 'lucide-react';
+import { Layers, CheckCircle2, AlertCircle, ArrowRight, Mail, RefreshCw, ArrowLeft } from 'lucide-react';
 import api from '../services/api';
 import { useAuth } from '../context/AuthContext';
 
@@ -63,107 +63,115 @@ export default function VerifyEmail() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center p-4">
-      <div className="w-full max-w-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 selection:bg-brand-500 selection:text-white">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md">
         {/* Brand Header */}
         <div className="text-center space-y-2">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-brand-600 to-sky-400 flex items-center justify-center text-white mx-auto shadow-lg shadow-brand-500/25">
-            <Layers className="w-6 h-6" />
+          <div className="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center text-white mx-auto shadow-subtle">
+            <Mail className="w-5 h-5" />
           </div>
-          <h2 className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            GeoCommerce <span className="text-brand-500">AI</span>
+          <h2 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+            Email Verification
           </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Merchant Workspace Email Verification
+          <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
+            Securing your merchant workspace identity.
           </p>
         </div>
 
-        {/* State: Verifying */}
-        {status === 'verifying' && (
-          <div className="text-center py-8 space-y-4">
-            <RefreshCw className="w-8 h-8 text-brand-400 animate-spin mx-auto" />
-            <p className="text-sm font-medium text-slate-700 dark:text-slate-300">
-              Verifying your merchant credentials...
-            </p>
-            <p className="text-xs text-slate-500">
-              Please wait while we validate your cryptographic verification token.
-            </p>
-          </div>
-        )}
-
-        {/* State: Success */}
-        {status === 'success' && (
-          <div className="space-y-6">
-            <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-center space-y-2">
-              <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
-              <h3 className="text-sm font-bold text-emerald-400">Workspace Verified</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                {message}
-              </p>
-            </div>
-
-            <button
-              onClick={() => navigate(user ? '/overview' : '/login')}
-              className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-brand-600 to-sky-500 hover:from-brand-500 hover:to-sky-400 text-white font-semibold flex items-center justify-center gap-2 shadow-lg shadow-brand-500/25 transition-all text-xs"
-            >
-              <span>{user ? 'Enter Merchant Dashboard' : 'Sign In to Workspace'}</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        )}
-
-        {/* State: Error */}
-        {status === 'error' && (
-          <div className="space-y-6">
-            <div className="p-4 rounded-2xl bg-rose-500/10 border border-rose-500/30 text-center space-y-2">
-              <AlertCircle className="w-10 h-10 text-rose-400 mx-auto" />
-              <h3 className="text-sm font-bold text-rose-400">Verification Failed</h3>
-              <p className="text-xs text-slate-300 leading-relaxed">
-                {message}
-              </p>
-            </div>
-
-            <form onSubmit={handleResend} className="space-y-3 pt-2 border-t border-slate-800">
-              <label className="text-xs font-medium text-slate-400 block">
-                Request a new verification link:
-              </label>
-              <div className="relative">
-                <Mail className="w-4 h-4 text-slate-400 absolute left-3 top-3" />
-                <input
-                  type="email"
-                  required
-                  placeholder={user?.email || "merchant@store.com"}
-                  value={resendEmail}
-                  onChange={(e) => setResendEmail(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-500 text-xs"
-                />
+        {/* Card Container */}
+        <div className="mt-6 sm:mx-auto sm:w-full sm:max-w-md">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 py-8 px-6 sm:px-8 shadow-card rounded-2xl space-y-5">
+            {status === 'verifying' && (
+              <div className="py-8 text-center space-y-3">
+                <div className="w-6 h-6 border-2 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto" />
+                <p className="text-xs text-slate-500 dark:text-slate-400">Verifying your merchant email token...</p>
               </div>
+            )}
 
-              {resendMessage && (
-                <p className={`text-xs ${resendMessage.type === 'success' ? 'text-emerald-400' : 'text-rose-400'}`}>
-                  {resendMessage.text}
-                </p>
-              )}
+            {status === 'success' && (
+              <div className="space-y-4 text-center">
+                <div className="p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-900 text-emerald-800 dark:text-emerald-300 text-xs space-y-2">
+                  <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400 mx-auto" />
+                  <h3 className="font-semibold text-sm">Account Verified!</h3>
+                  <p className="leading-relaxed">{message}</p>
+                </div>
 
-              <button
-                type="submit"
-                disabled={resending}
-                className="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-xs flex items-center justify-center gap-2 transition"
-              >
-                {resending ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <Mail className="w-3.5 h-3.5 text-brand-400" />}
-                <span>{resending ? 'Sending...' : 'Resend Verification Email'}</span>
-              </button>
-            </form>
+                <div className="pt-2">
+                  <Link
+                    to="/overview"
+                    className="w-full py-2.5 px-4 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs shadow-subtle transition flex items-center justify-center gap-1.5"
+                  >
+                    <span>Proceed to Merchant Workspace</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </div>
+            )}
 
-            <div className="text-center pt-2">
-              <Link to="/login" className="text-xs text-brand-400 hover:text-brand-300 font-medium">
-                Return to Sign In
-              </Link>
-            </div>
+            {status === 'error' && (
+              <div className="space-y-4">
+                <div className="p-4 rounded-xl bg-rose-50 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 text-rose-700 dark:text-rose-300 text-xs space-y-2">
+                  <div className="flex items-center gap-2 font-semibold">
+                    <AlertCircle className="w-4 h-4 text-rose-600 dark:text-rose-400 shrink-0" />
+                    <span>Verification Failed</span>
+                  </div>
+                  <p className="leading-relaxed">{message}</p>
+                </div>
+
+                {/* Resend Form */}
+                <form onSubmit={handleResend} className="space-y-3 pt-2 text-xs">
+                  <p className="text-xs text-slate-500 dark:text-slate-400">
+                    Need a new verification link? Enter your merchant email below:
+                  </p>
+
+                  {resendMessage && (
+                    <div className={`p-2.5 rounded-lg text-xs font-medium ${
+                      resendMessage.type === 'success'
+                        ? 'bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-900'
+                        : 'bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900'
+                    }`}>
+                      {resendMessage.text}
+                    </div>
+                  )}
+
+                  <div className="space-y-1.5">
+                    <label className="text-slate-700 dark:text-slate-300 font-medium block">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="seller@store.in"
+                      value={resendEmail || user?.email || ''}
+                      onChange={(e) => setResendEmail(e.target.value)}
+                      className="w-full px-3 py-2.5 rounded-lg bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 text-xs transition"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={resending}
+                    className="w-full py-2.5 px-4 rounded-lg bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-white text-white dark:text-slate-900 font-semibold text-xs shadow-subtle transition disabled:opacity-50 flex items-center justify-center gap-1.5"
+                  >
+                    {resending ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <Mail className="w-3.5 h-3.5" />}
+                    <span>{resending ? 'Sending Link...' : 'Resend Verification Email'}</span>
+                  </button>
+                </form>
+
+                <div className="pt-3 border-t border-slate-100 dark:border-slate-800/80 text-center">
+                  <Link
+                    to="/login"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition"
+                  >
+                    <ArrowLeft className="w-3.5 h-3.5" />
+                    <span>Back to Sign In</span>
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
 }
-

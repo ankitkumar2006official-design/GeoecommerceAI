@@ -3,6 +3,18 @@ const Sale = require('../models/Sale');
 const User = require('../models/User');
 const { resolveActiveDatasetId } = require('../services/datasetService');
 
+// Helper to escape CSV cells and protect against Formula Injection (CWE-1236)
+function escapeCsvCell(val) {
+  if (val === undefined || val === null) return '""';
+  if (typeof val === 'number') return isNaN(val) ? '0' : String(val);
+  let str = String(val);
+  // Mitigate CSV Formula Injection: prefix formula injection triggers with a single quote
+  if (/^[=+\-@\t\r]/.test(str)) {
+    str = `'` + str;
+  }
+  return `"${str.replace(/"/g, '""')}"`;
+}
+
 exports.exportCSV = async (req, res) => {
   try {
     const sellerId = req.sellerId;
@@ -10,9 +22,8 @@ exports.exportCSV = async (req, res) => {
     const query = { sellerId };
     if (datasetId) query.datasetId = datasetId;
 
-    const records = await Sale.find(query).sort({ orderDate: -1 }).lean();
-
-    if (records.length === 0) {
+    const count = await Sale.countDocuments(query);
+    if (count === 0) {
       return res.status(404).json({ error: 'No sales records found to export.' });
     }
 
@@ -37,37 +48,44 @@ exports.exportCSV = async (req, res) => {
       'Advertising Spend (INR)'
     ];
 
-    let csvContent = headers.join(',') + '\n';
-
-    records.forEach((r) => {
-      const row = [
-        `"${r.orderId}"`,
-        `"${r.productId}"`,
-        `"${(r.productName || '').replace(/"/g, '""')}"`,
-        `"${r.category}"`,
-        `"${r.orderDate ? r.orderDate.toISOString().split('T')[0] : ''}"`,
-        `"${r.pincode}"`,
-        `"${r.city || ''}"`,
-        `"${r.district || ''}"`,
-        `"${r.state || ''}"`,
-        r.quantity,
-        r.sellingPrice,
-        r.costPrice,
-        `"${r.returnStatus}"`,
-        `"${r.cancellationStatus}"`,
-        r.discount,
-        r.inventoryQuantity,
-        r.shippingCost,
-        r.adSpend
-      ];
-      csvContent += row.join(',') + '\n';
-    });
-
     res.setHeader('Content-Type', 'text/csv');
     res.setHeader('Content-Disposition', 'attachment; filename="GeoCommerce_Sales_Export.csv"');
-    res.status(200).send(csvContent);
+    res.write(headers.join(',') + '\n');
+
+    // Stream records via cursor to prevent unbounded heap memory usage
+    const cursor = Sale.find(query).sort({ orderDate: -1 }).cursor();
+
+    for await (const r of cursor) {
+      const row = [
+        escapeCsvCell(r.orderId),
+        escapeCsvCell(r.productId),
+        escapeCsvCell(r.productName),
+        escapeCsvCell(r.category),
+        escapeCsvCell(r.orderDate ? r.orderDate.toISOString().split('T')[0] : ''),
+        escapeCsvCell(r.pincode),
+        escapeCsvCell(r.city),
+        escapeCsvCell(r.district),
+        escapeCsvCell(r.state),
+        escapeCsvCell(r.quantity),
+        escapeCsvCell(r.sellingPrice),
+        escapeCsvCell(r.costPrice),
+        escapeCsvCell(r.returnStatus),
+        escapeCsvCell(r.cancellationStatus),
+        escapeCsvCell(r.discount),
+        escapeCsvCell(r.inventoryQuantity),
+        escapeCsvCell(r.shippingCost),
+        escapeCsvCell(r.adSpend)
+      ];
+      res.write(row.join(',') + '\n');
+    }
+
+    res.end();
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    if (!res.headersSent) {
+      res.status(500).json({ error: err.message });
+    } else {
+      res.end();
+    }
   }
 };
 

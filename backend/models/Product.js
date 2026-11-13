@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { getModel } = require('./modelFactory');
 
 const productSchema = new mongoose.Schema({
   sellerId: {
@@ -59,6 +58,6 @@ const productSchema = new mongoose.Schema({
 productSchema.index({ sellerId: 1, productId: 1 }, { unique: true });
 productSchema.index({ sellerId: 1, category: 1 });
 
-const MongooseProduct = mongoose.model('Product', productSchema);
-module.exports = getModel('Product', MongooseProduct);
+const Product = mongoose.models.Product || mongoose.model('Product', productSchema);
+module.exports = Product;
 

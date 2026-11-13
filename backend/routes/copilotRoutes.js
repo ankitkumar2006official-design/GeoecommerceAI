@@ -6,6 +6,7 @@ const { authMiddleware } = require('../middleware/auth');
 router.use(authMiddleware);
 
 router.post('/ask', copilotController.askCopilot);
+router.post('/chat', copilotController.askCopilot);
 
 module.exports = router;
 

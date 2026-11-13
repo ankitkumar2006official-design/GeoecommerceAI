@@ -3,6 +3,7 @@ const crypto = require('crypto');
 const User = require('../models/User');
 const Sale = require('../models/Sale');
 const { JWT_SECRET } = require('../middleware/auth');
+const { isProtectedEnv } = require('../config/environment');
 const {
   sendWelcomeEmail,
   sendEmailVerificationEmail,
@@ -74,7 +75,7 @@ exports.register = async (req, res) => {
         role: user.role,
         isVerified: user.isVerified
       },
-      previewVerifyUrl: process.env.NODE_ENV !== 'production' ? verifyUrl : undefined
+      previewVerifyUrl: !isProtectedEnv() ? verifyUrl : undefined
     });
   } catch (err) {
     console.error('[Register Error]:', err);
@@ -160,7 +161,7 @@ exports.resendVerification = async (req, res) => {
       sent: true,
       email: user.email,
       mode: mailResult.mode,
-      previewVerifyUrl: process.env.NODE_ENV !== 'production' ? verifyUrl : undefined
+      previewVerifyUrl: !isProtectedEnv() ? verifyUrl : undefined
     });
   } catch (err) {
     console.error('[Resend Verification Error]:', err);
@@ -170,8 +171,8 @@ exports.resendVerification = async (req, res) => {
 
 exports.testEmailEndpoint = async (req, res) => {
   try {
-    if (process.env.NODE_ENV === 'production') {
-      return res.status(403).json({ error: 'Test email endpoint is disabled in production.' });
+    if (isProtectedEnv()) {
+      return res.status(403).json({ error: 'Test email endpoint is disabled in production and staging.' });
     }
 
     const { to, type = 'welcome', title, message } = req.body;
@@ -354,7 +355,7 @@ exports.forgotPassword = async (req, res) => {
       sent: true,
       email: user.email,
       mode: emailResult.mode,
-      previewResetUrl: !emailResult.delivered ? resetUrl : undefined
+      previewResetUrl: (!isProtectedEnv() || !emailResult.delivered) ? resetUrl : undefined
     });
   } catch (err) {
     console.error('[Forgot Password Error]:', err);

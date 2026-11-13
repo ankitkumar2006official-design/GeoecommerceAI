@@ -64,7 +64,5 @@ const uploadLogSchema = new mongoose.Schema({
   }
 }, { suppressReservedKeysWarning: true });
 
-const MongooseUploadLog = mongoose.model('UploadLog', uploadLogSchema);
-const { getModel } = require('./modelFactory');
-
-module.exports = getModel('UploadLog', MongooseUploadLog);
+const UploadLog = mongoose.models.UploadLog || mongoose.model('UploadLog', uploadLogSchema);
+module.exports = UploadLog;

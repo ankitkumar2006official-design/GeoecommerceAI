@@ -9,10 +9,11 @@
  * 6. Development test endpoint (/api/auth/test-email) & production guard
  */
 
+require('./setupTestEnv');
 const assert = require('assert');
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../backend/.env') });
-const mongoose = require('mongoose');
+require('../backend/node_modules/dotenv').config({ path: path.resolve(__dirname, '../backend/.env') });
+const mongoose = require('../backend/node_modules/mongoose');
 const crypto = require('crypto');
 const User = require('../backend/models/User');
 const emailService = require('../backend/services/emailService');

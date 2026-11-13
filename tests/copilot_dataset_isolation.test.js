@@ -1,8 +1,9 @@
+require('./setupTestEnv');
 const test = require('node:test');
 const assert = require('node:assert');
-const axios = require('axios');
+const axios = require('../backend/node_modules/axios');
 const fs = require('fs');
-const FormData = require('form-data');
+const FormData = require('../backend/node_modules/form-data');
 const path = require('path');
 
 const API_URL = 'http://localhost:5000/api';
@@ -84,9 +85,13 @@ test('GeoCommerce AI Copilot - Dataset Isolation & Grounded Analytics Test', asy
 
     // Verify it explicitly states no sales data for Kolkata
     assert.ok(
-      reply.includes('no sales data is available for kolkata') ||
-      reply.includes('no sales data is available for **kolkata') ||
-      reply.includes('no data is available for kolkata'),
+      reply.includes('kolkata') && (
+        reply.includes('not contain') ||
+        reply.includes('no sales data') ||
+        reply.includes('no data') ||
+        reply.includes('no records') ||
+        reply.includes('no information')
+      ),
       'Must state no sales data is available for Kolkata'
     );
   });

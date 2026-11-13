@@ -2,29 +2,50 @@ const Sale = require('../models/Sale');
 const mongoose = require('mongoose');
 const { resolveActiveDatasetId } = require('../services/datasetService');
 
+// Helper to sanitize query parameters and prevent NoSQL operator injection
+function sanitizeFilterString(val) {
+  if (typeof val !== 'string') return null;
+  const trimmed = val.trim();
+  if (trimmed === '' || trimmed === 'All' || trimmed.startsWith('$')) return null;
+  return trimmed;
+}
+
 // Helper to construct date/category/dataset filter query
 async function buildFilterQuery(sellerId, filters = {}) {
   const query = { sellerId: new mongoose.Types.ObjectId(sellerId) };
 
   // Strict dataset isolation: query active dataset unless specific dataset requested
-  const datasetId = filters.datasetId || await resolveActiveDatasetId(sellerId);
+  const rawDatasetId = sanitizeFilterString(filters.datasetId);
+  const datasetId = rawDatasetId || await resolveActiveDatasetId(sellerId);
   if (datasetId) {
     query.datasetId = datasetId;
   }
 
-  if (filters.category && filters.category !== 'All') {
-    query.category = filters.category;
+  const category = sanitizeFilterString(filters.category);
+  if (category) {
+    query.category = category;
   }
-  if (filters.state && filters.state !== 'All') {
-    query.state = filters.state;
+  const state = sanitizeFilterString(filters.state);
+  if (state) {
+    query.state = state;
   }
-  if (filters.city && filters.city !== 'All') {
-    query.city = filters.city;
+  const city = sanitizeFilterString(filters.city);
+  if (city) {
+    query.city = city;
   }
   if (filters.startDate || filters.endDate) {
-    query.orderDate = {};
-    if (filters.startDate) query.orderDate.$gte = new Date(filters.startDate);
-    if (filters.endDate) query.orderDate.$lte = new Date(filters.endDate);
+    const dateQuery = {};
+    if (typeof filters.startDate === 'string') {
+      const d = new Date(filters.startDate);
+      if (!isNaN(d.getTime())) dateQuery.$gte = d;
+    }
+    if (typeof filters.endDate === 'string') {
+      const d = new Date(filters.endDate);
+      if (!isNaN(d.getTime())) dateQuery.$lte = d;
+    }
+    if (Object.keys(dateQuery).length > 0) {
+      query.orderDate = dateQuery;
+    }
   }
 
   return query;
@@ -209,7 +230,9 @@ exports.getOverview = async (req, res) => {
 exports.getRegionalDemand = async (req, res) => {
   try {
     const sellerId = req.sellerId;
-    const { level = 'state' } = req.query; // 'state', 'district', 'city', 'pincode'
+    const allowedLevels = ['state', 'district', 'city', 'pincode', 'region'];
+    const rawLevel = typeof req.query.level === 'string' ? req.query.level.toLowerCase().trim() : 'state';
+    const level = allowedLevels.includes(rawLevel) ? rawLevel : 'state';
     const query = await buildFilterQuery(sellerId, req.query);
 
     const groupField = `$${level}`;

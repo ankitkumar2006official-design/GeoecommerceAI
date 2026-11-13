@@ -3,6 +3,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 const Sale = require('../models/Sale');
 const { resolveActiveDatasetId } = require('../services/datasetService');
+const { isProtectedEnv, getEnvironment } = require('../config/environment');
 
 const ML_SERVICE_URL = process.env.ML_SERVICE_URL || 'http://127.0.0.1:8000';
 
@@ -106,30 +107,47 @@ const ACTION_TO_BRIDGE = {
   marketing: 'marketing'
 };
 
-// Unified dispatcher: Try FastAPI HTTP first, fallback to Python bridge
+// Unified dispatcher: Try FastAPI HTTP first (with retry), fallback to Python bridge only in local development
 async function dispatchMlRequest(endpointAction, payload) {
   const httpEndpoint = ACTION_TO_ENDPOINT[endpointAction] || endpointAction;
   const bridgeAction = ACTION_TO_BRIDGE[endpointAction] || endpointAction.replace('-optimizer', '').replace('-score', '');
 
-  try {
-    const response = await axios.post(`${ML_SERVICE_URL}/api/ml/${httpEndpoint}`, payload, {
-      timeout: 15000
-    });
-    return response.data;
-  } catch (err) {
-    if (
-      err.code === 'ECONNREFUSED' ||
-      err.code === 'ETIMEDOUT' ||
-      err.code === 'ECONNABORTED' ||
-      err.code === 'ENOTFOUND' ||
-      err.response?.status === 404 ||
-      err.message?.includes('timeout')
-    ) {
-      // Fallback to local python bridge
-      return await executePythonBridge(bridgeAction, payload);
+  let lastErr = null;
+  // Try up to 2 times with a 500ms delay between attempts
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const response = await axios.post(`${ML_SERVICE_URL}/api/ml/${httpEndpoint}`, payload, {
+        timeout: 10000
+      });
+      return response.data;
+    } catch (err) {
+      lastErr = err;
+      if (attempt < 2) {
+        await new Promise(r => setTimeout(r, 500));
+      }
     }
-    throw err;
   }
+
+  // In protected environments (production & staging), strictly prohibit spawning a local python process
+  if (isProtectedEnv()) {
+    throw new Error(
+      `ML Microservice is unavailable at ${ML_SERVICE_URL}. HTTP request failed (${lastErr.message}). Local python execution is disabled in ${getEnvironment()}.`
+    );
+  }
+
+  // In local development, fallback to local python bridge
+  if (
+    lastErr.code === 'ECONNREFUSED' ||
+    lastErr.code === 'ETIMEDOUT' ||
+    lastErr.code === 'ECONNABORTED' ||
+    lastErr.code === 'ENOTFOUND' ||
+    lastErr.response?.status === 404 ||
+    lastErr.message?.includes('timeout')
+  ) {
+    return await executePythonBridge(bridgeAction, payload);
+  }
+
+  throw lastErr;
 }
 
 exports.getForecast = async (req, res) => {

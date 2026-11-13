@@ -17,7 +17,8 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  Legend
+  Legend,
+  CartesianGrid
 } from 'recharts';
 import api from '../services/api';
 import StatCard from '../components/common/StatCard';
@@ -30,6 +31,7 @@ export default function PricingIntelligence() {
   const [productsList, setProductsList] = useState([]);
   const [sliderPct, setSliderPct] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -44,9 +46,10 @@ export default function PricingIntelligence() {
     loadProducts();
   }, []);
 
-  const fetchPricing = async () => {
+  const fetchPricing = async (isManual = false) => {
     try {
-      setLoading(true);
+      if (isManual) setRefreshing(true);
+      else setLoading(true);
       setError(null);
       const res = await api.post('/ml/pricing', {
         productId: selectedProductId || null
@@ -56,6 +59,7 @@ export default function PricingIntelligence() {
       setError(err.response?.data?.error || err.message);
     } finally {
       setLoading(false);
+      setRefreshing(false);
     }
   };
 
@@ -75,33 +79,39 @@ export default function PricingIntelligence() {
   return (
     <div className="space-y-6">
       {/* Title */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-1">
         <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <DollarSign className="w-6 h-6 text-brand-500" />
-            <span>AI Pricing Intelligence &amp; Elasticity Simulator</span>
-          </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Model price elasticity (Ed = %ΔQ / %ΔP) to identify gross-profit maximizing price points.
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+              <DollarSign className="w-5 h-5 text-brand-600 dark:text-brand-400" />
+              <span>Pricing Intelligence &amp; Elasticity Simulator</span>
+            </h1>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 border border-brand-200/60 dark:border-brand-800/60 font-semibold">
+              Ed = %ΔQ / %ΔP
+            </span>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Model price elasticity of demand to identify gross-margin maximizing price points across the catalog.
           </p>
         </div>
 
         <button
-          onClick={fetchPricing}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300 self-start sm:self-auto transition"
+          onClick={() => fetchPricing(true)}
+          disabled={refreshing}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-medium text-slate-700 dark:text-slate-200 self-start sm:self-auto transition shadow-subtle disabled:opacity-50"
         >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Refresh</span>
+          <RefreshCw className={`w-3.5 h-3.5 ${refreshing ? 'animate-spin text-brand-600' : 'text-slate-400'}`} />
+          <span>{refreshing ? 'Refreshing...' : 'Refresh'}</span>
         </button>
       </div>
 
       {/* Target Selector */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm flex items-center gap-3 text-xs">
-        <span className="text-slate-400 font-semibold shrink-0">Product for Pricing Analysis:</span>
+      <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-3.5 shadow-card flex items-center gap-3 text-xs">
+        <span className="text-slate-400 text-[11px] font-medium shrink-0">Product for Pricing Analysis:</span>
         <select
           value={selectedProductId}
           onChange={(e) => setSelectedProductId(e.target.value)}
-          className="flex-1 max-w-md bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-1.5 font-medium text-slate-800 dark:text-slate-200 focus:outline-none"
+          className="flex-1 max-w-md bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg px-2.5 py-1.5 font-medium text-slate-800 dark:text-slate-200 text-xs focus:outline-none focus:ring-1 focus:ring-brand-500 cursor-pointer"
         >
           <option value="">Full Store Catalog Aggregate</option>
           {productsList.map((p) => (
@@ -128,14 +138,14 @@ export default function PricingIntelligence() {
               color="brand"
             />
             <StatCard
-              title="Estimated Price Elasticity"
+              title="Estimated Elasticity"
               value={`${data.base_metrics?.estimated_elasticity || -1.25}`}
               subtext={data.base_metrics?.has_empirical_elasticity ? 'Empirical regression from discounts' : 'Standard retail elasticity prior'}
               icon={Percent}
               color="indigo"
             />
             <StatCard
-              title="Max-Profit Recommended Price"
+              title="Max-Profit Price Point"
               value={`₹${data.best_profit_recommendation?.simulated_price || 0}`}
               subtext={`${data.best_profit_recommendation?.price_change_pct > 0 ? '+' : ''}${data.best_profit_recommendation?.price_change_pct}% optimal shift`}
               icon={CheckCircle2}
@@ -144,33 +154,33 @@ export default function PricingIntelligence() {
             <StatCard
               title="Projected Max Profit"
               value={`₹${(data.best_profit_recommendation?.simulated_gross_profit || 0).toLocaleString('en-IN')}`}
-              subtext={`Margin: ${data.best_profit_recommendation?.profit_margin_pct}%`}
+              subtext={`Gross Margin: ${data.best_profit_recommendation?.profit_margin_pct}%`}
               icon={TrendingUp}
               color="emerald"
             />
           </div>
 
           {/* Interactive Pricing Simulation Slider */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-5">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 sm:p-6 shadow-card space-y-5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                  <Sliders className="w-4 h-4 text-brand-500" />
+                <h2 className="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                  <Sliders className="w-4 h-4 text-brand-600 dark:text-brand-400" />
                   <span>Interactive Price Shift Simulator</span>
-                </h3>
-                <p className="text-[11px] text-slate-400">
-                  Simulate retail price adjustments from -20% to +20% to observe the trade-off between volume and gross profit.
+                </h2>
+                <p className="text-[11px] text-slate-400 dark:text-slate-500">
+                  Simulate retail price shifts (-20% to +20%) to observe volume sensitivity vs net gross profitability.
                 </p>
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="text-xs font-mono font-bold px-3 py-1 rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400 border border-brand-500/20">
-                  Price Adjustment: {sliderPct > 0 ? `+${sliderPct}%` : `${sliderPct}%`}
+                <span className="text-xs font-mono font-semibold px-2.5 py-1 rounded-md bg-brand-50 dark:bg-brand-950 text-brand-700 dark:text-brand-300 border border-brand-200/60 dark:border-brand-800/60">
+                  Shift: {sliderPct > 0 ? `+${sliderPct}%` : `${sliderPct}%`}
                 </span>
               </div>
             </div>
 
-            {/* Slider */}
+            {/* Range Slider */}
             <div className="space-y-2">
               <input
                 type="range"
@@ -179,40 +189,40 @@ export default function PricingIntelligence() {
                 step={5}
                 value={sliderPct}
                 onChange={(e) => setSliderPct(Number(e.target.value))}
-                className="w-full accent-brand-500 cursor-pointer"
+                className="w-full accent-brand-600 cursor-pointer h-1.5 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none"
               />
               <div className="flex justify-between text-[10px] font-mono text-slate-400">
-                <span>-20% (Heavy Discount)</span>
+                <span>-20% (Discount)</span>
                 <span>-10%</span>
-                <span>0% (Current)</span>
+                <span>0% (Baseline)</span>
                 <span>+10%</span>
                 <span>+20% (Premium)</span>
               </div>
             </div>
 
             {/* Simulated Live Results Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-800">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-slate-50/70 dark:bg-slate-850/60 border border-slate-200/80 dark:border-slate-800">
               <div>
-                <span className="text-[10px] text-slate-400 uppercase block font-semibold">Simulated Price</span>
-                <span className="text-lg font-extrabold font-mono text-slate-900 dark:text-white">
+                <span className="text-[10px] text-slate-400 uppercase block font-medium">Simulated Price</span>
+                <span className="text-lg font-bold font-mono text-slate-900 dark:text-white">
                   ₹{currentSimPoint.simulated_price}
                 </span>
               </div>
               <div>
-                <span className="text-[10px] text-slate-400 uppercase block font-semibold">Simulated Demand</span>
-                <span className="text-lg font-extrabold font-mono text-slate-900 dark:text-white">
-                  {currentSimPoint.simulated_volume} units
+                <span className="text-[10px] text-slate-400 uppercase block font-medium">Projected Units</span>
+                <span className="text-lg font-bold font-mono text-slate-900 dark:text-white">
+                  {currentSimPoint.simulated_volume}
                 </span>
               </div>
               <div>
-                <span className="text-[10px] text-slate-400 uppercase block font-semibold">Projected Revenue</span>
-                <span className="text-lg font-extrabold font-mono text-brand-600 dark:text-brand-400">
+                <span className="text-[10px] text-slate-400 uppercase block font-medium">Gross Revenue</span>
+                <span className="text-lg font-bold font-mono text-brand-600 dark:text-brand-400">
                   ₹{(currentSimPoint.simulated_revenue || 0).toLocaleString('en-IN')}
                 </span>
               </div>
               <div>
-                <span className="text-[10px] text-slate-400 uppercase block font-semibold">Projected Gross Profit</span>
-                <span className="text-lg font-extrabold font-mono text-emerald-600 dark:text-emerald-400">
+                <span className="text-[10px] text-slate-400 uppercase block font-medium">Gross Profit</span>
+                <span className="text-lg font-bold font-mono text-emerald-600 dark:text-emerald-400">
                   ₹{(currentSimPoint.simulated_gross_profit || 0).toLocaleString('en-IN')}
                 </span>
               </div>
@@ -220,28 +230,33 @@ export default function PricingIntelligence() {
           </div>
 
           {/* Pricing Simulation Curve Chart */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
-            <h3 className="text-sm font-bold text-slate-900 dark:text-white">
-              Revenue &amp; Profit Elasticity Curve
-            </h3>
-            <p className="text-[11px] text-slate-400">
-              Blue bars represent simulated revenue; Emerald line shows projected gross profit after accounting for unit product cost.
-            </p>
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 shadow-card space-y-4">
+            <div>
+              <h2 className="text-sm font-semibold text-slate-900 dark:text-white">
+                Revenue &amp; Profit Elasticity Curve
+              </h2>
+              <p className="text-[11px] text-slate-400 dark:text-slate-500">
+                Blue bars represent simulated gross revenue; Emerald line charts net gross profit factoring in unit product cost.
+              </p>
+            </div>
 
             <div className="h-72 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <ComposedChart data={data.simulation_curve || []} margin={{ top: 10, right: 10, left: 0, bottom: 20 }}>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#94a3b8" opacity={0.15} />
                   <XAxis
                     dataKey="price_change_pct"
                     stroke="#94a3b8"
                     fontSize={11}
                     tickLine={false}
+                    axisLine={false}
                     tickFormatter={(v) => `${v > 0 ? '+' : ''}${v}%`}
                   />
                   <YAxis
                     stroke="#94a3b8"
                     fontSize={11}
                     tickLine={false}
+                    axisLine={false}
                     tickFormatter={(v) => `₹${(v / 1000).toFixed(0)}k`}
                   />
                   <Tooltip
@@ -249,29 +264,30 @@ export default function PricingIntelligence() {
                     contentStyle={{
                       backgroundColor: '#0f172a',
                       border: '1px solid #1e293b',
-                      borderRadius: '0.75rem',
+                      borderRadius: '0.5rem',
                       color: '#fff',
-                      fontSize: '12px'
+                      fontSize: '11px',
+                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
                     }}
                   />
-                  <Bar dataKey="simulated_revenue" fill="#0284c7" radius={[4, 4, 0, 0]} name="Projected Revenue" />
-                  <Line type="monotone" dataKey="simulated_gross_profit" stroke="#10b981" strokeWidth={3} name="Gross Profit" dot={{ r: 4 }} />
+                  <Bar dataKey="simulated_revenue" fill="#2563eb" radius={[4, 4, 0, 0]} name="Projected Revenue" />
+                  <Line type="monotone" dataKey="simulated_gross_profit" stroke="#10b981" strokeWidth={2.5} name="Gross Profit" dot={{ r: 3, fill: '#10b981' }} />
                 </ComposedChart>
               </ResponsiveContainer>
             </div>
           </div>
 
           {/* Explainability & Limitations Note */}
-          <div className="p-4 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 text-xs space-y-1.5">
-            <div className="flex items-center gap-2 font-bold text-slate-800 dark:text-slate-200">
-              <HelpCircle className="w-4 h-4 text-brand-500" />
-              <span>Pricing Model Methodology &amp; Safeguards</span>
+          <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-850/60 border border-slate-200/80 dark:border-slate-800 text-xs space-y-1.5 shadow-subtle">
+            <div className="flex items-center gap-2 font-semibold text-slate-800 dark:text-slate-200">
+              <HelpCircle className="w-4 h-4 text-brand-600 dark:text-brand-400" />
+              <span>Pricing Methodology &amp; Execution Safeguards</span>
             </div>
-            <p className="text-slate-600 dark:text-slate-400">
+            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
               {data.elasticity_explanation}
             </p>
-            <p className="text-[11px] text-slate-500 dark:text-slate-400 italic">
-              Safety rule: GeoCommerce AI provides consultative simulation recommendations only. It does not automatically execute price changes on live marketplaces.
+            <p className="text-[11px] text-slate-400 italic">
+              Note: GeoCommerce AI provides strategic pricing simulations. Price updates must be confirmed and executed manually on target marketplaces.
             </p>
           </div>
         </>
@@ -279,4 +295,3 @@ export default function PricingIntelligence() {
     </div>
   );
 }
-

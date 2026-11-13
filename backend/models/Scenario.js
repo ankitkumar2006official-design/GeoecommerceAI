@@ -37,7 +37,5 @@ const scenarioSchema = new mongoose.Schema({
   }
 });
 
-const MongooseScenario = mongoose.model('Scenario', scenarioSchema);
-const { getModel } = require('./modelFactory');
-
-module.exports = getModel('Scenario', MongooseScenario);
+const Scenario = mongoose.models.Scenario || mongoose.model('Scenario', scenarioSchema);
+module.exports = Scenario;

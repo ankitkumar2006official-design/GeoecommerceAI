@@ -126,7 +126,6 @@ saleSchema.index({ sellerId: 1, orderDate: 1 });
 saleSchema.index({ sellerId: 1, state: 1, category: 1 });
 saleSchema.index({ sellerId: 1, orderId: 1, productId: 1 });
 
-const MongooseSale = mongoose.model('Sale', saleSchema);
-const { getModel } = require('./modelFactory');
+const Sale = mongoose.models.Sale || mongoose.model('Sale', saleSchema);
 
-module.exports = getModel('Sale', MongooseSale);
+module.exports = Sale;

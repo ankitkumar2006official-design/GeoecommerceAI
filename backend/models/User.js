@@ -70,7 +70,6 @@ userSchema.methods.comparePassword = async function (candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
-const MongooseUser = mongoose.model('User', userSchema);
-const { getModel } = require('./modelFactory');
+const User = mongoose.models.User || mongoose.model('User', userSchema);
 
-module.exports = getModel('User', MongooseUser);
+module.exports = User;

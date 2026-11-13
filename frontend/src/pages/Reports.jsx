@@ -74,27 +74,36 @@ export default function Reports() {
   return (
     <div className="space-y-6">
       {/* Title */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-1">
         <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <FileSpreadsheet className="w-6 h-6 text-brand-500" />
-            <span>Seller Reports &amp; Exports</span>
-          </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Generate and download enterprise CSV data exports and executive PDF intelligence digests.
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+              <FileSpreadsheet className="w-5 h-5 text-brand-600 dark:text-brand-400" />
+              <span>Intelligence Reports &amp; Data Exports</span>
+            </h1>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-brand-50 dark:bg-brand-950 text-brand-600 dark:text-brand-400 border border-brand-200/60 dark:border-brand-800/60 font-semibold">
+              PDF &amp; CSV Exports
+            </span>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Compile and download enterprise sales records or executive PDF digests for strategic reviews.
           </p>
         </div>
       </div>
 
       {status && (
         <div
-          className={`p-4 rounded-xl text-xs flex items-center gap-2 ${
+          className={`p-3.5 rounded-xl text-xs flex items-center gap-2 animate-fadeIn ${
             status.type === 'success'
-              ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20'
-              : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20'
+              ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
+              : 'bg-rose-50 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
           }`}
         >
-          {status.type === 'success' ? <CheckCircle2 className="w-4 h-4" /> : <AlertCircle className="w-4 h-4" />}
+          {status.type === 'success' ? (
+            <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+          ) : (
+            <AlertCircle className="w-4 h-4 text-rose-600 dark:text-rose-400 shrink-0" />
+          )}
           <span>{status.text}</span>
         </div>
       )}
@@ -102,35 +111,35 @@ export default function Reports() {
       {/* Export Options Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* PDF Executive Report Card */}
-        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm flex flex-col justify-between space-y-4">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 sm:p-6 shadow-card flex flex-col justify-between space-y-4">
           <div className="space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400 flex items-center justify-center">
-              <FileText className="w-5 h-5" />
+            <div className="w-9 h-9 rounded-lg bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border border-rose-200/60 dark:border-rose-900/60 flex items-center justify-center">
+              <FileText className="w-4 h-4" />
             </div>
 
-            <h3 className="text-base font-extrabold text-slate-900 dark:text-white">
-              Executive PDF Intelligence Report
-            </h3>
+            <h2 className="text-base font-semibold text-slate-900 dark:text-white">
+              Executive PDF Intelligence Digest
+            </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              Formatted multi-section PDF document containing your executive financial overview, top regional markets, product revenue rankings, dead stock risk audit, and strategic AI directives.
+              Formatted multi-section PDF document containing your financial velocity summary, top regional markets, catalog revenue distribution, and strategic recommendations.
             </p>
 
-            <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-100 dark:border-slate-800">
+            <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-800">
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Executive revenue &amp; gross margin breakdown</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Executive revenue &amp; gross margin analysis</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>State &amp; city demand concentration table</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Geographic demand concentration table</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Inventory replenishment &amp; safety stock audit</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Safety stock and replenishment diagnostic</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Apriori cross-sell merchandise strategy</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Apriori cross-sell bundle suggestions</span>
               </li>
             </ul>
           </div>
@@ -138,43 +147,43 @@ export default function Reports() {
           <button
             onClick={handleDownloadPdf}
             disabled={downloadingPdf}
-            className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs shadow-md shadow-rose-600/20 disabled:opacity-50 transition"
+            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-white text-white dark:text-slate-900 font-semibold text-xs shadow-subtle disabled:opacity-50 transition"
           >
-            <Download className="w-4 h-4" />
+            <Download className="w-3.5 h-3.5" />
             <span>{downloadingPdf ? 'Generating PDF...' : 'Download Executive PDF Report'}</span>
           </button>
         </div>
 
         {/* CSV Full Data Export Card */}
-        <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm flex flex-col justify-between space-y-4">
+        <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 sm:p-6 shadow-card flex flex-col justify-between space-y-4">
           <div className="space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
-              <FileSpreadsheet className="w-5 h-5" />
+            <div className="w-9 h-9 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-200/60 dark:border-emerald-900/60 flex items-center justify-center">
+              <FileSpreadsheet className="w-4 h-4" />
             </div>
 
-            <h3 className="text-base font-extrabold text-slate-900 dark:text-white">
-              Complete Sales CSV Data Export
-            </h3>
+            <h2 className="text-base font-semibold text-slate-900 dark:text-white">
+              Complete Sales CSV Dataset
+            </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              Export all delivered sales records for your store into a clean, RFC-4180 compliant CSV spreadsheet ready for Microsoft Excel, Google Sheets, or custom BI ingestion.
+              Export all delivered sales records for your merchant account into an RFC-4180 compliant CSV spreadsheet ready for Microsoft Excel, Google Sheets, or custom BI ingestion.
             </p>
 
-            <ul className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-100 dark:border-slate-800">
+            <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-300 pt-3 border-t border-slate-100 dark:border-slate-800">
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Includes order dates, delivery PIN codes, and city names</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Order dates, delivery PIN codes, and city names</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Product IDs, titles, categories, and inventory stock</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Product SKUs, titles, categories, and inventory stock</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Unit selling prices, cost prices, and discount percentages</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Unit selling prices, cost prices, and discount amounts</span>
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                <span>Shipping costs, advertising spend, and return statuses</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Shipping costs, ad attribution, and return flags</span>
               </li>
             </ul>
           </div>
@@ -182,14 +191,13 @@ export default function Reports() {
           <button
             onClick={handleDownloadCsv}
             disabled={downloadingCsv}
-            className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/20 disabled:opacity-50 transition"
+            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs shadow-subtle disabled:opacity-50 transition"
           >
-            <Download className="w-4 h-4" />
-            <span>{downloadingCsv ? 'Compiling CSV...' : 'Download Full Sales CSV'}</span>
+            <Download className="w-3.5 h-3.5" />
+            <span>{downloadingCsv ? 'Compiling CSV...' : 'Download Sales CSV'}</span>
           </button>
         </div>
       </div>
     </div>
   );
 }
-

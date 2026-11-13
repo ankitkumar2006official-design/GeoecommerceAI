@@ -8,7 +8,9 @@ import {
   Calendar,
   Building,
   RefreshCw,
-  Search
+  Search,
+  X,
+  ChevronRight
 } from 'lucide-react';
 import api from '../services/api';
 import DemandMap from '../components/map/DemandMap';
@@ -64,27 +66,29 @@ export default function RegionalDemand() {
 
   return (
     <div className="space-y-6">
-      {/* Page Title */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* Page Title & Level Selector */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-1">
         <div>
-          <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-            <MapPin className="w-6 h-6 text-brand-500" />
-            <span>Regional Demand Intelligence</span>
-          </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Multi-tier consumer purchase demand at State, District, City, and PIN code levels across India.
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-brand-600 dark:text-brand-400" />
+              <span>Regional Demand Intelligence</span>
+            </h1>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Geographic demand distribution and product popularity ranking at State, District, City, and PIN code granularity.
           </p>
         </div>
 
-        {/* Level Selector Pills */}
-        <div className="flex items-center p-1 bg-slate-200 dark:bg-slate-800 rounded-xl text-xs font-semibold self-start sm:self-auto">
+        {/* Level Selector Segmented Control */}
+        <div className="flex items-center p-0.5 bg-slate-100 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 rounded-lg text-xs font-medium self-start sm:self-auto shadow-subtle">
           {['state', 'district', 'city', 'pincode'].map((lvl) => (
             <button
               key={lvl}
               onClick={() => setLevel(lvl)}
-              className={`px-3 py-1.5 rounded-lg capitalize transition ${
+              className={`px-3 py-1.5 rounded-md capitalize transition-all ${
                 level === lvl
-                  ? 'bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 shadow-sm'
+                  ? 'bg-white dark:bg-slate-900 text-brand-600 dark:text-brand-400 font-semibold shadow-subtle'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
@@ -95,44 +99,44 @@ export default function RegionalDemand() {
       </div>
 
       {/* Filter Bar */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-sm flex flex-wrap items-center justify-between gap-3 text-xs">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-3.5 shadow-card flex flex-wrap items-center justify-between gap-3 text-xs">
         <div className="flex flex-wrap items-center gap-3 flex-1 min-w-[280px]">
           {/* Search Input */}
           <div className="relative flex-1 min-w-[180px]">
-            <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400" />
+            <Search className="w-3.5 h-3.5 absolute left-3 top-2.5 text-slate-400 pointer-events-none" />
             <input
               type="text"
-              placeholder={`Filter ${level} names...`}
+              placeholder={`Search ${level} names...`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-brand-500"
+              className="w-full pl-9 pr-3 py-1.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-1 focus:ring-brand-500 placeholder:text-slate-400 transition"
             />
           </div>
 
           {/* State Filter */}
           <div className="flex items-center gap-1.5">
-            <span className="text-slate-400">State:</span>
+            <span className="text-slate-400 text-[11px] font-medium">State:</span>
             <select
               value={selectedState}
               onChange={(e) => setSelectedState(e.target.value)}
-              className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 font-medium text-slate-700 dark:text-slate-200 focus:outline-none"
+              className="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg px-2.5 py-1.5 font-medium text-slate-700 dark:text-slate-200 text-xs focus:outline-none focus:ring-1 focus:ring-brand-500 cursor-pointer"
             >
               {uniqueStates.map((st) => (
-                <option key={st} value={st}>{st}</option>
+                <option key={st} value={st} className="bg-white dark:bg-slate-900 text-slate-800 dark:text-white">{st}</option>
               ))}
             </select>
           </div>
 
           {/* Category Filter */}
           <div className="flex items-center gap-1.5">
-            <span className="text-slate-400">Category:</span>
+            <span className="text-slate-400 text-[11px] font-medium">Category:</span>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-2.5 py-1.5 font-medium text-slate-700 dark:text-slate-200 focus:outline-none"
+              className="bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-lg px-2.5 py-1.5 font-medium text-slate-700 dark:text-slate-200 text-xs focus:outline-none focus:ring-1 focus:ring-brand-500 cursor-pointer"
             >
               {uniqueCategories.map((cat) => (
-                <option key={cat} value={cat}>{cat}</option>
+                <option key={cat} value={cat} className="bg-white dark:bg-slate-900 text-slate-800 dark:text-white">{cat}</option>
               ))}
             </select>
           </div>
@@ -140,9 +144,9 @@ export default function RegionalDemand() {
 
         <button
           onClick={fetchRegionalData}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold text-slate-600 dark:text-slate-300 transition"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 text-xs font-medium text-slate-700 dark:text-slate-300 transition shadow-subtle"
         >
-          <RefreshCw className="w-3.5 h-3.5" />
+          <RefreshCw className="w-3.5 h-3.5 text-slate-400" />
           <span>Apply</span>
         </button>
       </div>
@@ -154,13 +158,13 @@ export default function RegionalDemand() {
       ) : (
         <>
           {/* Interactive Demand Map */}
-          <div className="space-y-2">
+          <div className="space-y-2.5">
             <div className="flex items-center justify-between">
-              <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
-                <Layers className="w-4 h-4 text-brand-500" />
-                <span>Geospatial Demand Heatmap — India</span>
-              </h3>
-              <span className="text-[11px] text-slate-400 font-mono">
+              <h2 className="text-sm font-semibold text-slate-900 dark:text-white flex items-center gap-2">
+                <Layers className="w-4 h-4 text-brand-600 dark:text-brand-400" />
+                <span>Geospatial Demand Clusters — India</span>
+              </h2>
+              <span className="text-[11px] text-slate-500 dark:text-slate-400 font-mono">
                 {mapPoints.length} verified delivery clusters mapped
               </span>
             </div>
@@ -174,86 +178,87 @@ export default function RegionalDemand() {
 
           {/* Selected cluster quick detail card if clicked on map */}
           {selectedPoint && (
-            <div className="p-4 rounded-2xl bg-brand-50 dark:bg-brand-950/40 border border-brand-200 dark:border-brand-900 flex flex-wrap items-center justify-between gap-4 animate-fadeIn">
+            <div className="p-4 rounded-xl bg-brand-50/70 dark:bg-brand-950/40 border border-brand-200 dark:border-brand-900/60 flex flex-wrap items-center justify-between gap-4 animate-fadeIn">
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-600 dark:text-brand-400">
-                  Selected Area Details
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-700 dark:text-brand-400">
+                  Selected Locality Details
                 </span>
-                <h4 className="text-base font-extrabold text-slate-900 dark:text-white">
+                <h3 className="text-sm font-bold text-slate-900 dark:text-white mt-0.5">
                   {selectedPoint.city} — PIN {selectedPoint.pincode} ({selectedPoint.state})
-                </h4>
+                </h3>
                 <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">
-                  Top Product in this locality: <strong className="text-slate-900 dark:text-white">{selectedPoint.topProduct}</strong> ({selectedPoint.topProductQty} units)
+                  Top Product: <strong className="text-slate-900 dark:text-white">{selectedPoint.topProduct}</strong> ({selectedPoint.topProductQty} units)
                 </p>
               </div>
 
-              <div className="flex items-center gap-4 text-xs font-mono">
+              <div className="flex items-center gap-5 text-xs">
                 <div>
-                  <span className="text-[10px] text-slate-400 uppercase block">Total Units</span>
-                  <span className="text-sm font-bold text-slate-900 dark:text-white">{selectedPoint.units}</span>
+                  <span className="text-[10px] text-slate-400 uppercase block font-medium">Total Units</span>
+                  <span className="text-sm font-bold text-slate-900 dark:text-white tabular-nums">{selectedPoint.units}</span>
                 </div>
                 <div>
-                  <span className="text-[10px] text-slate-400 uppercase block">Revenue</span>
-                  <span className="text-sm font-bold text-emerald-600 dark:text-emerald-400">
+                  <span className="text-[10px] text-slate-400 uppercase block font-medium">Revenue</span>
+                  <span className="text-sm font-bold text-emerald-600 dark:text-emerald-400 tabular-nums">
                     ₹{Math.round(selectedPoint.revenue).toLocaleString('en-IN')}
                   </span>
                 </div>
                 <button
                   onClick={() => setSelectedPoint(null)}
-                  className="px-2.5 py-1 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold"
+                  className="p-1 rounded-md text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition"
+                  title="Dismiss details"
                 >
-                  Clear
+                  <X className="w-4 h-4" />
                 </button>
               </div>
             </div>
           )}
 
           {/* Regional Demand Ranking Table */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-sm space-y-4">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800/90 rounded-xl p-5 shadow-card space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white capitalize">
-                  {level} Demand & Product Popularity Ranking
-                </h3>
-                <p className="text-[11px] text-slate-400">
-                  Showing top products, volumes, and revenues per geographic boundary
+                <h2 className="text-sm font-semibold text-slate-900 dark:text-white capitalize">
+                  {level} Demand &amp; Product Popularity Ranking
+                </h2>
+                <p className="text-[11px] text-slate-400 dark:text-slate-500">
+                  Granular breakdown of most purchased inventory, volumes, and revenue contribution
                 </p>
               </div>
               <span className="text-xs font-mono text-slate-400">{filteredRegions.length} locations</span>
             </div>
 
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto rounded-lg border border-slate-200/70 dark:border-slate-800">
               <table className="w-full text-left text-xs">
-                <thead className="bg-slate-50 dark:bg-slate-800/50 text-slate-500 uppercase tracking-wider font-semibold border-b border-slate-200 dark:border-slate-800">
+                <thead className="bg-slate-50 dark:bg-slate-800/60 text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold border-b border-slate-200/70 dark:border-slate-800 text-[10px]">
                   <tr>
                     <th className="px-4 py-3 capitalize">{level}</th>
-                    <th className="px-4 py-3">Most Purchased Product</th>
-                    <th className="px-4 py-3">Top Product Units</th>
-                    <th className="px-4 py-3">Top Product Revenue</th>
-                    <th className="px-4 py-3">Total Area Units</th>
-                    <th className="px-4 py-3">Total Area Revenue</th>
+                    <th className="px-4 py-3">Most Purchased SKU</th>
+                    <th className="px-4 py-3">SKU Units</th>
+                    <th className="px-4 py-3">SKU Revenue</th>
+                    <th className="px-4 py-3">Total Units</th>
+                    <th className="px-4 py-3">Total Revenue</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-normal">
                   {filteredRegions.map((r, idx) => (
-                    <tr key={`${r.location}-${idx}`} className="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition">
-                      <td className="px-4 py-3 font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
-                        <span className="w-5 text-slate-400 text-[10px] font-mono">{idx + 1}.</span>
+                    <tr key={`${r.location}-${idx}`} className="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition">
+                      <td className="px-4 py-3 font-medium text-slate-800 dark:text-slate-200 flex items-center gap-2">
+                        <span className="text-slate-400 text-[10px] font-mono w-5">{idx + 1}.</span>
                         <span>{r.location}</span>
                       </td>
                       <td className="px-4 py-3 text-slate-700 dark:text-slate-300 font-medium">
                         <span className="font-semibold text-brand-600 dark:text-brand-400">{r.topProduct}</span>
                       </td>
-                      <td className="px-4 py-3 font-mono text-slate-600 dark:text-slate-400">
+                      <td className="px-4 py-3 tabular-nums text-slate-600 dark:text-slate-400">
                         {r.topProductUnits} units
                       </td>
-                      <td className="px-4 py-3 font-mono text-slate-700 dark:text-slate-300">
+                      <td className="px-4 py-3 tabular-nums text-slate-700 dark:text-slate-300">
                         ₹{Number(r.topProductRevenue || 0).toLocaleString('en-IN')}
                       </td>
-                      <td className="px-4 py-3 font-mono font-semibold text-slate-800 dark:text-slate-200">
+                      <td className="px-4 py-3 tabular-nums font-medium text-slate-800 dark:text-slate-200">
                         {r.totalUnits} units
                       </td>
-                      <td className="px-4 py-3 font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                      <td className="px-4 py-3 tabular-nums font-semibold text-emerald-600 dark:text-emerald-400">
                         ₹{Number(r.totalRevenue || 0).toLocaleString('en-IN')}
                       </td>
                     </tr>
@@ -267,4 +272,3 @@ export default function RegionalDemand() {
     </div>
   );
 }
-

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { getModel } = require('./modelFactory');
 
 const orderItemSchema = new mongoose.Schema({
   productId: { type: String, required: true },
@@ -83,6 +82,6 @@ orderSchema.index({ sellerId: 1, orderId: 1 }, { unique: true });
 orderSchema.index({ sellerId: 1, orderDate: -1 });
 orderSchema.index({ sellerId: 1, state: 1 });
 
-const MongooseOrder = mongoose.model('Order', orderSchema);
-module.exports = getModel('Order', MongooseOrder);
+const Order = mongoose.models.Order || mongoose.model('Order', orderSchema);
+module.exports = Order;
 

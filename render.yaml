@@ -26,6 +26,8 @@ services:
         value: GeoCommerce AI <onboarding@resend.dev>
       - key: FRONTEND_URL
         sync: false
+      - key: ML_SERVICE_URL
+        value: http://geocommerce-ml:10000
 
   # Python FastAPI ML Microservice
   - type: web

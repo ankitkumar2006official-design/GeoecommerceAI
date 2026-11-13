@@ -1,8 +1,12 @@
 const path = require('path');
+if (process.env.NODE_ENV === 'test') {
+  require('dotenv').config({ path: path.resolve(__dirname, '../.env.test'), override: true });
+}
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 require('dotenv').config();
 const mongoose = require('mongoose');
-const { setInMemoryMode } = require('../models/modelFactory');
+const { assertIsolatedTestDatabase } = require('./testDbGuard');
+const { isProtectedEnv, isTest, getEnvironment } = require('./environment');
 
 let isConnected = false;
 let connectionAttempted = false;
@@ -27,35 +31,54 @@ mongoose.connection.on('disconnected', () => {
 });
 
 async function connectDB() {
-  const customUri = process.env.MONGODB_URI;
   connectionAttempted = true;
+  let customUri = process.env.MONGODB_URI;
 
-  if (customUri && customUri.startsWith('mongodb')) {
+  // In test environment, enforce strict fail-closed database isolation
+  if (process.env.NODE_ENV === 'test') {
+    const testUri = process.env.MONGODB_TEST_URI || process.env.MONGODB_URI;
     try {
-      // Mask password and user in console logs for strict privacy
-      const sanitizedUri = customUri.replace(/\/\/[^@]+@/, '//***:***@');
-      console.log(`[MongoDB] Connecting to MongoDB Atlas cluster at: ${sanitizedUri}`);
-
-      await mongoose.connect(customUri, {
-        serverSelectionTimeoutMS: 15000,
-        socketTimeoutMS: 45000,
-        maxPoolSize: 10,
-        retryWrites: true
-      });
-
-      isConnected = true;
-      setInMemoryMode(false);
-      console.log(`[MongoDB] MongoDB Atlas connection verified on database "${mongoose.connection.name}".`);
-      return;
-    } catch (err) {
-      lastError = err.message;
-      console.warn(`[MongoDB] MongoDB Atlas connection failed (${err.message}).`);
+      assertIsolatedTestDatabase(testUri);
+      customUri = testUri;
+    } catch (isolationErr) {
+      lastError = isolationErr.message;
+      console.error(isolationErr.message);
+      throw isolationErr;
     }
   }
 
-  // Graceful fallback to high-performance embedded in-memory mode if Atlas is unreachable
-  setInMemoryMode(true);
-  console.log('[MongoDB] GeoCommerce AI initialized with embedded high-performance In-Memory Database store.');
+  if (!customUri || !customUri.startsWith('mongodb')) {
+    const errorMsg = '[MongoDB] MONGODB_URI is required and must begin with mongodb:// or mongodb+srv://';
+    lastError = errorMsg;
+    console.error(errorMsg);
+    if (isProtectedEnv() || isTest()) {
+      throw new Error(errorMsg);
+    }
+    return;
+  }
+
+  try {
+    // Mask password and user in console logs for strict privacy
+    const sanitizedUri = customUri.replace(/\/\/[^@]+@/, '//***:***@');
+    console.log(`[MongoDB] Connecting to database cluster at: ${sanitizedUri}`);
+
+    await mongoose.connect(customUri, {
+      serverSelectionTimeoutMS: 15000,
+      socketTimeoutMS: 45000,
+      maxPoolSize: 30, // Optimized connection pool for production concurrency
+      minPoolSize: 5,
+      retryWrites: true
+    });
+
+    isConnected = true;
+    console.log(`[MongoDB] Database connection verified on database "${mongoose.connection.name}".`);
+  } catch (err) {
+    lastError = err.message;
+    console.error(`[MongoDB] Database connection failed (${err.message}).`);
+    if (isProtectedEnv() || isTest()) {
+      throw new Error(`[MongoDB] Fatal: Failed to connect to database in ${getEnvironment()}: ${err.message}`);
+    }
+  }
 }
 
 async function closeDB() {
@@ -80,9 +103,9 @@ function getDbStatus() {
   return {
     connected,
     status: activeState,
-    database: connected ? mongoose.connection.name : (readyState === 0 ? 'in-memory-store' : 'none'),
+    database: connected ? mongoose.connection.name : 'disconnected',
     clusterHost: safeHost,
-    mode: connected ? 'MongoDB Atlas (Persistent Cloud Cluster)' : 'In-Memory Fallback',
+    mode: connected ? 'MongoDB Atlas (Persistent Cloud Cluster)' : 'Disconnected (Offline)',
     connectionAttempted,
     lastError: lastError ? 'Connection challenge encountered (credentials/network)' : null,
     timestamp: new Date().toISOString()

@@ -1,3 +1,4 @@
+require('./setupTestEnv');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const axios = require('c:/e-commerce ai sales data/backend/node_modules/axios');

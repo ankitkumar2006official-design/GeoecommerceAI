@@ -1,3 +1,4 @@
+require('./setupTestEnv');
 const test = require('node:test');
 const assert = require('node:assert');
 const axios = require('../backend/node_modules/axios');
